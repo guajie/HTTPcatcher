@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\":\"2030-11-11 11:21:12\"",
+      "matchValue" : "expireTime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "days\": \"999",
+      "matchValue" : "days\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isExpire\": \"0\"",
+      "matchValue" : "isExpire\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\":\"1\"",
+      "matchValue" : "\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "精塾学院 国学经典解读听书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 9100,
+      "query" : "",
+      "host" : "47.104.228.152",
+      "path" : "\/api\/apiAppUser\/getUser"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 9100,
+      "query" : "",
+      "host" : "47.104.228.152",
+      "path" : "\/api\/apiCourse\/courseInfoSelf"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 9100,
+      "query" : "",
+      "host" : "47.104.228.152",
+      "path" : "\/api\/apiCourse\/course"
+    }
+  ],
+  "description" : "精塾学院-国学经典课程解读听书社区 来自 西安精塾教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%B2%BE%E5%A1%BE%E5%AD%A6%E9%99%A2-%E5%9B%BD%E5%AD%A6%E7%BB%8F%E5%85%B8%E8%AF%BE%E7%A8%8B%E8%A7%A3%E8%AF%BB%E5%90%AC%E4%B9%A6%E7%A4%BE%E5%8C%BA\/id1503465556"
+}

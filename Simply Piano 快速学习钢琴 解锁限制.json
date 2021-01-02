@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "membershipInfo\":{\"familyIapID\":\"com.joytunes.asla.subscriptiononeyear_trial_family\",\"membershipTier\":\"premium_home\",\"planDuration\":\"oneyear\",\"membershipType\":\"SPONLY\",\"daysRemaining\":737,\"autoRenewable\":1,\"dateStarted\":\"2020-02-23\",\"isTrialPeriod\":1,\"currentIapID\":\"com.joytunes.asla.subscriptiononeyear_trial_individual\",\"dateExpire\":\"2099-03-01\",\"membershipDescription\":\"高级会员\",\"isAutoRenew\":null}",
+      "matchValue" : "membershipInfo\":\\{[^}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Simply Piano 快速学习钢琴 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "asla.joytunes.com",
+      "path" : "\/server\/asla\/accounts\/*"
+    }
+  ],
+  "description" : "Simply Piano 由 JoyTunes 开发 来自 JoyTunes https:\/\/apps.apple.com\/cn\/app\/simply-piano-%E7%94%B1-joytunes-%E5%BC%80%E5%8F%91\/id1019442026"
+}

@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2030-11-11\"",
+      "matchValue" : "vipExpireTime\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":0",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "remove-header",
+      "matchField" : "Server",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "",
+      "destiontion" : "response",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "小红绳 视频直播相亲交交友 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xiaohongsheng.net",
+      "path" : ""
+    }
+  ],
+  "description" : "小红绳-视频直播相亲交友 来自 Hubei xiaohongsheng Network Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%B0%8F%E7%BA%A2%E7%BB%B3-%E8%A7%86%E9%A2%91%E7%9B%B4%E6%92%AD%E7%9B%B8%E4%BA%B2%E4%BA%A4%E5%8F%8B\/id1476243045\n\n出现自动断开vpn的情况请使用Qx规则\n\/*\n#Qx 小红绳 视频直播相亲交 解锁会员 A+\r\nhttps:\\\/\\\/app.xiaohongsheng.net\\\/* url script-response-body xhs.js\n*\/\n\nlet a = JSON.parse($response.body);\na.code = 0;\na.data.isVip = 1;\na.data.vipExpireTime = \"2030-11-11\"\n$done({body: JSON.stringify(a)});\n\n\n可以使用文件夹来创建js文件保存到iCloud QuantumultX Script\nhttps:\/\/apps.apple.com\/cn\/app\/%E6%96%87%E4%BB%B6%E5%A4%B9\/id983467956"
+}

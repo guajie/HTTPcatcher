@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "films\": [{\n    \"goodId\": \"fimoAesthetic400\",\n    \"goodName\": \"Aesthetic 400\",\n    \"goodPrice\": 0,\n    \"pay\": \"sync\",\n    \"photo\": 0,\n    \"time\": \"2020-04-27 11:13:06\"\n  }, {\n    \"goodId\": \"fimoIFPAN100\",\n    \"goodName\": \"PAN 100\",\n    \"goodPrice\": 0,\n    \"pay\": \"sync\",\n    \"photo\": 0,\n    \"time\": \"2020-04-27 11:13:06\"\n  }, {\n    \"goodId\": \"fimoLMcolor100\",\n    \"goodName\": \"LM Color 100\",\n    \"goodPrice\": 0,\n    \"pay\": \"sync\",\n    \"photo\": 0,\n    \"time\": \"2020-04-27 11:13:06\"\n  }, {\n    \"goodId\": \"fimoBusiness400\",\n    \"goodName\": \"Business 400\",\n    \"goodPrice\": 0,\n    \"pay\": \"sync\",\n    \"photo\": 0,\n    \"time\": \"2020-04-27 11:13:06\"\n  }, {\n    \"goodId\": \"fimoEK80\",\n    \"goodName\": \"EK 80\",\n    \"goodPrice\": 0,\n    \"pay\": \"sync\",\n    \"photo\": 0,\n    \"time\": \"2020-04-27 11:13:06\"\n  }, {\n    \"goodId\": \"fimoYummy100\",\n    \"goodName\": \"Yummy 100\",\n    \"goodPrice\": 0,\n    \"pay\": \"sync\",\n    \"photo\": 0,\n    \"time\": \"2020-04-27 11:13:06\"\n  }, {\n    \"goodId\": \"fimoXRed50\",\n    \"goodName\": \"X-Red 50\",\n    \"goodPrice\": 0,\n    \"pay\": \"sync\",\n    \"photo\": 0,\n    \"time\": \"2020-04-27 11:13:06\"\n  }, {\n    \"goodId\": \"fimoJoey100T\",\n    \"goodName\": \"Joey 100T\",\n    \"goodPrice\": 0,\n    \"pay\": \"sync\",\n    \"photo\": 0,\n    \"time\": \"2020-04-27 11:13:06\"\n  }, {\n    \"goodId\": \"fimoMorandi200\",\n    \"goodName\": \"Morandi 200\",\n    \"goodPrice\": 0,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1995-01-15 14:00:00\"\n  }, {\n    \"goodId\": \"fimoSuperHR100\",\n    \"goodName\": \"SuperHR 100\",\n    \"goodPrice\": 6,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1998-01-15 14:00:00\"\n  }, {\n    \"goodId\": \"fimoEPR64\",\n    \"goodName\": \"EPR 64\",\n    \"goodPrice\": 6,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1998-02-15 14:33:00\"\n  }, {\n    \"goodId\": \"fimoPortra160NC\",\n    \"goodName\": \"PortraNC 160NC\",\n    \"goodPrice\": 12,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1998-10-15 14:33:00\"\n  }, {\n    \"goodId\": \"fimoKDchrome64\",\n    \"goodName\": \"KDchrome 64\",\n    \"goodPrice\": 12,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"2001-01-15 13:00:22\"\n  }, {\n    \"goodId\": \"fimoTriX400\",\n    \"goodName\": \"TriX 400\",\n    \"goodPrice\": 8,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1807-11-13 19:00:00\"\n  }, {\n    \"goodId\": \"fimoNatura1600\",\n    \"goodName\": \"Natura 1600\",\n    \"goodPrice\": 1,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1899-12-13 19:15:33\"\n  }, {\n    \"goodId\": \"fimoBubble400\",\n    \"goodName\": \"Bubble 400\",\n    \"goodPrice\": 6,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1954-10-21 01:00:00\"\n  }, {\n    \"goodId\": \"fimoDE200\",\n    \"goodName\": \"DE 200\",\n    \"goodPrice\": 12,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1989-10-25 08:30:00\"\n  }, {\n    \"goodId\": \"fimoTokyo500\",\n    \"goodName\": \"Tokyo 500\",\n    \"goodPrice\": 12,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"2000-02-10 17:00:00\"\n  }, {\n    \"goodId\": \"fimoHK200\",\n    \"goodName\": \"HK 200\",\n    \"goodPrice\": 6,\n    \"pay\": \"apple\",\n    \"photo\": 0,\n    \"time\": \"1999-08-10 10:35:00\"\n  }]",
+      "matchValue" : "films\":\\[[^]]+\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "FIMO 复古胶片相机 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "server.yoyiapp.com",
+      "path" : "\/fimo-user\/user\/sync"
+    }
+  ],
+  "description" : "登号恢复购买 等待时间比较久\n越狱屏蔽app\n交卷收藏夹显示19 下次用不用开网球\n\nFIMO -复古胶片相机 来自 JUSTMAE Technology PTE. LTD https:\/\/apps.apple.com\/cn\/app\/fimo-%E5%A4%8D%E5%8F%A4%E8%83%B6%E7%89%87%E7%9B%B8%E6%9C%BA\/id1454219307"
+}

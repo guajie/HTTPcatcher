@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : ":0",
+      "matchValue" : ":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "表情制作 文字表情包制作 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "xiaoma.dicallapp.com",
+      "path" : "\/EMGetMeCount.ashx"
+    }
+  ],
+  "description" : "表情制作-文字表情包制作神器 来自 Huiwen Education Consulting Co., Ltd.文字表情包制作神器 来自 Huiwen Education Consulting Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%A1%A8%E6%83%85%E5%88%B6%E4%BD%9C-%E6%96%87%E5%AD%97%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%B6%E4%BD%9C%E7%A5%9E%E5%99%A8\/id1517576627"
+}

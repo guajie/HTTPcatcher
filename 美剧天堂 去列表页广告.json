@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "location\":2,\"url2\":\"\",\"image2\":\"\"",
+      "matchValue" : "location\":\\d,\"url\":\"http.*?\",\"image\":\"http.*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "美剧天堂 去列表页广告 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "*.maimengmao.com",
+      "path" : "\/system\/api\/video\/category\/*"
+    }
+  ],
+  "description" : "美剧天堂-美剧视频社区 来自 Shanghai Chengjia Film & Television Media Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%BE%8E%E5%89%A7%E5%A4%A9%E5%A0%82-%E7%BE%8E%E5%89%A7%E8%A7%86%E9%A2%91%E7%A4%BE%E5%8C%BA\/id1498738720"
+}

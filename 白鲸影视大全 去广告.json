@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n  \"status\": 200,\n  \"msg\": \"请求成功\"}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "白鲸影视大全 去广告 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/app\/\/?product\/config\/searchAppDownloadUrl"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/app\/php\/api\/ad\/v?"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/app\/\/user\/task\/v?\/searchTaskList"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/app\/\/user\/task\/*\/searchTaskConfigByCode"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/app\/external\/friend\/v?\/getExternalBalance"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/app\/\/lookup\/searchLookupItem"
+    }
+  ],
+  "description" : "微信登录去红包弹窗\n白鲸影视大全-国产剧影评与解说 来自 深圳市龙卷风影视传媒有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%99%BD%E9%B2%B8%E5%BD%B1%E8%A7%86%E5%A4%A7%E5%85%A8-%E5%9B%BD%E4%BA%A7%E5%89%A7%E5%BD%B1%E8%AF%84%E4%B8%8E%E8%A7%A3%E8%AF%B4\/id1479265975"
+}

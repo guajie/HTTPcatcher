@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "free\":\"1\"",
+      "matchValue" : "free\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Pintu 精致优雅的拼图助手 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.wecut.com",
+      "path" : "*"
+    }
+  ],
+  "description" : "Pintu - 精致优雅的拼图助手 来自 Shicong Zhou https:\/\/apps.apple.com\/cn\/app\/pintu-%E7%B2%BE%E8%87%B4%E4%BC%98%E9%9B%85%E7%9A%84%E6%8B%BC%E5%9B%BE%E5%8A%A9%E6%89%8B\/id1334000216"
+}

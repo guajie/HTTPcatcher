@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":true",
+      "matchValue" : "is_vip\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expired_date\":\"2022-05-05T09:08:12+0000\"",
+      "matchValue" : "expired_date\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "FirstVPN Wifi Proxy 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.adminvpn.com",
+      "path" : "\/api\/customers\/init"
+    }
+  ],
+  "description" : "非国区下\nFirstVPN - Wifi Proxy by Hefei Yixun Network Technology Co., Ltd https:\/\/apps.apple.com\/us\/app\/firstvpn-wifi-proxy\/id1399968492"
+}

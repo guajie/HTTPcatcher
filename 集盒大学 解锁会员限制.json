@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\":\"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":\"Y\"",
+      "matchValue" : "is_vip\":\"\\w\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_svip\":\"Y\"",
+      "matchValue" : "is_svip\":\"\\w\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\":\"9999",
+      "matchValue" : "\":\"0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "集盒大学 解锁会员限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api2019.jiheapp.com",
+      "path" : "\/v1\/user\/info\/get"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api2019.jiheapp.com",
+      "path" : "\/v1\/user\/course\/detail"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api2019.jiheapp.com",
+      "path" : "\/v1\/user\/info\/my_classmate"
+    }
+  ],
+  "description" : "集盒大学 来自 Hangzhou Community Network Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%9B%86%E7%9B%92%E5%A4%A7%E5%AD%A6\/id1477021637\n\n\n附上Qx规则\n\/*\n\/\/集合大学A+\n^https:\\\/\\\/api2019.jiheapp.com\\\/v1\\\/user\\\/(info\\\/get|course\\\/detail|info\\\/my_classmate)* url script-response-body jhdx.js\n*\/\n\n\/\/jhdx.js↓\nvar body = $response.body;\nvar url = $request.url;\nvar obj = JSON.parse(body);\n\n\nconst u1 = 'info\/get';\nconst u2 = 'course\/detail';\nconst u3 = \"info\/my_classmate\"\n\nif (url.indexOf(u1) != -1) {\nobj.data[\"nickname\"] = \"已解锁\";\nbody = JSON.stringify(obj);\n}\n\nif (url.indexOf(u2) != -1) {\nobj.data[\"is_vip\"] = \"Y\";\nobj.data[\"is_svip\"] = \"Y\";\nbody = JSON.stringify(obj);\n}\n\nif (url.indexOf(u3) != -1) {\nbody = body.replace(\/\":\"0\/g, '\":\"9999');\n}\n\n$done({body})"
+}

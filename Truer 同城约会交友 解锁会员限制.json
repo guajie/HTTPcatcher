@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":true",
+      "matchValue" : "vip\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Truer 同城约会交友 解锁会员限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "inf.jianse.tv",
+      "path" : "\/api\/users\/*"
+    }
+  ],
+  "description" : "Truer - 同城约会交友软件 来自 Yulei Zhou https:\/\/apps.apple.com\/cn\/app\/truer-%E5%90%8C%E5%9F%8E%E7%BA%A6%E4%BC%9A%E4%BA%A4%E5%8F%8B%E8%BD%AF%E4%BB%B6\/id1462713145"
+}

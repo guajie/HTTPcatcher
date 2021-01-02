@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "time\":1800000000",
+      "matchValue" : "time\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "隆城影视 全网资源 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "ys.yizheLa.cn",
+      "path" : "\/login\/login\/veifys.html"
+    }
+  ],
+  "description" : "不生效？点击开通选择一个套餐跳转页面后即可返回即可生效\n\n下载地址\n【隆城影视】全网VIP视频、小说、漫画随意看，APP下载地址：http:\/\/ys.yizheLa.cn\/app\/index\/qudao.html?uid=Mjk5ODI="
+}

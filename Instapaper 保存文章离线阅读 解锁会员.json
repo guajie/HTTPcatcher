@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "ipsubnow=1588350628&ipsubexp=1800000000&ipsub=1",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Instapaper 保存文章离线阅读 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.instapaper.com",
+      "path" : "\/api\/subscription_status"
+    }
+  ],
+  "description" : "Instapaper 来自 Instapaper Holdings, Inc. https:\/\/apps.apple.com\/cn\/app\/instapaper\/id288545208"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_pay\":\"1\"",
+      "matchValue" : "is_pay\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "CEO周课 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "xy.xiaozaoapp.com",
+      "path" : "\/other\/api\/courseDetail"
+    }
+  ],
+  "description" : "中途遇到退出vpn的情况请使用Qx\nCEO周课-持续更新CEO认知体系 来自 Jinan Daxiang Technology Co.Ltd. https:\/\/apps.apple.com\/cn\/app\/ceo%E5%91%A8%E8%AF%BE-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0ceo%E8%AE%A4%E7%9F%A5%E4%BD%93%E7%B3%BB\/id1481821560\n\n附上Qx规则\n\/*\n#ceo周课 A+\n^http:\\\/\\\/xy\\.xiaozaoapp\\.com:?(\\d+)?\\\/other\\\/api\\\/courseDetail url script-response-body ceozk.js\n*\/\nbody = $response.body.replace(\/is_pay\":\"0\"\/g, 'is_pay\":\"1\"');\n$done({body});"
+}

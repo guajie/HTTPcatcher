@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": [{\n      \"id\": 88888880,\n      \"auth_type\": 1,\n      \"auth_value\": 2439271514\n    }]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "CAD看图#CAD快速看图大师 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/memprofile"
+    }
+  ],
+  "description" : "迅捷CAD看图-CAD快速看图大师 来自 Shanghai Hudun Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%BF%85%E6%8D%B7cad%E7%9C%8B%E5%9B%BE-cad%E5%BF%AB%E9%80%9F%E7%9C%8B%E5%9B%BE%E5%A4%A7%E5%B8%88\/id1410683012"
+}

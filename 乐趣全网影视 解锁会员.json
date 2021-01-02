@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "time\":1786522623",
+      "matchValue" : "time\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "power\":\"3",
+      "matchValue" : "power\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"je\":999",
+      "matchValue" : "\"je\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "乐趣全网影视 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 81,
+      "query" : "",
+      "host" : "vip.bnhbihv.cn",
+      "path" : "\/login\/login\/sign.html"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 81,
+      "query" : "",
+      "host" : "vip.bnhbihv.cn",
+      "path" : "\/login\/login\/veifys.html"
+    }
+  ],
+  "description" : "下载地址，http:\/\/bnhbihv.cn\/app\/index\/m.html?uid="
+}

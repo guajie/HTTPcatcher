@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isFree\":true",
+      "matchValue" : "isFree\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "沙拉视频 照片视频vlog剪辑神器 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.saladvideo.com",
+      "path" : "\/app\/v1\/template\/home"
+    }
+  ],
+  "description" : "不用订阅&恢复\n沙拉视频-照片视频vlog剪辑神器 来自 ChengDu PinGuo Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%B2%99%E6%8B%89%E8%A7%86%E9%A2%91-%E7%85%A7%E7%89%87%E8%A7%86%E9%A2%91vlog%E5%89%AA%E8%BE%91%E7%A5%9E%E5%99%A8\/id1471276682"
+}

@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "remainders\":9999",
+      "matchValue" : "remainders\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "modify-header",
+      "matchField" : "Cookie",
+      "field" : "",
+      "value" : "xxx_api_auth=6131333537653261363463323331666265663763396239663835636662373930",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "adrowss\":",
+      "matchValue" : "adrows\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "adgroupss\":",
+      "matchValue" : "adgroups\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "小小影视 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "*.xiaoxiaoapps*.com",
+      "path" : ""
+    }
+  ],
+  "description" : "登号。下载地址，http:\/\/xiao1.app\/"
+}

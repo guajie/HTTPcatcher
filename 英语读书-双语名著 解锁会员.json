@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"isVip\":true,\"code\":200,\"expireDays\":9999}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "英语读书-双语名著 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "h=QueryVipUser",
+      "host" : "duoting.tatatimes.com",
+      "path" : "\/tataeraapi\/api.s"
+    }
+  ],
+  "description" : "英语读书-双语名著 来自 lei mingxiu https:\/\/apps.apple.com\/cn\/app\/%E8%8B%B1%E8%AF%AD%E8%AF%BB%E4%B9%A6-%E5%8F%8C%E8%AF%AD%E5%90%8D%E8%91%97\/id1205841286"
+}

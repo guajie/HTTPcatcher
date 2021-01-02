@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "chapterprice\": \"0\"",
+      "matchValue" : "chapterprice\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "chaptertype\":1",
+      "matchValue" : "chaptertype\":2",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "distributionStatus\":1",
+      "matchValue" : "distributionStatus\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "好芳法课堂 解锁付费音频 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 8080,
+      "query" : "",
+      "host" : "wfjava.wfkids.net",
+      "path" : "\/wfcm-api\/course\/courseInfo"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 8080,
+      "query" : "",
+      "host" : "wfjava.wfkids.net",
+      "path" : "\/wfcm-api\/course\/courseChapter20"
+    }
+  ],
+  "description" : "好芳法课堂 来自 北京爱看爱秀教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%A5%BD%E8%8A%B3%E6%B3%95%E8%AF%BE%E5%A0%82\/id1375992347"
+}

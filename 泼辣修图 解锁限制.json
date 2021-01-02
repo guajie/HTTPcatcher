@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\\\"app\\\":\\\"PPE\\\",\\\"isUnlimited\\\":true,\\\"membershipExpiryDate\\\":\\\"2099-01-01T12:00:00.000Z\\\"}",
+      "matchValue" : "[^*]+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "status-code",
+      "matchField" : "",
+      "field" : "",
+      "value" : "200",
+      "matchValue" : "400",
+      "destiontion" : "response",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "泼辣修图 A+",
+  "locations" : [
+    {
+      "method" : "PUT",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.polaxiong.com",
+      "path" : "\/v1\/payments\/appleiap\/receipts\/confirmation"
+    }
+  ],
+  "description" : "泼辣修图 来自 Polarr, Inc. https:\/\/apps.apple.com\/cn\/app\/%E6%B3%BC%E8%BE%A3%E4%BF%AE%E5%9B%BE\/id988173374"
+}

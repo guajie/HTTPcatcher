@@ -1,0 +1,109 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "freeType\": \"0\"",
+      "matchValue" : "freeType\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isPay\": 1",
+      "matchValue" : "isPay\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"id\":\"已解锁\",\"memberId",
+      "matchValue" : "\"id\":\"\\w+\",\"memberId",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Price\": 0",
+      "matchValue" : "Price\":\\d+\\.\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "goldPrice\":0",
+      "matchValue" : "goldPrice\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "远见塔 领读听书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.4sight.ink",
+      "path" : "\/app\/detail\/getDeatil"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.4sight.ink",
+      "path" : "\/app\/detail\/getDectory"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.4sight.ink",
+      "path" : "\/app\/play\/getPlay"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.4sight.ink",
+      "path" : "\/app\/play\/getPlayList"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.4sight.ink",
+      "path" : "\/app\/user\/getUser"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.4sight.ink",
+      "path" : "\/app\/read\/detail"
+    }
+  ],
+  "description" : "远见塔 来自 重庆律蚁信息科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%BF%9C%E8%A7%81%E5%A1%94\/id1478722182"
+}

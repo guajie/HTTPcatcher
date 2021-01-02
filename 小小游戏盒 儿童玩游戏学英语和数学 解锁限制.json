@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "lflag\": 0",
+      "matchValue" : "lflag\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "lflag\":\"0\"",
+      "matchValue" : "lflag\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "小小游戏盒 儿童玩游戏学英语和数学 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "cdnapi.bbwansha.com",
+      "path" : "*"
+    }
+  ],
+  "description" : "不行就卸载重装或者清除缓存一定要开规则进去\n全部缓存一遍点击列表内容就不用开规则进去了\n小小游戏盒-儿童玩游戏学英语和数学 来自 Hongxia liu https:\/\/apps.apple.com\/cn\/app\/%E5%B0%8F%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9B%92-%E5%84%BF%E7%AB%A5%E7%8E%A9%E6%B8%B8%E6%88%8F%E5%AD%A6%E8%8B%B1%E8%AF%AD%E5%92%8C%E6%95%B0%E5%AD%A6\/id1259124202"
+}

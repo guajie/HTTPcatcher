@@ -1,0 +1,100 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isvip\":1",
+      "matchValue" : "isvip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "coins\":9999",
+      "matchValue" : "coins\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "recommend\":9999",
+      "matchValue" : "recommend\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Cticket\":9999",
+      "matchValue" : "Cticket\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Cgold\":9999",
+      "matchValue" : "Cgold\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "golds\":9999",
+      "matchValue" : "golds\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "price\":0",
+      "matchValue" : "price\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "知音漫客 看二次元漫画 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "getuserinfo-globalapi.zymk.cn",
+      "path" : "\/app_api\/v*\/getuserinfo\/"
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "getuserinfo-globalapi.zymk.cn",
+      "path" : "\/app_api\/v*\/coin_account\/"
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "getcomicinfo-globalapi.zymk.cn",
+      "path" : "\/app_api\/v*\/getcomicinfo\/"
+    }
+  ],
+  "description" : "知音漫客-看二次元漫画平台大全快 来自 小明太极(湖北)国漫文化有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%9F%A5%E9%9F%B3%E6%BC%AB%E5%AE%A2-%E7%9C%8B%E4%BA%8C%E6%AC%A1%E5%85%83%E6%BC%AB%E7%94%BB%E5%B9%B3%E5%8F%B0%E5%A4%A7%E5%85%A8%E5%BF%AB\/id1012491820"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"code\":\"200\",\"message\":\"会员资金信息\",\"data\":{\"gold\":\"999\",\"integral\":\"999\",\"card_count\":\"999\",\"ticket\":\"999\",\"vip_end_time\":\"1800000000\",\"read_card_end_time\":\"0\",\"is_vip\":\"1\",\"vip_type\":\"2\",\"vip_baron_time\":\"1800000000\",\"vip_viscount_time\":\"1800000000\"}}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "漫客栈 每日更新的漫画小说大全 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "member.mkzcdn.com",
+      "path" : "\/user\/funds\/info\/"
+    }
+  ],
+  "description" : "漫客栈-每日更新的漫画小说大全 来自 小明太极(湖北)国漫文化有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%BC%AB%E5%AE%A2%E6%A0%88-%E6%AF%8F%E6%97%A5%E6%9B%B4%E6%96%B0%E7%9A%84%E6%BC%AB%E7%94%BB%E5%B0%8F%E8%AF%B4%E5%A4%A7%E5%85%A8\/id1189885433"
+}

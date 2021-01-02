@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "family\": \"1\"",
+      "matchValue" : "family\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_free\": \"1\"",
+      "matchValue" : "is_free\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_single_sale_course\": \"0",
+      "matchValue" : "is_single_sale_course\":\"1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_free\": true",
+      "matchValue" : "is_free\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "media_type\": \"0\"",
+      "matchValue" : "media_type\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_day\":365",
+      "matchValue" : "vip_day\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "妈妈金融学院 金融知识学习平台 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "ssl.phjrxy.cn",
+      "path" : "\/course_detail"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "ssl.phjrxy.cn",
+      "path" : "\/personal_detail"
+    }
+  ],
+  "description" : "妈妈金融学院-金融知识学习平台 来自 广州普融教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%A6%88%E5%A6%88%E9%87%91%E8%9E%8D%E5%AD%A6%E9%99%A2-%E9%87%91%E8%9E%8D%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0\/id1230280149"
+}

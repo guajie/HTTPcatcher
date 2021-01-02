@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "step\":\"20000",
+      "matchValue" : "step\":\"\\d+",
+      "destiontion" : "request",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "刷乐心健康步数 同步支付宝&微信&QQ A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "sports.lifesense.com",
+      "path" : "\/sport_service\/sport\/sport\/uploadMobileStepV2"
+    }
+  ],
+  "description" : "步数默认2w\n打开规则摇一摇，修改后打开同步到微信支付宝\n\n乐心健康-运动,减肥,睡眠健康管理平台 来自 广州动心信息科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E4%B9%90%E5%BF%83%E5%81%A5%E5%BA%B7-%E8%BF%90%E5%8A%A8-%E5%87%8F%E8%82%A5-%E7%9D%A1%E7%9C%A0%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0\/id1033751075"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":0",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "云听 官方中央广播电视总台音频 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/app*"
+    }
+  ],
+  "description" : "云听 来自 CNR New Media https:\/\/apps.apple.com\/cn\/app\/%E4%BA%91%E5%90%AC\/id496145505"
+}

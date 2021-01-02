@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "data\":{\"isValid\":1,\"expiresTs\":4455600000}}",
+      "matchValue" : "data\":\\{(\\S+)\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "VaporCam蒸汽波相机 解锁订阅 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "pay.wecut.com",
+      "path" : "\/apple\/iosAppVerifyReceipt.php"
+    }
+  ],
+  "description" : "VaporCam－蒸汽波相机 来自 Weipeng Zhong https:\/\/apps.apple.com\/cn\/app\/vaporcam-%E8%92%B8%E6%B1%BD%E6%B3%A2%E7%9B%B8%E6%9C%BA\/id1246175190"
+}

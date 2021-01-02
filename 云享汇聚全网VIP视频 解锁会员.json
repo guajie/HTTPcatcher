@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "time\": 1800000000",
+      "matchValue" : "time\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "power\": \"2\"",
+      "matchValue" : "power\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "shiyong\": \"30\"",
+      "matchValue" : "shiyong\":\"\\d+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "je\": 999",
+      "matchValue" : "je\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "云享汇聚全网VIP视频 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "yun99.lhzly.net",
+      "path" : "\/login\/login\/sign.html"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "yun99.lhzly.net",
+      "path" : "\/login\/login\/veifys.html"
+    }
+  ],
+  "description" : "时间没变就点充值会员页面后返回\nAPP下载地址：http:\/\/yun99.lhzly.net\/app\/index\/qudao.html?uid=MzYwNTAx"
+}

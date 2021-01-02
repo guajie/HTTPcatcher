@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":false",
+      "matchValue" : "vip\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "雨眠 助眠的白噪音 解锁会员限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "wallpaper.17youfang.com",
+      "path" : "\/api\/*"
+    }
+  ],
+  "description" : "雨眠 - 专注冥想助眠的白噪音番茄钟 来自 Youfang Network Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%9B%A8%E7%9C%A0-%E4%B8%93%E6%B3%A8%E5%86%A5%E6%83%B3%E5%8A%A9%E7%9C%A0%E7%9A%84%E7%99%BD%E5%99%AA%E9%9F%B3%E7%95%AA%E8%8C%84%E9%92%9F\/id1418463360"
+}

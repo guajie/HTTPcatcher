@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "jindu\": 2",
+      "matchValue" : "jindu\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_pay\":\"否\"",
+      "matchValue" : "is_pay\":\"是\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\": true",
+      "matchValue" : "isVip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "蚂蚁摄影 解锁付费课程 看描述 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.mae.vip",
+      "path" : "\/MaYiAPP1.2\/appCourseUrl\/allSectionByCou_idForIOS"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.mae.vip",
+      "path" : "\/MaYiAPP1.2\/amyc\/getMyHome"
+    }
+  ],
+  "description" : "点查看完整目录或点免费试看\n蚂蚁摄影 来自 烟台搜酷经贸有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%9A%82%E8%9A%81%E6%91%84%E5%BD%B1\/id1412586191"
+}

@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "modify-form",
+      "matchField" : "uid",
+      "field" : "",
+      "value" : "35",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : false,
+  "name" : "奥利给Live直播 永 1.8+ 解锁会员 A+",
+  "description" : "一次性规则\n下载地址，https:\/\/ok6.app",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "1008610010.yohui.vip",
+      "path" : "\/index.php\/Api\/LiveApi\/getUserInfo"
+    }
+  ]
+}

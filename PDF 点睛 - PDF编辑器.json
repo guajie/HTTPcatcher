@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"originalTransactionId\":\"730000355073823\",\"subscriptionState\":\"active\",\"isInGracePeriod\":true,\"subscriptionExpirationDate\":\"02:33 19\\\/08\\\/2020\",\"subscriptionAutoRenewStatus\":\"autoRenewOff\",\"isEligibleForIntroPeriod\":true,\"isPDFExpert6User\":true,\"subscriptionReceiptId\":\"1559207582000\"}",
+      "matchValue" : "[^*]+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "PDF 点睛 - PDF编辑器 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "license.pdfexpert.com",
+      "path" : "\/api\/1.0\/pdfexpert6\/subscription\/refresh"
+    }
+  ],
+  "description" : "PDF 点睛 - PDF编辑器 (PDF Expert 7) 来自 Readdle Inc. https:\/\/apps.apple.com\/cn\/app\/pdf-%E7%82%B9%E7%9D%9B-pdf%E7%BC%96%E8%BE%91%E5%99%A8-pdf-expert-7\/id743974925"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2070-01-01 00:00:00\"",
+      "matchValue" : "vipExpireTime\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "PDF编辑 图片转PDF编辑 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "micro-tool-api.foundao.com",
+      "path" : "\/orderPayCenterService\/user\/userInfo"
+    }
+  ],
+  "description" : "不用订阅&恢复\nPDF编辑 - 图片转PDF编辑器 来自 Chengdu Tianmaituodao Technology Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/pdf%E7%BC%96%E8%BE%91-%E5%9B%BE%E7%89%87%E8%BD%ACpdf%E7%BC%96%E8%BE%91%E5%99%A8\/id1503315108"
+}

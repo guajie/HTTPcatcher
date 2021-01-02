@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_buyed\": 1",
+      "matchValue" : "is_buyed\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "来学宝典 900+考试科目 解锁vip课程 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.laixue.com",
+      "path" : "\/*\/courses\/*"
+    }
+  ],
+  "description" : "来学宝典 来自 来学机构 https:\/\/apps.apple.com\/cn\/app\/%E6%9D%A5%E5%AD%A6%E5%AE%9D%E5%85%B8\/id1154335640"
+}

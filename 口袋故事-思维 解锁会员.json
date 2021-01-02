@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "forever_vip\": true",
+      "matchValue" : "forever_vip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": true",
+      "matchValue" : "is_vip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "ilisten_vip\": true",
+      "matchValue" : "ilisten_vip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_valid_time\":\"1800000000\"",
+      "matchValue" : "vip_valid_time\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_free\":\"1\"",
+      "matchValue" : "is_free\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "口袋故事-思维 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.idaddy.cn",
+      "path" : "\/inner4\/lesson\/user"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.idaddy.cn",
+      "path" : "\/inner4\/lesson\/list"
+    }
+  ],
+  "description" : "口袋故事-思维 来自 Shanghai Tongrui Network Technology Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%8F%A3%E8%A2%8B%E6%95%85%E4%BA%8B-%E6%80%9D%E7%BB%B4\/id1514743932"
+}

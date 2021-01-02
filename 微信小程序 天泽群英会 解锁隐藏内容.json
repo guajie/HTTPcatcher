@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Ad\":\"0\"",
+      "matchValue" : "Ad\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "微信小程序 天泽群英会 解锁隐藏内容 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "a.jxjt888.top",
+      "path" : "\/wp-json\/wp\/v2\/posts\/*"
+    }
+  ],
+  "description" : "微信里搜索 天泽群英会"
+}

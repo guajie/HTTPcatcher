@@ -1,0 +1,118 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_type\":1",
+      "matchValue" : "vip_type\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_show\":0",
+      "matchValue" : "is_show\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_button\":\"已解锁\"",
+      "matchValue" : "vip_button\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_free\":1",
+      "matchValue" : "is_free\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "can_play\":1",
+      "matchValue" : "can_play\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_paly\": 1",
+      "matchValue" : "is_paly\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "div class=\"fixed-bar\" style=\"display:none\"",
+      "matchValue" : "div class=\"fixed-bar\" style=\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "class=\"video-con\" ",
+      "matchValue" : "class=\"video-con\" style=\"height: 100%\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "虎课网 解锁读书&图文教程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.huke88.com",
+      "path" : "\/v5\/user\/get-user-info"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.huke88.com",
+      "path" : "\/v5\/book\/detail"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.huke88.com",
+      "path" : "\/video\/pictext"
+    }
+  ],
+  "description" : "只解锁了图文教程和读书 \n虎课网 来自 财牛(上海)教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%99%8E%E8%AF%BE%E7%BD%91\/id1273126065"
+}

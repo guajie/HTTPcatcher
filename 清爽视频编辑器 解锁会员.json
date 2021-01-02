@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": [{\n      \"id\": 88888880,\n      \"auth_type\": 1,\n      \"auth_value\": 2439271514\n    }]",
+      "matchValue" : "vip\": \\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "清爽视频编辑器 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/memprofile"
+    }
+  ],
+  "description" : "清爽视频编辑器-视频剪辑制作app 来自 Shanghai Hudun Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%B8%85%E7%88%BD%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91%E5%99%A8-%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E5%88%B6%E4%BD%9Capp\/id1461701348"
+}

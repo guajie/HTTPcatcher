@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":[{\"id\":8888881,\"auth_type\":1,\"auth_value\":1800000000}]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_valid\":1",
+      "matchValue" : "\"vip_valid\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_deadline\":1800000000",
+      "matchValue" : "\"vip_deadline\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "uid\":\"已解锁\"",
+      "matchValue" : "uid\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "智能证件照相机 解锁会员特权 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "*.yiyongcad.com",
+      "path" : "\/api\/v4\/virtualactregister"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "*.yiyongcad.com",
+      "path" : "\/api\/v4\/memprofile"
+    }
+  ],
+  "description" : "不用订阅&恢复\n智能证件照相机-最美证件照拍照软件 来自 Duanqiang Tang https:\/\/apps.apple.com\/cn\/app\/%E6%99%BA%E8%83%BD%E8%AF%81%E4%BB%B6%E7%85%A7%E7%9B%B8%E6%9C%BA-%E6%9C%80%E7%BE%8E%E8%AF%81%E4%BB%B6%E7%85%A7%E6%8B%8D%E7%85%A7%E8%BD%AF%E4%BB%B6\/id1474736468"
+}

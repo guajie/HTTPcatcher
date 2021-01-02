@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipStatus\":\"1",
+      "matchValue" : "vipStatus\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\":1800000000",
+      "matchValue" : "expireTime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "cost\":0",
+      "matchValue" : "cost\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "BBC英语 每日英语听力视频 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.iyuba.com.cn",
+      "path" : "\/v2\/api.iyuba"
+    },
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "class.iyuba.cn",
+      "path" : "\/getClass.iyuba"
+    }
+  ],
+  "description" : "BBC英语-BBC每日英语听力视频 来自 ShangHai AiLanguage Technology Ltd. https:\/\/apps.apple.com\/cn\/app\/bbc%E8%8B%B1%E8%AF%AD-bbc%E6%AF%8F%E6%97%A5%E8%8B%B1%E8%AF%AD%E5%90%AC%E5%8A%9B%E8%A7%86%E9%A2%91\/id1452831630"
+}

@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"Flag\":100",
+      "matchValue" : "\"Flag\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "Uik 附近交友约单身 A+",
+  "description" : "Uik-附近交友约单身 来自 Tianshu Mutual Entertainment Network Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/uik-%E9%99%84%E8%BF%91%E4%BA%A4%E5%8F%8B%E7%BA%A6%E5%8D%95%E8%BA%AB\/id1478392360\n\n20201115 随时失效",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app.richchat.top",
+      "path" : "\/api\/g2\/user\/checkCanChat"
+    }
+  ]
+}

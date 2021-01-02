@@ -1,0 +1,24 @@
+{
+	"rules": [{
+		"action": "path",
+		"matchField": "",
+		"field": "",
+		"value": ".m3u8",
+		"matchValue": "short.m3u8",
+		"destiontion": "request",
+		"isRegex": true
+	}],
+	"enabled": true,
+	"isReadOnly": false,
+	"name": "微啪 解锁次数限制 A+",
+	"locations": [{
+		"method": "GET",
+		"scheme": "http",
+		"enabled": true,
+		"port": 80,
+		"query": "",
+		"host": "cdn.wayada.com",
+		"path": "*short.m3u8"
+	}],
+	"description": "A+ \n下载地址，http:\/\/papa.sex?code=993VF2&channel=share"
+}

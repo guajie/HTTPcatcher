@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"VIP\":3,\"VIPExpiredAt\":\"1800000000\"",
+      "matchValue" : "\"VIPExpiredAt\":\"\\d+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "",
+      "matchValue" : ",\"Required\":true",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":200",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "爱戏评(爱视频) 1.8+ 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "aliapi.zeise.top",
+      "path" : "\/user\/UserSrv\/GetUser"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "aliapi.zeise.top",
+      "path" : "\/video\/VideoSrv\/RequirePurchaseVideo"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "aliapi.zeise.top",
+      "path" : "\/video\/VideoSrv\/MakePay"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "aliapi.zeise.top",
+      "path" : "\/video\/VideoSrv\/CanWatch"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "aliapi.zeise.top",
+      "path" : "\/user\/UserSrv\/GetGroupByUserID"
+    }
+  ],
+  "description" : "下载地址，https:\/\/asp3.app?invite_code=RJ0J2S3Q\n\n附Qx规则\n\/*\n#爱戏评(爱视频)1.8+ 解锁限制 A+\n^https:\\\/\\\/aliapi\\.zeise\\.top\\\/(video\\\/VideoSrv\\\/(MakePay|RequirePurchaseVideo|CanWatch)|user\\\/UserSrv\\\/GetUser) url script-response-body axp.js\n\nhostname\naliapi.zeise.top\n*\/\n\nbody = $response.body.replace(\/\"VIPExpiredAt\":\"\\d+\"\/g, '\"VIP\":3,\"VIPExpiredAt\":\"1800000000\"').replace(\/,\"Required\":true\/g, \" \").replace(\/code\":\\d+\/g, 'code\":200');\n$done({body});"
+}

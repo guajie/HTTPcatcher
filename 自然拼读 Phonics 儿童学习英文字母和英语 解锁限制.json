@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "lflag\": 0",
+      "matchValue" : "lflag\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "lflag\":\"0\"",
+      "matchValue" : "lflag\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "自然拼读 Phonics 儿童学习英文字母和英语 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "cdnapi.bbwansha.com",
+      "path" : "*"
+    }
+  ],
+  "description" : "不行就卸载重装一定要开规则进去\n全部缓存一遍点击列表内容就不用开规则进去了\n自然拼读 Phonics - 儿童学习英文字母和英语音标单词 来自 上海震渊信息技术有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB-phonics-%E5%84%BF%E7%AB%A5%E5%AD%A6%E4%B9%A0%E8%8B%B1%E6%96%87%E5%AD%97%E6%AF%8D%E5%92%8C%E8%8B%B1%E8%AF%AD%E9%9F%B3%E6%A0%87%E5%8D%95%E8%AF%8D\/id1393459063"
+}

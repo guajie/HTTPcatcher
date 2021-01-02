@@ -1,0 +1,24 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "{\n \"xiezhen_vip\": 1,\n \"video_vip\": 1,\n \"status\": \"20000\",\n \"type\": \"success\"\n}",
+		"matchValue": ".+",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": false,
+	"isReadOnly": false,
+	"name": "零度摄影 丝袜美腿 解锁会员限制 A+",
+	"locations": [{
+		"method": "POST",
+		"scheme": "http",
+		"enabled": true,
+		"port": 80,
+		"query": "",
+		"host": "app.lingdu2019.cn",
+		"path": "\/api\/my_home\/check_vip"
+	}],
+	"description": "零度摄影 来自 fengkai qi https:\/\/apps.apple.com\/cn\/app\/%E9%9B%B6%E5%BA%A6%E6%91%84%E5%BD%B1\/id1480080691"
+}

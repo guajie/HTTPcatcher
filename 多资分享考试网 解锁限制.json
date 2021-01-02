@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_surplus_count\":\"2055-11-11\"",
+      "matchValue" : "vip_surplus_count\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_upgrade_count\":\"5000",
+      "matchValue" : "vip_upgrade_count\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "member_level\":5",
+      "matchValue" : "member_level\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":200",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "多资分享考试网 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "act=member_index&op=get_member_info",
+      "host" : "kaoshi.duoziedu.com",
+      "path" : "\/mobile\/index.php"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "act=member_points&op=points_list",
+      "host" : "kaoshi.duoziedu.com",
+      "path" : "\/mobile\/index.php"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "act=index&op=goods_video_play",
+      "host" : "kaoshi.duoziedu.com",
+      "path" : "\/mobile\/index.php"
+    }
+  ],
+  "description" : "多资分享 来自 广州多资教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%A4%9A%E8%B5%84%E5%88%86%E4%BA%AB\/id1434546374"
+}

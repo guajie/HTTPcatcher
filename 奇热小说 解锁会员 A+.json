@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_expire\":\"1800000000",
+      "matchValue" : "vip_expire\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "奇热小说 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.weiqire.com",
+      "path" : "*\/user\/info"
+    }
+  ],
+  "description" : "奇热小说- 看小说就上奇热 来自 chengzhi liao https:\/\/apps.apple.com\/cn\/app\/%E5%A5%87%E7%83%AD%E5%B0%8F%E8%AF%B4-%E7%9C%8B%E5%B0%8F%E8%AF%B4%E5%B0%B1%E4%B8%8A%E5%A5%87%E7%83%AD\/id1224888764"
+}

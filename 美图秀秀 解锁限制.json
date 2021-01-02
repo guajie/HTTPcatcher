@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_type\":1",
+      "matchValue" : "\"vip_type\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "美图秀秀 解锁限制 A+",
+  "description" : "美图秀秀 来自 Xiamen Meitu Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%BE%8E%E5%9B%BE%E7%A7%80%E7%A7%80\/id416048305\n\n提供未测试qx规则\nhostname＝*\n\n#美图秀秀 解锁限制 A+\nhttps:\/\/api\\.xiuxiu\\.meitu\\.com\/v1\/user\/show.json.+ url script-response-body xxxx.js\n\nbody = $response.body.replace(\/\"vip_type\":0\/g, '\"vip_type\":1');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.xiuxiu.meitu.com",
+      "path" : "\/v1\/user\/show.json"
+    }
+  ]
+}

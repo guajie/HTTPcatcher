@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "free",
+      "matchValue" : "preview",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "unlimited",
+      "matchValue" : "view",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "false",
+      "matchValue" : "true",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "Nichi 复古胶片 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "mini-bj.bybutter.com",
+      "path" : "\/mood\/privileges"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "mini-bj.bybutter.com",
+      "path" : "\/mood\/official-templates"
+    }
+  ],
+  "description" : "Nichi - 复古胶片，拍立得滤镜手帐拼图 来自 北京缪客科技有限公司 https:\/\/apps.apple.com\/cn\/app\/nichi-%E5%A4%8D%E5%8F%A4%E8%83%B6%E7%89%87-%E6%8B%8D%E7%AB%8B%E5%BE%97%E6%BB%A4%E9%95%9C%E6%89%8B%E5%B8%90%E6%8B%BC%E5%9B%BE\/id1442041390"
+}

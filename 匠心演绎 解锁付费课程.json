@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_free\":0",
+      "matchValue" : "is_free\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\":\"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "匠心演绎 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "jiangxinyanyi.com",
+      "path" : "\/api\/course\/teacherCourseContent"
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "token=7436f489c420486ab42fef8b32369132",
+      "host" : "jiangxinyanyi.com",
+      "path" : "\/api\/user\/userShow"
+    }
+  ],
+  "description" : "匠心演绎 来自 北京聚匠艺传媒有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%8C%A0%E5%BF%83%E6%BC%94%E7%BB%8E\/id1437520150"
+}

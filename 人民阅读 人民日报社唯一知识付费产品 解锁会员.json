@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_end_time\": \"2030-11-11\"",
+      "matchValue" : "vip_end_time\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_end_timestamp\": 1800000000000",
+      "matchValue" : "vip_end_timestamp\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "user_type\":2",
+      "matchValue" : "user_type\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "人民阅读 人民日报社唯一知识付费产品 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "rmyd.peopledigital.com.cn",
+      "path" : "\/share\/app\/people_reading_sevice\/peoplereading\/userinfolist.html"
+    }
+  ],
+  "description" : "人民阅读-人民日报社唯一知识付费产品 来自 PeopleDigital https:\/\/apps.apple.com\/cn\/app\/%E4%BA%BA%E6%B0%91%E9%98%85%E8%AF%BB-%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E7%A4%BE%E5%94%AF%E4%B8%80%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9%E4%BA%A7%E5%93%81\/id1443456901"
+}

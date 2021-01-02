@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip_day\":999",
+      "matchValue" : "is_vip_day\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_buy\": 1",
+      "matchValue" : "is_buy\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_buy_exp\":\"1800000000\"",
+      "matchValue" : "is_buy_exp\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_pay\":1",
+      "matchValue" : "is_pay\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\": \"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_shi\":1",
+      "matchValue" : "is_shi\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "良师雅集 精品大师课程 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.liangshiyaji.cn",
+      "path" : "\/api\/user\/CgetUserInfo"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.liangshiyaji.cn",
+      "path" : "\/api\/Strict\/getStrictDetails"
+    }
+  ],
+  "description" : "良师雅集 来自 上海师集企业管理有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%89%AF%E5%B8%88%E9%9B%85%E9%9B%86\/id1448660428"
+}

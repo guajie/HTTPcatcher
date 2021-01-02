@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expires_date_ms_super\":\"1800000000000",
+      "matchValue" : "expires_date_ms_super\":\"0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_premium\":1",
+      "matchValue" : "is_premium\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_super_premium\":1",
+      "matchValue" : "is_super_premium\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expires_date_ms\":\"1800000000000",
+      "matchValue" : "expires_date_ms\":\"0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "fastVPN 解锁高级 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "apiprod.fastvpnapp.net",
+      "path" : "\/api\/user\/device_register"
+    }
+  ],
+  "description" : "需非国区\nFastVPN - High Speed VPN by MobileArts LLC https:\/\/apps.apple.com\/us\/app\/fastvpn-high-speed-vpn\/id1282336711"
+}

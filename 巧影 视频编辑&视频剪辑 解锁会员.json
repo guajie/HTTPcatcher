@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : " {\n  \"is_valid_device\" : true,\n  \"has_valid_subscription\" : true,\n  \"expiration_date_ms\" : 1800000000000,\n  \"is_table_resettable\" : true,\n  \"subscription_product_id\" : \"com.kinemaster.sub.annual.ia2\",\n  \"state_code\" : 0\n}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "巧影 视频编辑&视频剪辑 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api-kinemaster-assetstore.*.com",
+      "path" : "\/v2.1\/product\/verifyReceipt"
+    }
+  ],
+  "description" : "巧影 - 视频编辑&视频剪辑&视频制作 来自 KineMaster, Inc. https:\/\/apps.apple.com\/cn\/app\/%E5%B7%A7%E5%BD%B1-%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91-%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91-%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C\/id1223932558"
+}

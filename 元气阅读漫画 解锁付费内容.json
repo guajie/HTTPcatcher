@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipStatus\":0",
+      "matchValue" : "vipStatus\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isAuthorize\": 1",
+      "matchValue" : "isAuthorize\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\": \"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "元气阅读漫画 解锁付费内容 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.yqacg.com",
+      "path" : "\/api\/v1\/comic\/chapter\/fulllist"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.yqacg.com",
+      "path" : "\/api\/v1\/comicsubscription\/subscripinfo"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.yqacg.com",
+      "path" : "\/api\/v4\/user\/myInfo\/getInfo"
+    }
+  ],
+  "description" : "元气阅读-二次元小说漫画阅读基地 来自 小说阅读网 https:\/\/apps.apple.com\/cn\/app\/%E5%85%83%E6%B0%94%E9%98%85%E8%AF%BB-%E4%BA%8C%E6%AC%A1%E5%85%83%E5%B0%8F%E8%AF%B4%E6%BC%AB%E7%94%BB%E9%98%85%E8%AF%BB%E5%9F%BA%E5%9C%B0\/id1334002347"
+}

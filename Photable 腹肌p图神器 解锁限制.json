@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":0",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isLimitedFree\":1",
+      "matchValue" : "isLimitedFree\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "value\":\"99999",
+      "matchValue" : "value\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Photable 腹肌p图神器 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "poto.alphatech.mobi",
+      "path" : "\/api\/*"
+    }
+  ],
+  "description" : "使用方法，从右下角商店进入等Plus标志消失下载即可\nPhotable - 腹肌p图神器 来自 Alpha Mobile Limited https:\/\/apps.apple.com\/cn\/app\/photable-%E8%85%B9%E8%82%8Cp%E5%9B%BE%E7%A5%9E%E5%99%A8\/id1216590966"
+}

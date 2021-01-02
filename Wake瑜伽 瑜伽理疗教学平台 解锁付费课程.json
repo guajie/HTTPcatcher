@@ -1,0 +1,91 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\":\"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "uSvipExpireAt\":1800000000",
+      "matchValue" : "uSvipExpireAt\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":2",
+      "matchValue" : "is_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "restExpDays\":999",
+      "matchValue" : "restExpDays\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "canPlay\":1",
+      "matchValue" : "canPlay\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "canBuy\":2",
+      "matchValue" : "canBuy\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expValid\":1",
+      "matchValue" : "expValid\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Wake瑜伽 瑜伽理疗教学平台 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "m.wakeyoga.com",
+      "path" : "\/api\/getHuaweiUserSvipList"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "api.wakeyoga.com",
+      "path" : "\/getLessonDetailNew"
+    }
+  ],
+  "description" : "Wake瑜伽-专业瑜伽理疗健康教学平台 来自 Wake of Light Yoga Culture Co., Ltd https:\/\/apps.apple.com\/cn\/app\/wake%E7%91%9C%E4%BC%BD-%E4%B8%93%E4%B8%9A%E7%91%9C%E4%BC%BD%E7%90%86%E7%96%97%E5%81%A5%E5%BA%B7%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0\/id1351667163"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2070-01-01 00:00:00\"",
+      "matchValue" : "vipExpireTime\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "魔板视频 微商宣传短视频模板制作 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "micro-tool-api.foundao.com",
+      "path" : "\/orderPayCenterService\/user\/userInfo"
+    }
+  ],
+  "description" : "不用订阅&恢复\n魔板视频-微商宣传短视频模板制作 来自 Chengdu Tianmaituodao Technology Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%AD%94%E6%9D%BF%E8%A7%86%E9%A2%91-%E5%BE%AE%E5%95%86%E5%AE%A3%E4%BC%A0%E7%9F%AD%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF%E5%88%B6%E4%BD%9C\/id1466920456"
+}

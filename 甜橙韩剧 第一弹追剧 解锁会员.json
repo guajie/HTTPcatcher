@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipEndTime\": 1800000000",
+      "matchValue" : "vipEndTime\" : 0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVipUser\":1",
+      "matchValue" : "isVipUser\" : 0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "scale\": \"0\"",
+      "matchValue" : "scale\" : \".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "甜橙韩剧 第一弹追剧 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.orangehanju.com",
+      "path" : "\/queryAdConfig"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.orangehanju.com",
+      "path" : "\/getUserInfo"
+    }
+  ],
+  "description" : "甜橙韩剧-高清流畅第一弹追剧软件 来自 Hainan Xuanchuang Network Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E7%94%9C%E6%A9%99%E9%9F%A9%E5%89%A7-%E9%AB%98%E6%B8%85%E6%B5%81%E7%95%85%E7%AC%AC%E4%B8%80%E5%BC%B9%E8%BF%BD%E5%89%A7%E8%BD%AF%E4%BB%B6\/id1497858999"
+}

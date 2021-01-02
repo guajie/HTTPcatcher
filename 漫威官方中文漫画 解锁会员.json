@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "subscription_expire_time=1800000000000",
+      "matchValue" : "subscription_expire_time=\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "subscription_type=1",
+      "matchValue" : "subscription_type=none",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "漫威官方中文漫画 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "new.marvelunlimitedresources.com",
+      "path" : "\/marvel\/services"
+    }
+  ],
+  "description" : "漫威无限 来自 NetEase Information Technology (Beijing) Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%BC%AB%E5%A8%81%E6%97%A0%E9%99%90\/id1481166810"
+}

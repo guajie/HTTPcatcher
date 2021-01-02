@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":\"1\"",
+      "matchValue" : "is_vip\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expire_date\": \"2030-11-11\"",
+      "matchValue" : "expire_date\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "has_buy\": \"1\"",
+      "matchValue" : "has_buy\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "虫虫吉他 学吉他必备曲谱库 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "urlparam=common\/user\/GetVip*",
+      "host" : "cc.lzjoy.com",
+      "path" : "\/"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "urlparam=pad\/opern\/detail*",
+      "host" : "cc.lzjoy.com",
+      "path" : "\/"
+    }
+  ],
+  "description" : "此规则来源于https:\/\/github.com\/pm936\/httpcatcher\n虫虫吉他 - 学吉他必备曲谱库 来自 Shanghai Lingzhuo Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%99%AB%E8%99%AB%E5%90%89%E4%BB%96-%E5%AD%A6%E5%90%89%E4%BB%96%E5%BF%85%E5%A4%87%E6%9B%B2%E8%B0%B1%E5%BA%93\/id1449345358"
+}

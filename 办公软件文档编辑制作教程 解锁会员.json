@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2030-01-01 00:00:00\"",
+      "matchValue" : "vipExpireTime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "办公软件文档编辑制作教程 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.leanapp.cn",
+      "path" : "\/tools\/*"
+    }
+  ],
+  "description" : "购买 取消或恢复购买\n办公软件-文档编辑制作教程 来自 Chengdu Haima Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6-%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B\/id1510481710"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "member$1\":7896543210,",
+      "matchValue" : "member(.*?)\":\\d+,",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "silver\":456321",
+      "matchValue" : "silver\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "韩剧TV 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "hjapi.bjxkhc.com",
+      "path" : "\/v2d2\/users\/abe2f3a0eb1b599231f6230c6195ea3a\/member"
+    }
+  ],
+  "description" : "下载地址，https:\/\/h5.hjapi.bjxkhc.com\/piglet_web\/index.html#\/downloadApp"
+}

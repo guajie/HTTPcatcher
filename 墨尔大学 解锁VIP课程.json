@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_free\":1",
+      "matchValue" : "is_free\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "墨尔大学 解锁VIP课程 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.esnewcollege.com",
+      "path" : "\/v2\/goods\/*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.esnewcollege.com",
+      "path" : "\/v2\/users"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "live_id=102",
+      "host" : "api.eestar.com",
+      "path" : "\/api\/v5\/live\/playback-info"
+    }
+  ],
+  "description" : "墨尔大学 来自 More (Guangzhou) Educational Technology Co.,Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%A2%A8%E5%B0%94%E5%A4%A7%E5%AD%A6\/id1306616132"
+}

@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "IsVip\":1",
+      "matchValue" : "IsVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "IsMiniVip\":1",
+      "matchValue" : "IsMiniVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "MiniItemEndDate\":\"\\\/Date(1800000000000+0800)\\\/\"",
+      "matchValue" : "MiniItemEndDate\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "IsBuy\":1",
+      "matchValue" : "IsBuy\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "时尚芭莎 时尚杂志新纪元 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "bz.metshow.com",
+      "path" : "\/api\/user\/userinfo\/*"
+    },
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "bz.metshow.com",
+      "path" : "\/api\/userminivip\/myminivipinfo"
+    }
+  ],
+  "description" : "时尚芭莎－时尚杂志新纪元 来自 时尚集团 Trends Group https:\/\/apps.apple.com\/cn\/app\/%E6%97%B6%E5%B0%9A%E8%8A%AD%E8%8E%8E-%E6%97%B6%E5%B0%9A%E6%9D%82%E5%BF%97%E6%96%B0%E7%BA%AA%E5%85%83\/id532074097"
+}

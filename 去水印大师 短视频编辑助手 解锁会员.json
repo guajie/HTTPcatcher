@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_exp\":1",
+      "matchValue" : "vip_exp\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "can_free_vip\":1",
+      "matchValue" : "can_free_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "out_time\":\"2030-01-01 00:00:00\"",
+      "matchValue" : "out_time\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "去水印大师 短视频编辑助手 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "wx.520gyh.com",
+      "path" : "\/Unmark\/Login\/deviceLogin"
+    }
+  ],
+  "description" : "去水印大师-短视频编辑助手 来自 志阳 郭 https:\/\/apps.apple.com\/cn\/app\/%E5%8E%BB%E6%B0%B4%E5%8D%B0%E5%A4%A7%E5%B8%88-%E7%9F%AD%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91%E5%8A%A9%E6%89%8B\/id1424012935"
+}

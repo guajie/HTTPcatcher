@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : ":1",
+      "matchValue" : ":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "UserVipEnd\":\"已解锁\"",
+      "matchValue" : "UserVipEnd\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "配音 文字转语音配音 解锁内购限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "xihongshi.dicallapp.com",
+      "path" : "\/SDGetMeCount.ashx"
+    }
+  ],
+  "description" : "配音-专业文字转语音配音软件 来自 Huiwen Education Consulting Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%85%8D%E9%9F%B3-%E4%B8%93%E4%B8%9A%E6%96%87%E5%AD%97%E8%BD%AC%E8%AF%AD%E9%9F%B3%E9%85%8D%E9%9F%B3%E8%BD%AF%E4%BB%B6\/id1518537260"
+}

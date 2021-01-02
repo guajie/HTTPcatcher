@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n \"response\": {\n  \"bbuid\": \"ZPpZvQbStP\",\n  \"usedIntroOfferPeriod\": false,\n  \"class\": \"UserModuleBillingResponse\",\n  \"is_in_billing_retry\": false,\n  \"modules\": [\n   {\n    \"class\": \"BillingModuleResponse\",\n    \"name\": \"com.brainbow.module.peak.PeakModule\",\n    \"subscription\": {\n     \"status\": 0,\n     \"statusdate\": 0,\n     \"source\": {\n      \"id\": \"com.brainbow.peak.arsub_1wtrial_12m4968\",\n      \"cancelable\": false,\n      \"provider\": \"itunes\",\n      \"type\": \"trial\"\n     },\n     \"bbuid\": \"ZPpZvQbStP\",\n     \"endTime\": 1779061000000,\n     \"startTime\":1531710600000,\n     \"pro\": true\n    }\n   }\n  ]\n },\n \"metaResponse\": {\n  \"code\": 0\n }\n}",
+      "matchValue" : "[^*]+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Peak 智客 聪明的头脑游戏 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "session=*",
+      "host" : "billing.peakcloud.org",
+      "path" : "\/billing\/2\/user\/me"
+    }
+  ],
+  "description" : "Peak 智客 来自 brainbow https:\/\/apps.apple.com\/cn\/app\/peak-%E6%99%BA%E5%AE%A2\/id806223188"
+}

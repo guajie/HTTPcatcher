@@ -1,0 +1,48 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "isCustomized\":true",
+		"matchValue": "isCustomized\":\\w+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "isPremium\":true",
+		"matchValue": "isPremium\":\\w+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "active\":true",
+		"matchValue": "active\":\\w+",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": false,
+	"isReadOnly": false,
+	"name": "VUE Vlog 年度精选 A+",
+	"locations": [{
+		"method": "",
+		"scheme": "",
+		"enabled": true,
+		"port": 0,
+		"query": "",
+		"host": "",
+		"path": "\/api\/v1\/users\/*\/profile"
+	}, {
+		"method": "",
+		"scheme": "",
+		"enabled": true,
+		"port": 0,
+		"query": "",
+		"host": "",
+		"path": "\/api\/v1\/users\/self"
+	}],
+	"description": "VUE Vlog 来自 VUE VIDEO CO., LTD. https:\/\/apps.apple.com\/cn\/app\/vue-vlog\/id1114690993"
+}

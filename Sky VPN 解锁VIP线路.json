@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "level\": \"free\"",
+      "matchValue" : "level\":\"\\w+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Sky VPN 解锁VIP线路 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "c2dmxrlb.api.lncldglobal.com",
+      "path" : "\/1.1\/classes\/TPProxy"
+    }
+  ],
+  "description" : "需非国区下载 下拉刷新\nSky VPN - Fastest Proxy by Techtock Mobile https:\/\/apps.apple.com\/us\/app\/sky-vpn-fastest-proxy\/id1477300981"
+}

@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isBuy\":true",
+      "matchValue" : "isBuy\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "account\":\"已解锁\"",
+      "matchValue" : "account\":\"\\d+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "status\": \"success\"",
+      "matchValue" : "status\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "考拉网校 解锁付费课程&电子书 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api*.kaola100.com",
+      "path" : "\/video\/c\/detail"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "login.kaola100.com",
+      "path" : "\/tyusercenter\/member\/getUserInfo*"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api*.kaola100.com",
+      "path" : "\/ebook\/ebook1\/detail"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api*.kaola100.com",
+      "path" : "\/shop\/opened\/status"
+    }
+  ],
+  "description" : "考拉网校 来自 Henan Tianyi Cultural Communication Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%80%83%E6%8B%89%E7%BD%91%E6%A0%A1\/id1099738000"
+}

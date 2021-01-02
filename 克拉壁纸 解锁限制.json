@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isFree\":true",
+      "matchValue" : "isFree\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\":1800000000",
+      "matchValue" : "expireTime\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "level\":8",
+      "matchValue" : "level\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "克拉壁纸 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "claritywallpaper.com",
+      "path" : ""
+    }
+  ],
+  "description" : "克拉壁纸 来自 YuanJing Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%85%8B%E6%8B%89%E5%A3%81%E7%BA%B8\/id1233738041"
+}

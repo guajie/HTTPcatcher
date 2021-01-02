@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": 0",
+      "matchValue" : "is_vip\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\": \"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "鲸鱼外教培优 青少儿英语培优 解锁VIP A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "parent-api.jingyupeiyou.com",
+      "path" : "\/v3\/picturebook\/detail"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "parent-api.jingyupeiyou.com",
+      "path" : "\/v2\/login\/getUserInfoByToken"
+    }
+  ],
+  "description" : "鲸鱼外教培优-青少儿英语培优平台 来自 Rouchi (Beijing) Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%B2%B8%E9%B1%BC%E5%A4%96%E6%95%99%E5%9F%B9%E4%BC%98-%E9%9D%92%E5%B0%91%E5%84%BF%E8%8B%B1%E8%AF%AD%E5%9F%B9%E4%BC%98%E5%B9%B3%E5%8F%B0\/id1481024302"
+}

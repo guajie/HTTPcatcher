@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_billing_retry\":\"True",
+      "matchValue" : "is_billing_retry\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "offer_eligible\":\"True",
+      "matchValue" : "offer_eligible\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "valid\":\"True",
+      "matchValue" : "valid\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expiresDate\":\"1\/1\/2050 12:00:00 AM\"",
+      "matchValue" : "expiresDate\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "original_transaction_id\":\"586838987\"",
+      "matchValue" : "original_transaction_id\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "consumed_product\":\"pretapplereceiptvalidation.azurewebsites.Subscriptions.yearly\"",
+      "matchValue" : "consumed_product\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Prêt-à-Makeup 花样美妆 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "pretapplereceiptvalidation.azurewebsites.net",
+      "path" : "\/Subscriptions\/ReceiptValidation"
+    }
+  ],
+  "description" : "Prêt-à-Makeup 来自 PRET A TEMPLATE CRIACAO E COMERCIALIZACAO DE SOFTWARE DE MODA LTDA https:\/\/apps.apple.com\/cn\/app\/pr%C3%AAt-%C3%A0-makeup\/id1434594204"
+}

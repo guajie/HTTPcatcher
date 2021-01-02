@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "tradeEndTime\":1686448000000",
+      "matchValue" : "tradeEndTime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "网易蜗牛读书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "p.du.163.com",
+      "path" : "\/gain\/readtime\/info.json"
+    }
+  ],
+  "description" : "网易蜗牛读书 来自 NetEase (Hangzhou) Network Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%BD%91%E6%98%93%E8%9C%97%E7%89%9B%E8%AF%BB%E4%B9%A6\/id1127249355"
+}

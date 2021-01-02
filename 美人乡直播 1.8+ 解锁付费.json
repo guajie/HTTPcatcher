@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":0",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "coin\":\"9999",
+      "matchValue" : "coin\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "美人乡直播解锁付费 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "ab.wrnmd.top",
+      "path" : "\/api\/public\/*"
+    }
+  ],
+  "description" : "下载地址，http:\/\/yyj333.top"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "freeWatches\":9999",
+      "matchValue" : "freeWatches\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expiredVip\": \"2030-05-05T08:22:19.332+0000\"",
+      "matchValue" : "expiredVip\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "草榴短视频 1.8+ 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/api\/user\/base\/info"
+    }
+  ],
+  "description" : "下载地址，https:\/\/clappa.me?p=JZBNBI"
+}

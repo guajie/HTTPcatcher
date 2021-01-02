@@ -1,0 +1,54 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipEnd\":1800000000",
+      "matchValue" : "vipEnd\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipStart\": 1555555555",
+      "matchValue" : "vipStart\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "曲奇影视 新片热剧想看就看 解锁会员 A+",
+  "description" : "下载地址 https:\/\/www.quqi.tv\/",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.yangzi688.com",
+      "path" : "\/lemon\/user\/myinfo"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.yangzi688.com",
+      "path" : "\/lemon\/credits\/coin\/detail"
+    }
+  ]
+}

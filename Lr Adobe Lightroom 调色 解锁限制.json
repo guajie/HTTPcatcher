@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "status\":\"subscriber\"",
+      "matchValue" : "status\":\"trial_expired\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "end\":\"2025-09-29T05:38:28.870698Z\"",
+      "matchValue" : "end\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "Lr Adobe Lightroom 调色 解锁限制 A+",
+  "description" : "设置里蜂窝网络和wifi访问禁止lr访问网络下次不用开网球\n\nAdobe Lightroom 专业摄影相机・照片库修图编辑 来自 Adobe Inc. https:\/\/apps.apple.com\/cn\/app\/adobe-lightroom-%E4%B8%93%E4%B8%9A%E6%91%84%E5%BD%B1%E7%9B%B8%E6%9C%BA-%E7%85%A7%E7%89%87%E5%BA%93%E4%BF%AE%E5%9B%BE%E7%BC%96%E8%BE%91\/id878783582",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "photos.adobe.io",
+      "path" : "\/v2\/accounts\/*"
+    }
+  ]
+}

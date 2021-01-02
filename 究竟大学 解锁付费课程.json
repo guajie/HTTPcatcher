@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "true",
+      "matchValue" : "false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "究竟大学 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 8888,
+      "query" : "",
+      "host" : "app.jiujingdaxue.cn",
+      "path" : "\/api\/course\/details"
+    }
+  ],
+  "description" : "究竟大学 来自 北京清大云教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%A9%B6%E7%AB%9F%E5%A4%A7%E5%AD%A6\/id1334531245"
+}

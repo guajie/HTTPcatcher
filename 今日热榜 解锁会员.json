@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":\"1",
+      "matchValue" : "is_vip\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expired\":\"1800000000",
+      "matchValue" : "expired\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip_now\":true",
+      "matchValue" : "is_vip_now\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "今日热榜 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.tophub.today",
+      "path" : "\/account\/sync"
+    }
+  ],
+  "description" : "购买弹出点取消\n下载地址，https:\/\/testflight.apple.com\/join\/51y2x3uo"
+}

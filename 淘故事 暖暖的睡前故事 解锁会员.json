@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"user_nickname\":\"已解锁\"",
+      "matchValue" : "\"user_nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "淘故事 暖暖的睡前故事 解锁会员 A+",
+  "description" : "淘故事-暖暖的睡前故事 来自 成都松球互娱科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%B7%98%E6%95%85%E4%BA%8B-%E6%9A%96%E6%9A%96%E7%9A%84%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B\/id1483297217",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 8088,
+      "query" : "",
+      "host" : "jianguaiapp.com",
+      "path" : "\/usercenter"
+    }
+  ]
+}

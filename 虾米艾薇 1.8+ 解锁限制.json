@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "dayDownloadRemain\":\"99999",
+      "matchValue" : "dayDownloadRemain\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "downloadCount\":\"99999",
+      "matchValue" : "downloadCount\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "inviteCount\":\"999",
+      "matchValue" : "inviteCount\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "bannerx\":",
+      "matchValue" : "banner\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "videodA\":",
+      "matchValue" : "videoAd\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isPlay\":true",
+      "matchValue" : "isPlay\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "虾米艾薇 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 81,
+      "query" : "",
+      "host" : "154.223.32.228",
+      "path" : "\/user\/login"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 81,
+      "query" : "",
+      "host" : "154.223.32.228",
+      "path" : "\/index\/videoInfo"
+    }
+  ],
+  "description" : "下载地址，https:\/\/www.xiamiav.online\/IOS-Download.html"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2070-01-01 00:00:00\"",
+      "matchValue" : "vipExpireTime\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "秒拍证件照 智能美颜美妆 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "micro-tool-api.foundao.com",
+      "path" : "\/orderPayCenterService\/user\/userInfo"
+    }
+  ],
+  "description" : "不用订阅&恢复\n秒拍证件照 - 智能美颜美妆 来自 Chengdu Tianmaituodao Technology Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%A7%92%E6%8B%8D%E8%AF%81%E4%BB%B6%E7%85%A7-%E6%99%BA%E8%83%BD%E7%BE%8E%E9%A2%9C%E7%BE%8E%E5%A6%86\/id1498410997"
+}

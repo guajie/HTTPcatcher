@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "gold\":999",
+      "matchValue" : "gold\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "gold2\":999",
+      "matchValue" : "gold2\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "配音秀 有声就有戏 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api1.peiyinxiu.com",
+      "path" : "\/Api\/user\/GetMyInfo"
+    }
+  ],
+  "description" : "配音秀-有声就有戏 来自 Hangzhou Showmobi Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%85%8D%E9%9F%B3%E7%A7%80-%E6%9C%89%E5%A3%B0%E5%B0%B1%E6%9C%89%E6%88%8F\/id746925035"
+}

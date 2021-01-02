@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "status-code",
+      "matchField" : "",
+      "field" : "",
+      "value" : "200",
+      "matchValue" : "400",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "remove-header",
+      "matchField" : "X-FaceApp-ErrorCode",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n    \"subscription_apple\": {\n        \"subscription_exp\": 3042979200,\n        \"product_id\": \"y\"\n    },\n    \"subscription_google\": null\n}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "Ai 人脸编辑器 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.faceapp.io",
+      "path" : "\/api\/v3.3\/auth\/user\/credentials"
+    }
+  ],
+  "description" : "需要靠服务器来处理照片的功能会发生异常，本地功能的完全实现、无推广信息、并且可以去除水印导出下载\n\nFaceApp - AI 人脸编辑器 来自 FaceApp Inc https:\/\/apps.apple.com\/cn\/app\/faceapp-ai-%E4%BA%BA%E8%84%B8%E7%BC%96%E8%BE%91%E5%99%A8\/id1180884341"
+}

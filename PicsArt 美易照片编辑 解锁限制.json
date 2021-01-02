@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "subscription\":{\"granted\":true}",
+      "matchValue" : "subscription\":\\{\"granted\":false\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "PicsArt 美易照片编辑 解锁限制 A+",
+  "description" : "PicsArt 美易照片编辑：图片&视频编辑工具 来自 PicsArt, Inc.\nhttps:\/\/apps.apple.com\/cn\/app\/picsart-%E7%BE%8E%E6%98%93%E7%85%A7%E7%89%87%E7%BC%96%E8%BE%91-%E5%9B%BE%E7%89%87-%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7\/id587366035",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.meiease.cn",
+      "path" : "\/users\/show\/me.json"
+    }
+  ]
+}

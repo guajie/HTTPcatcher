@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "status\":1",
+      "matchValue" : "status\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "树苗语音 无限送礼物 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.shumiaoapp.com",
+      "path" : "\/api\/UserCenterApi\/giveGift"
+    }
+  ],
+  "description" : "树苗语音 来自 宁波国瑞网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%A0%91%E8%8B%97%E8%AF%AD%E9%9F%B3\/id1508276785"
+}

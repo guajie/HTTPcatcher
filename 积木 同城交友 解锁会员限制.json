@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Status\":1",
+      "matchValue" : "Status\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expire_time\":\"1800000000\"",
+      "matchValue" : "expire_time\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "积木 同城交友 解锁会员限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "tyhr.fallinloveu.com",
+      "path" : "\/Two\/*"
+    }
+  ],
+  "description" : "不用订阅&恢复\n无会员信息提示 功能已解锁\n\n积木-同城交友软件 成人社交App 来自 中投智能(北京)新能源科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%A7%AF%E6%9C%A8-%E5%90%8C%E5%9F%8E%E4%BA%A4%E5%8F%8B%E8%BD%AF%E4%BB%B6-%E6%88%90%E4%BA%BA%E7%A4%BE%E4%BA%A4app\/id1465687192"
+}

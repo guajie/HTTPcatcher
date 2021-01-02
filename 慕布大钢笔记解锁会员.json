@@ -1,0 +1,24 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "\"vipEndDate\":\"20210315\"",
+		"matchValue": "\"vipEndDate\":\"\\d+\"",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": false,
+	"isReadOnly": false,
+	"name": "慕布 大钢笔记 A+",
+	"locations": [{
+		"method": "POST",
+		"scheme": "https",
+		"enabled": true,
+		"port": 443,
+		"query": "",
+		"host": "mubu.com",
+		"path": "\/api\/app\/user\/info"
+	}],
+	"description": "幕布 - 大纲笔记·思维导图·备忘录 来自 北京坤豆科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%B9%95%E5%B8%83-%E5%A4%A7%E7%BA%B2%E7%AC%94%E8%AE%B0-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE-%E5%A4%87%E5%BF%98%E5%BD%95\/id1214302139"
+}

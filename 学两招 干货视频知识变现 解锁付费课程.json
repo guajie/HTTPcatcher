@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_charge\": \"0\"",
+      "matchValue" : "is_charge\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "payment\": \"0.00\"",
+      "matchValue" : "payment\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_charge\": \"0\"",
+      "matchValue" : "is_charge\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "have_content\": \"0\"",
+      "matchValue" : "have_content\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_allow\": \"1\"",
+      "matchValue" : "is_allow\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "学两招 干货视频知识变现 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.xlzhao.com",
+      "path" : "\/*\/videos\/video-part\/*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.xlzhao.com",
+      "path" : "\/*\/videos\/*"
+    }
+  ],
+  "description" : "学两招 - 干货短视频知识变现平台 来自 北京学两招科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%AD%A6%E4%B8%A4%E6%8B%9B-%E5%B9%B2%E8%B4%A7%E7%9F%AD%E8%A7%86%E9%A2%91%E7%9F%A5%E8%AF%86%E5%8F%98%E7%8E%B0%E5%B9%B3%E5%8F%B0\/id1090748056"
+}

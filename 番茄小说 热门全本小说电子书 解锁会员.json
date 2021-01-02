@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "privilege\":[{\"id\":\"6703327493505422087\",\"name\":\"TTS权益\",\"expire_time\":\"1750987456\",\"is_forever\":\"1\",\"extra\":\"{\\\\\"from\\\\\":4}\",\"start_time\":\"1586017251\",\"left_time\":\"1476\",\"download_book_ids\":null},{\"id\":\"6766572795204735752\",\"name\":\"批量下载\",\"expire_time\":\"1587222928\",\"is_forever\":\"0\",\"extra\":\"{\\\\\"from\\\\\":1}\",\"start_time\":\"1586012290\",\"left_time\":\"1205353\",\"download_book_ids\":null},{\"id\":\"6703327401314620167\",\"name\":\"免广告\",\"expire_time\":\"1750987456\",\"is_forever\":\"1\",\"extra\":\"{\\\\\"from\\\\\":1}\",\"start_time\":\"1586014421\",\"left_time\":\"4528454854\",\"download_book_ids\":null}]",
+      "matchValue" : "privilege\":\\[(.*?)\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_info\":{\"is_vip\":\"1\",\"expire_time\":\"1750987456\",\"left_time\":\"1750987456\"}",
+      "matchValue" : "vip_info\":\\{[^\\}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "user_name\":\"VIP番茄\"",
+      "matchValue" : "user_name\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "avatar_url\":\"https:\/\/i.loli.net\/2020\/04\/11\/FZT7bzyjakCwVtL.jpg\"",
+      "matchValue" : "avatar_url\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "番茄小说 热门全本小说电子书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "reading-hl.snssdk.com",
+      "path" : "\/reading\/user\/info\/v:version\/"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "app2_id=548247084&app_id=548247084&device=12.4%7CiPhone9%2C1&guest_id=0&imei=35F5C671-C5A7-4926-B570-4CC5748FE518&type=UserLaunchAppReport&udid=c0d6d99c1f9e4a0694666281ba641f59&user_id=78428676&version=4.0.10",
+      "host" : "sapi.beingfine.cn",
+      "path" : "\/v1\/UserLaunchAppReport"
+    }
+  ],
+  "description" : "听书功能与微信读书的差一些 比现市面上听书好一些 番茄小说 - 热门全本小说电子书阅读器 来自 Beijing Zhending Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4-%E7%83%AD%E9%97%A8%E5%85%A8%E6%9C%AC%E5%B0%8F%E8%AF%B4%E7%94%B5%E5%AD%90%E4%B9%A6%E9%98%85%E8%AF%BB%E5%99%A8\/id1468454200"
+}

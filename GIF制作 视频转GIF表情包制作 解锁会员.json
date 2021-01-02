@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":[{\"id\":8888881,\"auth_type\":1,\"auth_value\":1800000000}]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "GIF制作 视频转GIF表情包制作 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/memprofile"
+    }
+  ],
+  "description" : "不用订阅&恢复\nGIF制作软件-视频转GIF & 动图表情包制作 来自 Duanqiang Tang https:\/\/apps.apple.com\/cn\/app\/gif%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6-%E8%A7%86%E9%A2%91%E8%BD%ACgif-%E5%8A%A8%E5%9B%BE%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%B6%E4%BD%9C\/id1475601403"
+}

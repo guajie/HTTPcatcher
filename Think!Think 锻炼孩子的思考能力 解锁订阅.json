@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "course\":40",
+      "matchValue" : "course\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "store\":1",
+      "matchValue" : "store\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expires_date\":\"2029-11-11\"",
+      "matchValue" : "expires_date\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Think!Think 锻炼孩子的思考能力 解锁订阅 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "think2-api.hanamarulab.com",
+      "path" : "\/api\/v4\/zh_CN\/apple\/*\/purchase\/info"
+    }
+  ],
+  "description" : "Think!Think! 来自 WonderLab Inc. https:\/\/apps.apple.com\/cn\/app\/think-think\/id1082259392"
+}

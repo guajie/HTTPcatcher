@@ -1,0 +1,136 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "dailyViewNum\":99999",
+      "matchValue" : "dailyViewNum\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "leftViewNum\":99999",
+      "matchValue" : "leftViewNum\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpiredDate\":\"1800000000\"",
+      "matchValue" : "vipExpiredDate\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "ExpiredDays\":999",
+      "matchValue" : "ExpiredDays\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isExpired\":2",
+      "matchValue" : "isExpired\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "extrViewNumber\":99999",
+      "matchValue" : "extrViewNumber\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "remainPlayCnt\":9999",
+      "matchValue" : "remainPlayCnt\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "startPagedA",
+      "matchValue" : "startPageAd",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "ads_\":",
+      "matchValue" : "ads\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "黄瓜视频&密橙视频 1.8.+ 解锁次数限制 +A",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api88.awk2.work",
+      "path" : "\/user\/info"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api88.awk2.work",
+      "path" : "\/mov\/playresult"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api88.awk2.work",
+      "path" : "\/mov\/browse"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api88.awk2.work",
+      "path" : "\/startpage\/combine"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api88.awk2.work",
+      "path" : "\/banner\/list2"
+    }
+  ],
+  "description" : "没有测试，自己改下吧\n下载地址，https:\/\/michen.gdyhws.space?pkg=cuke0001&accountCode=666&inviteCode=UB63A8=inviteCode&rs=2"
+}

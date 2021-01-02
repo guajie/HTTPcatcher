@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "member\":1",
+      "matchValue" : "member\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_member\":1",
+      "matchValue" : "is_member\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "大片 Bigshot视频编辑 解锁Vip A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.vnision.com",
+      "path" : "\/v1\/users\/home"
+    }
+  ],
+  "description" : "Bigshot - 视频编辑 来自 VNISION International Limited https:\/\/apps.apple.com\/cn\/app\/bigshot-%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91\/id1274910157"
+}

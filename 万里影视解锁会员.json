@@ -1,0 +1,48 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "time\":1645467742",
+		"matchValue": "time\":\\d+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "power\":\"3",
+		"matchValue": "power\":\"\\d+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "je\":999999",
+		"matchValue": "je\":\\d+",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": true,
+	"isReadOnly": false,
+	"name": "万里影视解锁会员 A+",
+	"locations": [{
+		"method": "GET",
+		"scheme": "http",
+		"enabled": true,
+		"port": 80,
+		"query": "",
+		"host": "vip.arten.cn",
+		"path": "\/login\/login\/veifys.html"
+	}, {
+		"method": "GET",
+		"scheme": "http",
+		"enabled": true,
+		"port": 80,
+		"query": "",
+		"host": "vip.arten.cn",
+		"path": "\/login\/login\/sign.html"
+	}],
+	"description": "A+ 应用搜万里生活"
+}

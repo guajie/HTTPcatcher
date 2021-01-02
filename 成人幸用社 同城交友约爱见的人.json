@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"status\":1,",
+      "matchValue" : "\"status\":\\d+,",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "成人幸用社 同城交友约爱见的人 A+",
+  "description" : "成人幸用社-同城交友，约爱见的人 来自 Longyou QuWa Toys Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%88%90%E4%BA%BA%E5%B9%B8%E7%94%A8%E7%A4%BE-%E5%90%8C%E5%9F%8E%E4%BA%A4%E5%8F%8B-%E7%BA%A6%E7%88%B1%E8%A7%81%E7%9A%84%E4%BA%BA\/id1358646373\n\n20201115 随时失效",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "sayu-api.chongqiwawa6.com",
+      "path" : "\/action\/call\/create"
+    }
+  ]
+}

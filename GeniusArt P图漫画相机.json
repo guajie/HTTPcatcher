@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "pay\":false",
+      "matchValue" : "pay\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "warn\":{}",
+      "matchValue" : "warn\":\\{[^}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "error\":0",
+      "matchValue" : "error\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "GeniusArt P图漫画相机 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "genius-api.dingdong.tv",
+      "path" : "\/api\/v1\/genius\/*"
+    }
+  ],
+  "description" : "GeniusArt：一键P图，漫画相机，换发型 来自 Fishmobi Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/geniusart-%E4%B8%80%E9%94%AEp%E5%9B%BE-%E6%BC%AB%E7%94%BB%E7%9B%B8%E6%9C%BA-%E6%8D%A2%E5%8F%91%E5%9E%8B\/id1486299023"
+}

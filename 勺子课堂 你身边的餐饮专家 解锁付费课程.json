@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "price\": \"0.00\"",
+      "matchValue" : "price\":\"\\d+\\.\\d+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "name\":\"已解锁\",\"nickname\"",
+      "matchValue" : "name\":\".*?\",\"nickname\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": 1",
+      "matchValue" : "is_vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "勺子课堂 你身边的餐饮专家 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.shaoziketang.com",
+      "path" : "\/api\/*\/courses\/*\/detail"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.shaoziketang.com",
+      "path" : "\/api\/*\/user\/user_info"
+    }
+  ],
+  "description" : "勺子课堂-你身边的餐饮专家 来自 蓝色地图(北京)科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%8B%BA%E5%AD%90%E8%AF%BE%E5%A0%82-%E4%BD%A0%E8%BA%AB%E8%BE%B9%E7%9A%84%E9%A4%90%E9%A5%AE%E4%B8%93%E5%AE%B6\/id1269032948"
+}

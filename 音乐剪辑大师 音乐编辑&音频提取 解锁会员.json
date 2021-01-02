@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_exp\":1",
+      "matchValue" : "vip_exp\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "out_time\": \"2030-01-01 00:00:00\"",
+      "matchValue" : "out_time\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "can_free_vip\":1",
+      "matchValue" : "can_free_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "音乐剪辑大师 音乐编辑&音频提取 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "wx.520gyh.com",
+      "path" : "\/Audioeditor\/Account\/deviceLogin"
+    }
+  ],
+  "description" : "音乐剪辑大师 - 音乐编辑 & 音频提取 来自 hu yucui https:\/\/apps.apple.com\/cn\/app\/%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91%E5%A4%A7%E5%B8%88-%E9%9F%B3%E4%B9%90%E7%BC%96%E8%BE%91-%E9%9F%B3%E9%A2%91%E6%8F%90%E5%8F%96\/id1461691301"
+}

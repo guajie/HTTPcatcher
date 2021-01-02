@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isfee\": \"1\"",
+      "matchValue" : "isfee\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isright\": \"1\"",
+      "matchValue" : "isright\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "free\": \"1\"",
+      "matchValue" : "free\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "ispower\":true",
+      "matchValue" : "ispower\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "pic\": ",
+      "matchValue" : "thumbnail\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "pic2\":\"\"",
+      "matchValue" : "pic\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "考研帮 研友在线学习移动课 解锁学习周刊 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "mapi.kyboye.com",
+      "path" : "\/user\/periodical\/get"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "mapi.kyboye.com",
+      "path" : "\/user\/frame\/info"
+    }
+  ],
+  "description" : "解锁学习周刊 知识框架\n考研帮-研友在线学习移动课堂 来自 Beijing Ying He You Shi Technology Limited Liability Company https:\/\/apps.apple.com\/cn\/app\/%E8%80%83%E7%A0%94%E5%B8%AE-%E7%A0%94%E5%8F%8B%E5%9C%A8%E7%BA%BF%E5%AD%A6%E4%B9%A0%E7%A7%BB%E5%8A%A8%E8%AF%BE%E5%A0%82\/id805408963"
+}

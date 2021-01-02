@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isBuy\":1",
+      "matchValue" : "isBuy\":0",
+      "destiontion" : "request",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickName\": \"已解锁\"",
+      "matchValue" : "nickName\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "全民幸福社 类似樊登 解锁会员付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.qiuwenxinli.com",
+      "path" : "\/*\/subject\/subjectDetail.json"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.qiuwenxinli.com",
+      "path" : "\/*\/user\/queryAccountInfo.json"
+    }
+  ],
+  "description" : "全民幸福社 来自 Shandong Qiu Wen Education Advisory Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%85%A8%E6%B0%91%E5%B9%B8%E7%A6%8F%E7%A4%BE\/id1195469011"
+}

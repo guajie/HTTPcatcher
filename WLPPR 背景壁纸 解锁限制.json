@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "unlocked\":true",
+      "matchValue" : "unlocked\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "WLPPR 背景壁纸 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "wlppr.cc",
+      "path" : ""
+    }
+  ],
+  "description" : "解锁后挂v不然很慢@.@\nWLPPR - background wallpapers 来自 Konstantin Kiselyov https:\/\/apps.apple.com\/cn\/app\/wlppr-background-wallpapers\/id991182525"
+}

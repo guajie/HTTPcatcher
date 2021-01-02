@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":2",
+      "matchValue" : "vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isShow\":\"0\"",
+      "matchValue" : "isShow\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "烘焙小屋 小白学烘焙 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.jiaonizuocai.com",
+      "path" : "\/v4\/User\/getUserData"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.jiaonizuocai.com",
+      "path" : "\/v4\/dish\/info"
+    }
+  ],
+  "description" : "烘焙小屋-小白学烘焙必备视频食谱大全 来自 优艺互动 https:\/\/apps.apple.com\/cn\/app\/%E7%83%98%E7%84%99%E5%B0%8F%E5%B1%8B-%E5%B0%8F%E7%99%BD%E5%AD%A6%E7%83%98%E7%84%99%E5%BF%85%E5%A4%87%E8%A7%86%E9%A2%91%E9%A3%9F%E8%B0%B1%E5%A4%A7%E5%85%A8\/id987065303"
+}

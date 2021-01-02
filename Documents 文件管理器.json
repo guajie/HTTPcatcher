@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\\\"isEligibleForIntroPeriod\\\":true,\\\"originalTransactionId\\\":\\\"730000965956825\\\",\\\"subscriptionExpirationDate\\\":\\\"10:10 10\/10\/2025\\\",\\\"subscriptionState\\\":\\\"active\\\",\\\"subscriptionReceiptId\\\":\\\"1889061094000\\\",\\\"isDocuments6User\\\":true,\\\"subscriptionAutoRenewStatus\\\":\\\"autoRenewOff\\\",\\\"isInGracePeriod\\\":true}",
+      "matchValue" : "[^*]+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Documents 文件管理器 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "license.pdfexpert.com",
+      "path" : "\/api\/1.0\/documents\/subscription\/refresh"
+    }
+  ],
+  "description" : "使用恢复购买\nDocuments by Readdle 来自 Readdle Inc. https:\/\/apps.apple.com\/cn\/app\/documents-by-readdle\/id364901807"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "serverType\":\"Parse\",\"IOS\":true,\"purchaseDate\":\"001800000000.000\",\"changeDate\":true",
+      "matchValue" : "serverType\":\"\\w+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Planner Pro 任务笔记全面规划 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "plannerpro-master-ios.us-east-*.elasticbeanstalk.com",
+      "path" : "\/parse\/classes\/_User\/*"
+    }
+  ],
+  "description" : "Planner Pro - Daily Calendar 来自 Beesoft Apps https:\/\/apps.apple.com\/cn\/app\/planner-pro-daily-calendar\/id571588936"
+}

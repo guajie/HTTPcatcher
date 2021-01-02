@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "free\": \"1\"",
+      "matchValue" : "free\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "画报相机 独特画报人生 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.wecut.com",
+      "path" : "\/postercam\/getTemplate.php"
+    }
+  ],
+  "description" : "画报相机 - 开启独特的画报人生 来自 Shicong Zhou https:\/\/apps.apple.com\/cn\/app\/%E7%94%BB%E6%8A%A5%E7%9B%B8%E6%9C%BA-%E5%BC%80%E5%90%AF%E7%8B%AC%E7%89%B9%E7%9A%84%E7%94%BB%E6%8A%A5%E4%BA%BA%E7%94%9F\/id1334000208"
+}

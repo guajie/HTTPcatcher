@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expire_date\":1800000000000",
+      "matchValue" : "expire_date\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "granted\":1",
+      "matchValue" : "granted\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "dl_quota\":999",
+      "matchValue" : "dl_quota\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "upload_count\":1",
+      "matchValue" : "upload_count\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "user_has_preferences\":1",
+      "matchValue" : "user_has_preferences\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "朗易思听 英语听力 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "sapi.beingfine.cn",
+      "path" : "\/v1\/UserLaunchAppReport"
+    }
+  ],
+  "description" : "朗易思听-英语听力、口语每日学 来自 北京艾斯酷科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%9C%97%E6%98%93%E6%80%9D%E5%90%AC-%E8%8B%B1%E8%AF%AD%E5%90%AC%E5%8A%9B-%E5%8F%A3%E8%AF%AD%E6%AF%8F%E6%97%A5%E5%AD%A6\/id548247084"
+}

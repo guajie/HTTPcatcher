@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "memberships\":[{\"endAt\":1650842277,\"id\":\"1\",\"name\":\"普通会员\",\"ownership\":\"temporary\",\"startAt\":1580106429,\"usageType\":\"unlimited\"}]",
+      "matchValue" : "memberships:\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "ownership\":\"free",
+      "matchValue" : "ownership\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "usageType\":\"unlimited",
+      "matchValue" : "usageType\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "黄油相机 解锁图片编辑限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api4.bybutter.com",
+      "path" : "\/v4\/users\/me*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api4.bybutter.com",
+      "path" : "\/v4\/shop\/*"
+    }
+  ],
+  "description" : "额外付费的素材不可用，可用图片编辑一键P图、滤镜、文字等高级功能\n\n黄油相机 - Plog记录日常 来自 wenrui shan https:\/\/apps.apple.com\/cn\/app\/%E9%BB%84%E6%B2%B9%E7%9B%B8%E6%9C%BA-plog%E8%AE%B0%E5%BD%95%E6%97%A5%E5%B8%B8\/id587176822"
+}

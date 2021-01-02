@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_expired_at\":\"2022-04-02 16:31:54\"",
+      "matchValue" : "vip_expired_at\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":100000",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "黑夜漂流瓶 附近陌生人交友 解锁会员限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "plpapi.xiu123.cn",
+      "path" : "\/api\/user"
+    }
+  ],
+  "description" : "黑夜漂流瓶-附近陌生人交友约会 by wq z https:\/\/apps.apple.com\/us\/app\/%E9%BB%91%E5%A4%9C%E6%BC%82%E6%B5%81%E7%93%B6-%E9%99%84%E8%BF%91%E9%99%8C%E7%94%9F%E4%BA%BA%E4%BA%A4%E5%8F%8B%E7%BA%A6%E4%BC%9A\/id1463145105"
+}

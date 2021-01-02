@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireDate\":\"999",
+      "matchValue" : "expireDate\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "memberDesc\":\"2099年6月8日到期\"",
+      "matchValue" : "memberDesc\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireDate\":\"1800000000000\"",
+      "matchValue" : "expireDate\":\"\\d+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "早晚读书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.zaowandushu.com",
+      "path" : "\/v\/customer\/info"
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.zaowandushu.com",
+      "path" : "\/v\/coin\/coinBuyBookClubPage"
+    }
+  ],
+  "description" : "早晚读书 来自 天津万卷书网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%97%A9%E6%99%9A%E8%AF%BB%E4%B9%A6\/id1464656164\n\n用不了的就用Qx规则\n\n\/\/早晚读书\nhttps:\\\/\\\/api.zaowandushu.com\\\/v\\\/[customer\\\/info|coin\\\/coinBuyBookClubPage] url script-response-body zwds.js\n\n\n\/\/zwds.js ↓\nlet a = JSON.parse($response.body);\nlet url = $request.url;\n\nif (url.indexOf(\"coinBuyBookClubPage\") != -1) {\na.attachment.expireDate =\"1800000000000\"\n}else{\na.attachment.expireDate = \"999\";\na.attachment.memberDesc = \"2099年6月8日到期\";\n}\n$done({body: JSON.stringify(a)});"
+}

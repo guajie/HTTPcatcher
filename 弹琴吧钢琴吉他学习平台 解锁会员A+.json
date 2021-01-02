@@ -1,0 +1,145 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "classVip\":1",
+      "matchValue" : "classVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "remaining_vip_time\":\"1800000000\"",
+      "matchValue" : "remaining_vip_time\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipInfo\":1",
+      "matchValue" : "vipInfo\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_status\": \"true\"",
+      "matchValue" : "vip_status\":\"false\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isvip\":\"0\"",
+      "matchValue" : "isvip\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isvipyp\":0",
+      "matchValue" : "isvipyp\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isfree\":1",
+      "matchValue" : "isfree\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isfree\":\"1\"",
+      "matchValue" : "isfree\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isShowFreeIcon\":\"1",
+      "matchValue" : "isShowFreeIcon\":\"0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "lessonType\":\"1\"",
+      "matchValue" : "lessonType\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "statusCode\":\"1\"",
+      "matchValue" : "statusCode\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "videoUrl2\"",
+      "matchValue" : "videoUrl\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "videoUrl\":\"http:\\\/\\\/wqbmn3gwj0wd8cjq.eu5.org\\\/v.php\\?a=http",
+      "matchValue" : "video\":\"http",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "弹琴吧钢琴吉他学习平台 解锁会员A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "www.tan8.com",
+      "path" : "\/codeindex.php"
+    }
+  ],
+  "description" : "只解锁了吉他尤克里里其他的自己弄吧\n弹琴吧-弹琴吧-钢琴吉他学习平台 来自 Beijing Qule Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%BC%B9%E7%90%B4%E5%90%A7-%E5%BC%B9%E7%90%B4%E5%90%A7-%E9%92%A2%E7%90%B4%E5%90%89%E4%BB%96%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0\/id1403263259"
+}

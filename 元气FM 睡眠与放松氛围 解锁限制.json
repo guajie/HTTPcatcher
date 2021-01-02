@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isFree\":true",
+      "matchValue" : "isFree\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "元气FM 睡眠与放松氛围 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "yuanjoy.com",
+      "path" : "\/FM\/api\/radio\/list\/exclude"
+    }
+  ],
+  "description" : "元气 FM - 睡眠与放松氛围乐台 来自 YuanJing Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%85%83%E6%B0%94-fm-%E7%9D%A1%E7%9C%A0%E4%B8%8E%E6%94%BE%E6%9D%BE%E6%B0%9B%E5%9B%B4%E4%B9%90%E5%8F%B0\/id1488407964"
+}

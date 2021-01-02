@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "allowItem\":{\"paperAnserNum\":9999,\"allowVideoNum\":9999,\"allowAllStardAnser\":9999,\"allowVideoAll\":9999,\"allowViewQuestionNum\":9999,\"order\":2}",
+      "matchValue" : "allowItem\":\\{[^}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipEndTime\":\"\\\/Date(2209017600000)\\\/\"",
+      "matchValue" : "vipEndTime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isPrint\":0",
+      "matchValue" : "isPrint\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "圣才电子书 解锁做题题库 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.100xuexi.com",
+      "path" : "\/TK\/QuePlanPractice.ashx"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.100xuexi.com",
+      "path" : "\/app\/UserHandler\/UserAccount.ashx"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "service.100eshu.com",
+      "path" : "\/app\/GetQuanTaoBooks.ashx"
+    }
+  ],
+  "description" : "解锁做题和视频 电子书可以自己解锁\n圣才电子书 来自 Sheng Cai E-books (Wuhan) Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%9C%A3%E6%89%8D%E7%94%B5%E5%AD%90%E4%B9%A6\/id880932624"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"result\":{\"lastTransactionId\":\"530000152300631\",\"originalTransactionId\":\"\",\"expireDate\":1800000000000,\"itemId\":\"Funmoji_1week\",\"trialPeriod\":true},\"message\":{\"code\":200,\"messageInfo\":\"ok\",\"serverTime\":1588350628000}}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "FUNmoji 制作你专属的表情包 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api-iptmtd.doglobal.net",
+      "path" : "\/pay\/apple"
+    }
+  ],
+  "description" : "FUNmoji - 制作你专属的表情包! 来自 Beijing Xiaoxiong Bowang Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/funmoji-%E5%88%B6%E4%BD%9C%E4%BD%A0%E4%B8%93%E5%B1%9E%E7%9A%84%E8%A1%A8%E6%83%85%E5%8C%85\/id1446397186"
+}

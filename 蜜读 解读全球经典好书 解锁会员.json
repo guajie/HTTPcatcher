@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isbuy\": 1",
+      "matchValue" : "isbuy\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "蜜读 解读全球经典好书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "wwdx.readerday.com",
+      "path" : "\/midu_api\/wwdxbook\/*"
+    }
+  ],
+  "description" : "蜜读-解读全球经典好书 来自 北京唯我读秀文化有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%9C%9C%E8%AF%BB-%E8%A7%A3%E8%AF%BB%E5%85%A8%E7%90%83%E7%BB%8F%E5%85%B8%E5%A5%BD%E4%B9%A6\/id1387376972\n\n网球使用中失效请使用Qx\n\/*\n#蜜读解锁会员 A+\n^https:\\\/\\\/wwdx\\.readerday\\.com\\\/midu_api\\\/wwdxbook\\\/* url script-response-body midu.js\n\nHost\nwwdx.readerday.com\n*\/\nvar body2 = $response.body.replace(\/isbuy\":0\/g, 'isbuy\":1');\n$done({body:body2});"
+}

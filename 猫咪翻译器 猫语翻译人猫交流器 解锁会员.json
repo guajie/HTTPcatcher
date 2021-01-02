@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":[{\"id\":8888881,\"auth_type\":1,\"auth_value\":1800000000}]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_valid\":1",
+      "matchValue" : "\"vip_valid\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_deadline\":1800000000",
+      "matchValue" : "\"vip_deadline\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "uid\":\"已解锁\"",
+      "matchValue" : "uid\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "猫咪翻译器 猫语翻译人猫交流器 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "*.yiyongcad.com",
+      "path" : "\/api\/v4\/virtualactregister"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "*.yiyongcad.com",
+      "path" : "\/api\/v4\/memprofile"
+    }
+  ],
+  "description" : "不用订阅&恢复\n猫咪翻译器-猫语翻译人猫交流器 来自 Duanqiang Tang https:\/\/apps.apple.com\/cn\/app\/%E7%8C%AB%E5%92%AA%E7%BF%BB%E8%AF%91%E5%99%A8-%E7%8C%AB%E8%AF%AD%E7%BF%BB%E8%AF%91%E4%BA%BA%E7%8C%AB%E4%BA%A4%E6%B5%81%E5%99%A8\/id1475867594"
+}

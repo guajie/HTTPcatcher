@@ -1,0 +1,91 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_auth\":\"y",
+      "matchValue" : "is_auth\":\"\\w",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "limit_expire\":1800000000",
+      "matchValue" : "limit_expire\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":200",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "msg\":\"\"",
+      "matchValue" : "msg\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_charge\":1",
+      "matchValue" : "is_charge\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "水晶dj 年轻人爱听的劲爆舞曲 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app.oscaches.com",
+      "path" : "\/index\/appinterface\/getUserInfo"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app.oscaches.com",
+      "path" : "\/index\/appinterface\/convertVip"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app.oscaches.com",
+      "path" : "\/index\/Appinterface\/downloadDetail"
+    }
+  ],
+  "description" : "水晶DJ - 年轻人爱听的劲爆舞曲 来自 Mooeen Mobile Internet Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%B0%B4%E6%99%B6dj-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%88%B1%E5%90%AC%E7%9A%84%E5%8A%B2%E7%88%86%E8%88%9E%E6%9B%B2\/id1215494034"
+}

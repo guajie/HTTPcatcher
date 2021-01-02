@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": [{\n      \"id\": 88888880,\n      \"auth_type\": 1,\n      \"auth_value\": 2439271514\n    }]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "OCR文字识别#图片转文字OCR拍照取字助手 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/virtualactregister"
+    }
+  ],
+  "description" : "迅捷文字识别 - 图片转文字OCR拍照取字助手 来自 Shanghai Hudun Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%BF%85%E6%8D%B7%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB-%E5%9B%BE%E7%89%87%E8%BD%AC%E6%96%87%E5%AD%97ocr%E6%8B%8D%E7%85%A7%E5%8F%96%E5%AD%97%E5%8A%A9%E6%89%8B\/id1434665506"
+}

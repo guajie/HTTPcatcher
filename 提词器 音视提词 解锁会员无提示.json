@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "day\":\"999\"",
+      "matchValue" : "day\":[ ]?\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "提词器 音视提词 解锁会员无提示 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "dubbing.csweimei.cn",
+      "path" : "\/Prompt\/GetVipInfo"
+    }
+  ],
+  "description" : "提词器-专业级音频和视频提词拍摄神器 来自 长沙原力网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%8F%90%E8%AF%8D%E5%99%A8-%E4%B8%93%E4%B8%9A%E7%BA%A7%E9%9F%B3%E9%A2%91%E5%92%8C%E8%A7%86%E9%A2%91%E6%8F%90%E8%AF%8D%E6%8B%8D%E6%91%84%E7%A5%9E%E5%99%A8\/id1514074390"
+}

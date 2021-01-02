@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1,\"vip_end_time\":1800000000,\"vip_type\":2",
+      "matchValue" : "is_vip\":0,\"vip_end_time\":0,\"vip_type\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "不折叠 微商不折叠输入法 A+",
+  "description" : "不折叠-微商不折叠输入法 来自 俊芳 付 https:\/\/apps.apple.com\/cn\/app\/%E4%B8%8D%E6%8A%98%E5%8F%A0-%E5%BE%AE%E5%95%86%E4%B8%8D%E6%8A%98%E5%8F%A0%E8%BE%93%E5%85%A5%E6%B3%95\/id1525319698\n\n提供未测试qx规则\nhoustname＝*\n\n#不折叠 微商不折叠输入法 A+\nhttp:\/\/notfold.sc2yun.com\/user\/my.+  url script-response-body sbsb.js\n\nbody = $response.body.replace(\/is_vip\":0,\"vip_end_time\":0,\"vip_type\":0\/g, 'is_vip\":1,\"vip_end_time\":1800000000,\"vip_type\":2');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "*",
+      "host" : "notfold.sc2yun.com",
+      "path" : "\/user\/my"
+    }
+  ]
+}

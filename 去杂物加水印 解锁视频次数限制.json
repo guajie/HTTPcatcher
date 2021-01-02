@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_exp\":999999",
+      "matchValue" : "vip_exp\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "can_free_vip\": 0",
+      "matchValue" : "can_free_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "去杂物加水印 解锁视频次数限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "wx.520gyh.com",
+      "path" : "\/Unmark\/Login\/*"
+    }
+  ],
+  "description" : "如闪退请无视用户页\n去杂物加水印-视频图片修复工具 来自 guo zhiyang https:\/\/apps.apple.com\/cn\/app\/%E5%8E%BB%E6%9D%82%E7%89%A9%E5%8A%A0%E6%B0%B4%E5%8D%B0-%E8%A7%86%E9%A2%91%E5%9B%BE%E7%89%87%E4%BF%AE%E5%A4%8D%E5%B7%A5%E5%85%B7\/id1406298864"
+}

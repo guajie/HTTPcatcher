@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "VIPTime\":\"2030-06-01\"",
+      "matchValue" : "VIPTime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVIP\":\"1",
+      "matchValue" : "isVIP\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Mr.Up-男性提升能力PC肌锻炼 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.ruchu.club",
+      "path" : "\/AppServerMAN\/MyIndexServlert"
+    }
+  ],
+  "description" : "Mr.Up-男性提升能力,PC肌锻炼平台 来自 康评健康医疗大数据科技有限公司 https:\/\/apps.apple.com\/cn\/app\/mr-up-%E7%94%B7%E6%80%A7%E6%8F%90%E5%8D%87%E8%83%BD%E5%8A%9B-pc%E8%82%8C%E9%94%BB%E7%82%BC%E5%B9%B3%E5%8F%B0\/id1404820562"
+}

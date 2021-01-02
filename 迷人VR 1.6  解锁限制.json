@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "money\":0",
+      "matchValue" : "money\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "state\":0",
+      "matchValue" : "state\":\\d",
+      "destiontion" : "request",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "迷人VR 1.6+ 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "*",
+      "host" : "www.miren.tv",
+      "path" : "\/routes\/api\/*"
+    }
+  ],
+  "description" : "迷人VR 来自 广州菲你不可信息技术有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%BF%B7%E4%BA%BAvr\/id1175241522"
+}

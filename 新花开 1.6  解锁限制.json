@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"m_istatus\": 2",
+      "matchValue" : "\"m_istatus\":.+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "新花开 1.6+ 解锁限制 A+",
+  "description" : "下载地址，http:\/\/xinhuakai1027.fj8999.com\/share\/jumpShare.htm?userId=79346\n\n20201115 随时失效",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app2.zhaonuanmei.com",
+      "path" : "\/app\/*"
+    }
+  ]
+}

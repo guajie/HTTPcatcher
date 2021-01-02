@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Num\":9999",
+      "matchValue" : "Num\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Sum\":9999",
+      "matchValue" : "Sum\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "todayRight\":9999",
+      "matchValue" : "todayRight\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "羞羞漫画 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "c.banghankeji.com",
+      "path" : "\/common\/MemberInfo\/getEntityByCode"
+    }
+  ],
+  "description" : "羞羞漫画 - 漫画人超爱的腐漫画大全 来自 di lan xu https:\/\/apps.apple.com\/cn\/app\/%E7%BE%9E%E7%BE%9E%E6%BC%AB%E7%94%BB-%E6%BC%AB%E7%94%BB%E4%BA%BA%E8%B6%85%E7%88%B1%E7%9A%84%E8%85%90%E6%BC%AB%E7%94%BB%E5%A4%A7%E5%85%A8\/id1464406639"
+}

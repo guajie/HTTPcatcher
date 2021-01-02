@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "remainders\":9999",
+      "matchValue" : "remainders\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "modify-header",
+      "matchField" : "Cookie",
+      "field" : "",
+      "value" : "xxx_api_auth=6631616134633837383533316262643363616532333362333138373130336362",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "adrowss\":",
+      "matchValue" : "adrows\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "adgroupss\":",
+      "matchValue" : "adgroups\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "小小影视 更新 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "*.xiaoxiaoapps*.com",
+      "path" : ""
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "*.xxjjappss.com",
+      "path" : "*"
+    }
+  ],
+  "description" : "更新cookie\n下载地址 http:\/\/xx.bdsy6.com\/?inviteCode=GXNG09"
+}

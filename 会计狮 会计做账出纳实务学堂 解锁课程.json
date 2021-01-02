@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "type\":0",
+      "matchValue" : "type\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "会计狮 会计做账出纳实务学堂 解锁课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.kuaijishizi.com",
+      "path" : "\/course\/play"
+    }
+  ],
+  "description" : "不行就卸载后重新重新安装一定要开了再进去他有缓存了\n\n会计狮-会计做账出纳实务学堂 来自 北京入行教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E4%BC%9A%E8%AE%A1%E7%8B%AE-%E4%BC%9A%E8%AE%A1%E5%81%9A%E8%B4%A6%E5%87%BA%E7%BA%B3%E5%AE%9E%E5%8A%A1%E5%AD%A6%E5%A0%82\/id1055541362"
+}

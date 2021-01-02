@@ -1,0 +1,24 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "code\":0",
+		"matchValue": "code\":\\d+",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": true,
+	"isReadOnly": false,
+	"name": "哎呀live 解锁付费房间 A+",
+	"locations": [{
+		"method": "POST",
+		"scheme": "https",
+		"enabled": true,
+		"port": 443,
+		"query": "",
+		"host": "api.hlo.xyz",
+		"path": "\/api\/public\/*"
+	}],
+	"description": "A+\n下载地址，https:\/\/feq.xyz\/27ow1.html"
+}

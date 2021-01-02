@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "member_info\":{\"end_time\":1800000000,\"member_type\":1,\"money\":999,\"month_num\":999,\"start_time\":1588174515}",
+      "matchValue" : "member_info\":\\{[^\\}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "money\":\".0.00\"",
+      "matchValue" : "money\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "全球说 7000种语言学习社交平台 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.talkmate.com",
+      "path" : "\/umv1\/user\/info"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.talkmate.com",
+      "path" : "\/member\/check"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "appKey=talkmateVersion&code=ENG-57c65b2cd89ca&device_id=a99bcd3549e94848a6038763749e4e31&pay_area=CN&platform=IOS&reqId=JMR8jjBZgTmjJNDR&sign=79B27B88E8F45CE18B693557C9CB7DD3&timeStamp=1588175048&user_id=5ea99d2cde1edc4d80d477a0&verify=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJUYWxrbWF0ZSIsImV4cCI6MTYxOTcxMDEyNCwianRpIjoiNWVhOTlkMmNkZTFlZGM0ZDgwZDQ3N2EwIn0.GKl8NqDzgclq9vSDC6rt5lUQYnHAJzBa_kl6uew17Hc",
+      "host" : "api.talkmate.com",
+      "path" : "\/disv1\/homev2\/course\/detail"
+    }
+  ],
+  "description" : "全球说 - 7000种语言学习社交平台 来自 Beijing CooLanguage Times Education Science and Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%85%A8%E7%90%83%E8%AF%B4-7000%E7%A7%8D%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0\/id959231176"
+}

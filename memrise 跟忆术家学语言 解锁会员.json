@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_premium\":true",
+      "matchValue" : "is_premium\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_pro\":true",
+      "matchValue" : "is_pro\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "memrise 跟忆术家学语言 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "limit=20&offset=0&period=week",
+      "host" : "api.memrise.com",
+      "path" : "\/v*\/leaderboards\/following\/"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.memrise.com",
+      "path" : "\/v*\/dashboard\/"
+    }
+  ],
+  "description" : "跟忆术家学语言 来自 Memrise https:\/\/apps.apple.com\/cn\/app\/%E8%B7%9F%E5%BF%86%E6%9C%AF%E5%AE%B6%E5%AD%A6%E8%AF%AD%E8%A8%80\/id635966718"
+}

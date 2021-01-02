@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "VIP\": 1",
+      "matchValue" : "VIP\": \\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "指尖时光 目标打卡 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "integral.dasyibalang.com",
+      "path" : "\/User"
+    }
+  ],
+  "description" : "指尖时光-目标打卡日历&日程备忘录 来自 Huaian Spark Catering Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%8C%87%E5%B0%96%E6%97%B6%E5%85%89-%E7%9B%AE%E6%A0%87%E6%89%93%E5%8D%A1%E6%97%A5%E5%8E%86-%E6%97%A5%E7%A8%8B%E5%A4%87%E5%BF%98%E5%BD%95\/id1392166974"
+}

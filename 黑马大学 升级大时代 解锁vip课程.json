@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "member_type\":\"1\"",
+      "matchValue" : "member_type\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":\"1\"",
+      "matchValue" : "is_vip\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "truename\":\"已解锁\"",
+      "matchValue" : "truename\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "黑马大学 升级大时代 解锁vip课程 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.cyhm.com",
+      "path" : "\/v5\/my\/index"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.cyhm.com",
+      "path" : "\/v5\/member\/index"
+    }
+  ],
+  "description" : "黑马大学 来自 Guo Kai https:\/\/apps.apple.com\/cn\/app\/%E9%BB%91%E9%A9%AC%E5%A4%A7%E5%AD%A6\/id1097480234"
+}

@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "status\":1",
+      "matchValue" : "status\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "endTime\":\"2050-11-11\"",
+      "matchValue" : "endTime\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipLevel\":1",
+      "matchValue" : "vipLevel\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipStatus\":1",
+      "matchValue" : "vipStatus\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "记账·海豚记账本 极简记账软 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "book.haitunwallet.com",
+      "path" : "\/app\/vip\/status"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "book.haitunwallet.com",
+      "path" : "\/app\/account\/members"
+    }
+  ],
+  "description" : "记账·海豚记账本：极简记账软件 来自 北京畅娱科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%AE%B0%E8%B4%A6-%E6%B5%B7%E8%B1%9A%E8%AE%B0%E8%B4%A6%E6%9C%AC-%E6%9E%81%E7%AE%80%E8%AE%B0%E8%B4%A6%E8%BD%AF%E4%BB%B6\/id1232616736"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : " {\n  \"product_id\": \"vip_privilege_monthly\",\n  \"status\": \"0\",\n  \"isBlacklist\": \"0\",\n  \"transaction_id\": \"310000409847203\",\n  \"cancellation_date\": \"\",\n  \"expires_date\": \"2099-04-29 01:25:28 Etc\/GMT\",\n  \"current_date\": \"2019-05-02 13:15:02\",\n  \"is_trial_period\": \"true\",\n  \"msg\": \"验证成功\",\n  \"original_transaction_id\": \"310000409847203\",\n  \"purchase_date\": \"2019-04-26 01:25:28 Etc\/GMT\"\n}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "乐秀 视频编辑和视频剪辑软件 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "owa.videoshowiosglobalserver.com",
+      "path" : "*\/iosPayClient*"
+    }
+  ],
+  "description" : "乐秀 - 视频编辑和视频剪辑软件 来自 Shanghai Enjoy Information Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E4%B9%90%E7%A7%80-%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91%E5%92%8C%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E8%BD%AF%E4%BB%B6\/id930380089"
+}

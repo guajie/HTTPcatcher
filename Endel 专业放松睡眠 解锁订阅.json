@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "subscription_info\":{\"type\":\"IOS\",\"valid_until\":1787191299.0716028}",
+      "matchValue" : "subscription_info\":\\{[^\\}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "Endel 专业放松睡眠 解锁订阅 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api-production.endel.io",
+      "path" : "\/v1\/user"
+    }
+  ],
+  "description" : "Endel 来自 Endel https:\/\/apps.apple.com\/cn\/app\/endel\/id1346247457"
+}

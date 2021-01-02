@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"recognizeTranslateAll\":999",
+      "matchValue" : "\"recognizeTranslateAll\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"normalCount\":999",
+      "matchValue" : "\"normalCount\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"batchCount\":999",
+      "matchValue" : "\"batchCount\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"translateCount\":999",
+      "matchValue" : "\"translateCount\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"remainNormal\":999",
+      "matchValue" : "\"remainNormal\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"remainBatch\":999",
+      "matchValue" : "\"remainBatch\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"remainTranslate\":999",
+      "matchValue" : "\"remainTranslate\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "白描 文字识别 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "baimiao.uzero.cn",
+      "path" : "\/api\/*"
+    }
+  ],
+  "description" : "白描-文字识别与文件扫描合成PDF工具 来自 Xinle Tao https:\/\/apps.apple.com\/cn\/app\/%E7%99%BD%E6%8F%8F-%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E4%B8%8E%E6%96%87%E4%BB%B6%E6%89%AB%E6%8F%8F%E5%90%88%E6%88%90pdf%E5%B7%A5%E5%85%B7\/id1249901692"
+}

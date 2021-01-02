@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "succeeded\":true",
+      "matchValue" : "succeeded\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "money\":9999",
+      "matchValue" : "money\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isAdmin\":true",
+      "matchValue" : "isAdmin\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "mobilePhoneVerified\":true",
+      "matchValue" : "mobilePhoneVerified\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "古书之美 看见我们的文明 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "avoscloud.com",
+      "path" : "\/1.1\/functions\/buyBook"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "avoscloud.com",
+      "path" : "\/1.1\/users\/*"
+    }
+  ],
+  "description" : "古书之美 - 看见我们的文明 来自 Beijing xichuang culture media co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%8F%A4%E4%B9%A6%E4%B9%8B%E7%BE%8E-%E7%9C%8B%E8%A7%81%E6%88%91%E4%BB%AC%E7%9A%84%E6%96%87%E6%98%8E\/id1206897372"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "days\":999",
+      "matchValue" : "days\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "真题伴侣 教育 解锁会员特权 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "ztbl.zoooy111.com",
+      "path" : "\/index.php\/User\/index"
+    }
+  ],
+  "description" : "真题伴侣 来自 yu chen https:\/\/apps.apple.com\/cn\/app\/%E7%9C%9F%E9%A2%98%E4%BC%B4%E4%BE%A3\/id1469517608"
+}

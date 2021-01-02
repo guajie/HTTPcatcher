@@ -1,0 +1,100 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "var isPay = 1;  #",
+      "matchValue" : "var isPay = document",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "var articleProperties2",
+      "matchValue" : "var articleProperties",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\":\"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isFree\":0",
+      "matchValue" : "isFree\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "aType\":0",
+      "matchValue" : "aType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "feeType\":0",
+      "matchValue" : "feeType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "财新 财经新闻周刊 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "mappsv5.caixin.com",
+      "path" : "\/articlev*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "gateway.caixin.com",
+      "path" : "\/api\/ucenter\/appapi\/v1\/userinfo"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "mappsv5.caixin.com",
+      "path" : "\/audioV1\/*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "course.caixin.com",
+      "path" : "\/expert.course\/course\/reserveapi\/*"
+    }
+  ],
+  "description" : "周刊新闻fm视听解锁限制\n财新-流言无处不在，真相就读财新 来自 Caixin Media Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E8%B4%A2%E6%96%B0-%E6%B5%81%E8%A8%80%E6%97%A0%E5%A4%84%E4%B8%8D%E5%9C%A8-%E7%9C%9F%E7%9B%B8%E5%B0%B1%E8%AF%BB%E8%B4%A2%E6%96%B0\/id356023612"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n  \"msg\": \"ok\",\n  \"state\": 0,\n  \"content\": {}\n}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "小魔女直播 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "*.xmn69.com",
+      "path" : "\/xmn\/live\/room\/intoRoom\/*"
+    }
+  ],
+  "description" : "下载网址：https:\/\/bz6.xyz\/?oem=7506bab5fe13e6c2\n\n下载备用：https:\/\/bj6.xyz\/?oem=7506bab5fe13e6c2\nhttps:\/\/sf6.xyz\/?oem=7506bab5fe13e6c2\n\n永久回家地址\nhttps:\/\/github.com\/xmn666\/1"
+}

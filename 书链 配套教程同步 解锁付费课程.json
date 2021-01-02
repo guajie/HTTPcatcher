@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"authType\":8, \"canDown\":",
+      "matchValue" : "\"canDown\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"nick\":\"已解锁\"",
+      "matchValue" : "\"nick\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "书链 配套教程同步 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.bookln.cn",
+      "path" : "\/lessonservice\/detail.do"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.bookln.cn",
+      "path" : "\/userservice\/*"
+    }
+  ],
+  "description" : "如果不行的话请清下缓存\n书链-配套图书学习工具 来自 杭州云梯科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E4%B9%A6%E9%93%BE-%E9%85%8D%E5%A5%97%E5%9B%BE%E4%B9%A6%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7\/id985908850"
+}

@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"levelCode\":1",
+      "matchValue" : "\"levelCode\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"expire\":1800000000000",
+      "matchValue" : "\"expire\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "DOP手机铃声 最火爆铃声 解锁会员 A+",
+  "description" : "手机铃声-2020年最新火爆铃声 来自 丽华 郭 https:\/\/apps.apple.com\/cn\/app\/%E6%89%8B%E6%9C%BA%E9%93%83%E5%A3%B0-2020%E5%B9%B4%E6%9C%80%E6%96%B0%E7%81%AB%E7%88%86%E9%93%83%E5%A3%B0\/id1521392650\n\n提供未测试qx规则\nhostname＝*\n\n#DOP手机铃声 最火爆铃声 解锁会员 A+\nhttps:\/\/dop\\.ring\\.maibaapp\\.com\/ru\/account\/get\/info url script-response-body dopsjls.js\n\nbody = $response.body.replace(\/\"levelCode\":0\/g, '\"levelCode\":1').replace(\/\"expire\":\\d\/g, '\"expire\":1800000000000');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "dop.ring.maibaapp.com",
+      "path" : "\/ru\/account\/get\/info"
+    }
+  ]
+}

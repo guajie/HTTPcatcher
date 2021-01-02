@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "excitationAd\": \"0\"",
+      "matchValue" : "excitationAd\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "微信小程序 老爷花苑 解锁隐藏内容 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.ddly666.top",
+      "path" : "\/wp-json\/wp\/v2\/posts\/*"
+    }
+  ],
+  "description" : "微信里搜索   大大花宛 或 老爷花苑"
+}

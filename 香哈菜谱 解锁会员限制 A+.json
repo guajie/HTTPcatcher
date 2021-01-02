@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "power\":{\"res\":true},\"extra\":",
+      "matchValue" : "power\":.+extra\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "香哈菜谱 解锁会员限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "apiios.xiangha.com",
+      "path" : "\/main8\/dish\/topInfo"
+    }
+  ],
+  "description" : "某某课程 点发布者头像 菜谱\n香哈菜谱-精选食谱 家常菜做法大全 来自 Beijing XiangHa Network Co,.Ltd https:\/\/apps.apple.com\/cn\/app\/%E9%A6%99%E5%93%88%E8%8F%9C%E8%B0%B1-%E7%B2%BE%E9%80%89%E9%A3%9F%E8%B0%B1-%E5%AE%B6%E5%B8%B8%E8%8F%9C%E5%81%9A%E6%B3%95%E5%A4%A7%E5%85%A8\/id1098628542"
+}

@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "pay\":\"1",
+      "matchValue" : "pay\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":\"1",
+      "matchValue" : "vip\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "exp_time\":\"1800000000",
+      "matchValue" : "exp_time\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_time_str\":\"2050-11-11\"",
+      "matchValue" : "vip_time_str\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "timo 附近的人社交APP 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "www.fatecompanion.com",
+      "path" : ""
+    }
+  ],
+  "description" : "timo-附近的人社交APP 来自 XueYing Li https:\/\/apps.apple.com\/cn\/app\/timo-%E9%99%84%E8%BF%91%E7%9A%84%E4%BA%BA%E7%A4%BE%E4%BA%A4app\/id1478544185"
+}

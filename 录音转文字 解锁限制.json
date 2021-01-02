@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":[{\"id\":1000000,\"auth_type\":2,\"auth_value\":1800000000}]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "录音转文字 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/*"
+    }
+  ],
+  "description" : "录音转文字助手-语音转换文字语音备忘录音机 来自 Shanghai Hudun Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%BD%95%E9%9F%B3%E8%BD%AC%E6%96%87%E5%AD%97%E5%8A%A9%E6%89%8B-%E8%AF%AD%E9%9F%B3%E8%BD%AC%E6%8D%A2%E6%96%87%E5%AD%97%E8%AF%AD%E9%9F%B3%E5%A4%87%E5%BF%98%E5%BD%95%E9%9F%B3%E6%9C%BA\/id1437701602"
+}

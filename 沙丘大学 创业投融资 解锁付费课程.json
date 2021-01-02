@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "separateType\":0",
+      "matchValue" : "separateType\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "customerName\" : \"已解锁\"",
+      "matchValue" : "customerName\" : \".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isSee\" : true",
+      "matchValue" : "isSee\"[ ]?:[ ]?false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "沙丘大学 创业投融资 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "sandcollege.bbvod.net",
+      "path" : "\/vc_talk\/api\/course\/*"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "sandcollege.bbvod.net",
+      "path" : "\/vc_talk\/api\/customer\/*\/getCustomerInfo"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "sandcollege.bbvod.net",
+      "path" : "\/vc_talk\/api\/customer\/v2.2\/getCustomerInfo"
+    }
+  ],
+  "description" : "沙丘大学-专注于创业、投融资的线上教育平台 来自 成功多媒体通信有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%B2%99%E4%B8%98%E5%A4%A7%E5%AD%A6-%E4%B8%93%E6%B3%A8%E4%BA%8E%E5%88%9B%E4%B8%9A-%E6%8A%95%E8%9E%8D%E8%B5%84%E7%9A%84%E7%BA%BF%E4%B8%8A%E6%95%99%E8%82%B2%E5%B9%B3%E5%8F%B0\/id1277032938"
+}

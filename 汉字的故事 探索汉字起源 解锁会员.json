@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "membership\":true",
+      "matchValue" : "membership\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "mobilePhoneVerified\":true",
+      "matchValue" : "mobilePhoneVerified\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "unlock\":true",
+      "matchValue" : "unlock\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "汉字的故事 探索汉字起源 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "avoscloud.com",
+      "path" : "\/1.1\/users\/*"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "avoscloud.com",
+      "path" : "\/1.1\/call\/*"
+    }
+  ],
+  "description" : "汉字的故事 - 探索汉字起源 来自 Beijing xichuang culture media co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%B1%89%E5%AD%97%E7%9A%84%E6%95%85%E4%BA%8B-%E6%8E%A2%E7%B4%A2%E6%B1%89%E5%AD%97%E8%B5%B7%E6%BA%90\/id1439752412"
+}

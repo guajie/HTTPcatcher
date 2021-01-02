@@ -1,0 +1,108 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpires\":1800000000",
+      "matchValue" : "vipExpires\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipType\":1",
+      "matchValue" : "vipType\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "autoRenewal\": true",
+      "matchValue" : "autoRenewal\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "packs\":{\"type\":2,\"end\":1800000000,\"period\":111,\"bought_vip\":1,\"bought_vip_end\":1800000000}",
+      "matchValue" : "packs\":\\{.*?\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "limitfree\":1",
+      "matchValue" : "limitfree\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "playright\": 1",
+      "matchValue" : "playright\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "downright\": 1",
+      "matchValue" : "downright\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "policytype\": 1",
+      "matchValue" : "policytype\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "酷我畅听 有声小说相声评书 解锁会员 A+",
+  "description" : "酷我畅听-有声小说相声评书情感电台国漫广播剧 来自 北京闻雨科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E9%85%B7%E6%88%91%E7%95%85%E5%90%AC-%E6%9C%89%E5%A3%B0%E5%B0%8F%E8%AF%B4%E7%9B%B8%E5%A3%B0%E8%AF%84%E4%B9%A6%E6%83%85%E6%84%9F%E7%94%B5%E5%8F%B0%E5%9B%BD%E6%BC%AB%E5%B9%BF%E6%92%AD%E5%89%A7\/id1058259189",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "*",
+      "host" : "tingshu.kuwo.cn",
+      "path" : "\/v2\/api\/user\/info"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "*",
+      "host" : "audiobookpay.kuwo.cn",
+      "path" : "\/a.p"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "audiobookpay.kuwo.cn",
+      "path" : "\/a.p"
+    }
+  ]
+}

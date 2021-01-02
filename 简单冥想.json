@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_forever\":\"true",
+      "matchValue" : "vip_forever\":\"false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"end_at\":\"2022-03-06 16:00:46\"",
+      "matchValue" : "\"end_at\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "简单冥想 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.simplemeditation.cn",
+      "path" : "\/subscription"
+    }
+  ],
+  "description" : "简单冥想－让睡眠和专注自然发生 来自 西安逸之田网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%AE%80%E5%8D%95%E5%86%A5%E6%83%B3-%E8%AE%A9%E7%9D%A1%E7%9C%A0%E5%92%8C%E4%B8%93%E6%B3%A8%E8%87%AA%E7%84%B6%E5%8F%91%E7%94%9F\/id1442032345"
+}

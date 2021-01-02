@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": [{\n      \"id\": 88888880,\n      \"auth_type\": 1,\n      \"auth_value\": 2439271514\n    }]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "文字转语音助手#便捷实用的文字转换 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/memprofile"
+    }
+  ],
+  "description" : "文字转语音助手-便捷实用的文字转换工具 来自 Shanghai Hudun Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%96%87%E5%AD%97%E8%BD%AC%E8%AF%AD%E9%9F%B3%E5%8A%A9%E6%89%8B-%E4%BE%BF%E6%8D%B7%E5%AE%9E%E7%94%A8%E7%9A%84%E6%96%87%E5%AD%97%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7\/id1443972891"
+}

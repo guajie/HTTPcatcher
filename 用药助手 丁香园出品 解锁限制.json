@@ -1,0 +1,199 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expertUser\":true",
+      "matchValue" : "expertUser\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expert\":true",
+      "matchValue" : "expert\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "professional\":true",
+      "matchValue" : "professional\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expertStatus\":1",
+      "matchValue" : "expertStatus\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "taskEndTime\":1999999999",
+      "matchValue" : "taskEndTime\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isProActive\":true",
+      "matchValue" : "isProActive\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireDate\":1999999999",
+      "matchValue" : "expireDate\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "memberDiscount\":true",
+      "matchValue" : "memberDiscount\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "purchase\":true",
+      "matchValue" : "purchase\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "message\":\"null",
+      "matchValue" : "message\":\"\\w+IAP",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "error\":\"null",
+      "matchValue" : "error\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "memberDiscount\":true",
+      "matchValue" : "memberDiscount\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isActive\":true",
+      "matchValue" : "isActive\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "userProDiscountPromptType\":1",
+      "matchValue" : "userProDiscountPromptType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "true",
+      "matchValue" : "false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "remainExpiredDay\":999",
+      "matchValue" : "remainExpiredDay\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "用药助手 丁香园出品 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "*.dxy.cn",
+      "path" : "\/app\/user\/pro\/stat"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "*.dxy.cn",
+      "path" : "\/app\/user\/init"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "*.dxy.cn",
+      "path" : "\/snsapi\/username\/*"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "*.dxy.cn",
+      "path" : "\/app\/user\/*"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "newdrugs.dxy.cn",
+      "path" : "*"
+    }
+  ],
+  "description" : "用药助手 - 不只是权威药物信息参考工具 来自 丁香园 https:\/\/apps.apple.com\/cn\/app\/%E7%94%A8%E8%8D%AF%E5%8A%A9%E6%89%8B-%E4%B8%8D%E5%8F%AA%E6%98%AF%E6%9D%83%E5%A8%81%E8%8D%AF%E7%89%A9%E4%BF%A1%E6%81%AF%E5%8F%82%E8%80%83%E5%B7%A5%E5%85%B7\/id540999305"
+}

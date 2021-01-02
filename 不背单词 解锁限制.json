@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "locked\\\\\":0",
+      "matchValue" : "locked\\\\\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "trial_duration\\\\\":-1",
+      "matchValue" : "trial_duration\\\\\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "purchased\":1",
+      "matchValue" : "purchased\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\\\\\":\\\\\"已解锁\\\\\"",
+      "matchValue" : "nickname\\\\\":\\\\\"\\d+\\\\\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "不背单词 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "121.43.19.216",
+      "path" : "\/v3\/course\/episodes\/*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "learnywhere.cn",
+      "path" : "\/api\/qt\/activity\/*"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "121.43.19.216",
+      "path" : "\/v3\/report\/launch\/*"
+    }
+  ],
+  "description" : "不背单词-真实语境学英语单词 来自 weihua xu https:\/\/apps.apple.com\/cn\/app\/%E4%B8%8D%E8%83%8C%E5%8D%95%E8%AF%8D-%E7%9C%9F%E5%AE%9E%E8%AF%AD%E5%A2%83%E5%AD%A6%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D\/id698570469"
+}

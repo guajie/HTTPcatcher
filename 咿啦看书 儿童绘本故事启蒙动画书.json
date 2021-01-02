@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_svip\":\"YES",
+      "matchValue" : "is_svip\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":\"YES",
+      "matchValue" : "is_vip\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isLbVip\":\"YES",
+      "matchValue" : "isLbVip\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_end_date\":1800000000",
+      "matchValue" : "vip_end_date\":-\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "status\":\"1",
+      "matchValue" : "status\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "咿啦看书 儿童绘本故事启蒙动画书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.ellabook.cn",
+      "path" : "\/rest\/api\/service"
+    }
+  ],
+  "description" : "咿啦看书 - 儿童绘本故事启蒙动画书 来自 diandu https:\/\/apps.apple.com\/cn\/app\/%E5%92%BF%E5%95%A6%E7%9C%8B%E4%B9%A6-%E5%84%BF%E7%AB%A5%E7%BB%98%E6%9C%AC%E6%95%85%E4%BA%8B%E5%90%AF%E8%92%99%E5%8A%A8%E7%94%BB%E4%B9%A6\/id1176775033"
+}

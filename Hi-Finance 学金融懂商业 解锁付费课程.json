@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "istrial\": \"1\"",
+      "matchValue" : "istrial\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\":\"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Hi-Finance 学金融懂商业 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app3.hi-finance.com.cn",
+      "path" : "\/courses\/getcoursedetail"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app3.hi-finance.com.cn",
+      "path" : "\/user\/getmember"
+    }
+  ],
+  "description" : "Hi-Finance 来自 上海孵亚贤泽金融信息服务有限公司 https:\/\/apps.apple.com\/cn\/app\/hi-finance\/id1139999452"
+}

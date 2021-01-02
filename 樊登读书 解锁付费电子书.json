@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "true",
+      "matchValue" : "false",
+      "destiontion" : "response",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : false,
+  "name" : "樊登读书 解锁付费电子书 A+",
+  "description" : "樊登读书-听亲子职场精选好书 来自 Shanghai Soybean Network Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%A8%8A%E7%99%BB%E8%AF%BB%E4%B9%A6-%E5%90%AC%E4%BA%B2%E5%AD%90%E8%81%8C%E5%9C%BA%E7%B2%BE%E9%80%89%E5%A5%BD%E4%B9%A6\/id963152777\n\n提供未测试 qx规则\nhostname ＝ *\n\n#樊登读书解锁电子书\n^https:\\\/\\\/gateway-api\\.dushu\\.io\\\/innovation-orchestration\\\/api\\\/ebook\\\/v100\\\/ebookInfo url script-response-body fdds_ebook.js\n\nbody = $response.body.replace(\/false\/g, \"true\");\n$done({body});",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "gateway-api.dushu.io",
+      "path" : "\/innovation-orchestration\/api\/ebook\/v100\/ebookInfo"
+    }
+  ]
+}

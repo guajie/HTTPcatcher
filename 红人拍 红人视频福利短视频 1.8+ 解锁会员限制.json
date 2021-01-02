@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "newVipLevel\":1,\"newVipDate\":\"2030-05-12 00:00:00\",\"experienceTime\":0,\"firstMonSubTime\":0,\"newVipLife\":0,\"flowSize\":25200,\"leftSize\":24379,\"useSize\":821",
+      "matchValue" : "newVipLevel\":\\d,\"newVipDate\":null,\"experienceTime\":\\d,\"firstMonSubTime\":0,\"newVipLife\":0,\"flowSize\":\\d+,\"leftSize\":\\d+,\"useSize\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "playInfoList2",
+      "matchValue" : "playInfoList",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "playInfoList\":[{\"definition\":\"LD\",\"format\":\"mp4\",\"playURL\":\"$1\"}]",
+      "matchValue" : "trySeeUrl\":\"(.*?)\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "userCode\":\"A+\"",
+      "matchValue" : "userCode\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "红人拍 红人视频福利短视频 1.8+ 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "ws.redpai.cn",
+      "path" : "\/video\/personalInfo"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "ws.redpai.cn",
+      "path" : "\/video\/videoDetail"
+    }
+  ],
+  "description" : "更红人拍 来自 深圳市快点生活科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%BA%A2%E4%BA%BA%E6%8B%8D\/id1423450213"
+}

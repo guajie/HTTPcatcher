@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is-paid\":true",
+      "matchValue" : "is-paid\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Jibjab ai扣出脸部 制作恶搞搞笑视频&GIF 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "origin-prod-phoenix.jibjab.com",
+      "path" : "\/v1\/user"
+    }
+  ],
+  "description" : "JibJab 来自 JibJab Catapult CA LLC https:\/\/apps.apple.com\/cn\/app\/jibjab\/id875561136"
+}

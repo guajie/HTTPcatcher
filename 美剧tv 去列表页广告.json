@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "location\":2,\"url2\":\"\",\"image2\":\"\"",
+      "matchValue" : "location\":\\d,\"url\":\"http.*?\",\"image\":\"http.*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "美剧tv 去列表页广告 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "*.maimengmao.com",
+      "path" : "\/system\/api\/video\/category\/*"
+    }
+  ],
+  "description" : "美剧tv-美剧视频影视大全 来自 Shandong Shichuang Network Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%BE%8E%E5%89%A7tv-%E7%BE%8E%E5%89%A7%E8%A7%86%E9%A2%91%E5%BD%B1%E8%A7%86%E5%A4%A7%E5%85%A8\/id1463378267"
+}

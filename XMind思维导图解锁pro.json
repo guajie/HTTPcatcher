@@ -1,0 +1,24 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "{\"raw_data\": \"DBcBHgojrvPgruIJMfb4KK\/76CmjxSHSp9KipRwOnQUuf+Gt2FncFUzNvxZydUeXEzDZt\/XWEm91lHFYrvT0f2AFap2L4psLI\/34sKU9VLGH7kFsBYlexU\/nifBtosMJqQxL4TU1pjvjl+1uyWsFAeGR42aEnVhQWgvJB5Ovcd0=\", \"license\": {\"status\": \"sub\", \"expireTime\":3070928235000}, \"_code\": 200}",
+		"matchValue": ".+",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": true,
+	"isReadOnly": false,
+	"name": "XMind思维导图解锁订阅 A+",
+	"locations": [{
+		"method": "POST",
+		"scheme": "https",
+		"enabled": true,
+		"port": 443,
+		"query": "",
+		"host": "www.xmind.cn",
+		"path": "\/_res\/devices"
+	}],
+	"description": "A+"
+}

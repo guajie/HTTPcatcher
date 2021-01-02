@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "diamondViptime\":1787122410000",
+      "matchValue" : "diamondViptime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "viplevel\":3",
+      "matchValue" : "viplevel\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "飒漫画-二次元 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "m.samh.xndm.tech",
+      "path" : "\/userapi\/info\/v1\/getuserinfo"
+    }
+  ],
+  "description" : "飒漫画-二次元快看漫画之家 来自 Shenzhen Xiaoniu Animation Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%A3%92%E6%BC%AB%E7%94%BB-%E4%BA%8C%E6%AC%A1%E5%85%83%E5%BF%AB%E7%9C%8B%E6%BC%AB%E7%94%BB%E4%B9%8B%E5%AE%B6\/id1344659342"
+}

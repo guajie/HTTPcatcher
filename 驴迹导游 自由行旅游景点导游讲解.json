@@ -1,0 +1,81 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":\"1\"",
+      "matchValue" : "isVip\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipDays\": \"99\"",
+      "matchValue" : "vipDays\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipEndDate\": \"2011-11-11 00:00:00\"",
+      "matchValue" : "vipEndDate\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "endTime\":\"2011-11-11 00:00:00\"",
+      "matchValue" : "endTime\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isAuth\":1",
+      "matchValue" : "isAuth\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "驴迹导游 自由行旅游景点导游讲解 A+",
+  "description" : "驴迹导游-自由行旅游景点导游讲解 来自 广州市驴迹科技有限责任公司 https:\/\/apps.apple.com\/cn\/app\/%E9%A9%B4%E8%BF%B9%E5%AF%BC%E6%B8%B8-%E8%87%AA%E7%94%B1%E8%A1%8C%E6%97%85%E6%B8%B8%E6%99%AF%E7%82%B9%E5%AF%BC%E6%B8%B8%E8%AE%B2%E8%A7%A3\/id1250338068\n\n提供未测试Qx规则\nhostname＝*\n\n#驴迹导游 解锁限制 A+\nhttps:\/\/bmsapi\\.lvji\\.cn\/user\/rights\/scenic* url script-response-body ljdy.js\n\nbody = $response.body.replace(\/.+\/g, '{\"content\":{\"endTime\":\"2011-11-11 00:00:00\",\"isAuth\":1},\"msg\":\"SUCCESS\",\"status\":\"0\"}');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.365daoyou.cn",
+      "path" : "\/isExperienceVip"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.365daoyou.cn",
+      "path" : "\/my"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "bmsapi.lvji.cn",
+      "path" : "\/user\/rights\/scenic"
+    }
+  ]
+}

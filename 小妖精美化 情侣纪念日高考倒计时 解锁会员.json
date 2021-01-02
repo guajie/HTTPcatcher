@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "data\":{\"type\":1,\"isVip\":true,\"start\":1588174515,\"end\":1800000000,\"subscriptIosVip\":true,\"isVisitor\":true}",
+      "matchValue" : "data\":\\{[^\\}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "小妖精美化 情侣纪念日高考倒计时 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "bbs.maibaapp.com",
+      "path" : "\/panda\/vip\/get\/status\/ios"
+    }
+  ],
+  "description" : "小妖精美化-情侣纪念日高考倒计时 来自 Yi Yin https:\/\/apps.apple.com\/cn\/app\/%E5%B0%8F%E5%A6%96%E7%B2%BE%E7%BE%8E%E5%8C%96-%E6%83%85%E4%BE%A3%E7%BA%AA%E5%BF%B5%E6%97%A5%E9%AB%98%E8%80%83%E5%80%92%E8%AE%A1%E6%97%B6\/id1114551736"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2070-01-01 00:00:00\"",
+      "matchValue" : "vipExpireTime\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "电话录音 来电去电录音 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "micro-tool-api.foundao.com",
+      "path" : "\/orderPayCenterService\/user\/userInfo"
+    }
+  ],
+  "description" : "不用订阅&恢复\n通话录音 - 来电去电录音 来自 Chengdu Tianmaituodao Technology Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%80%9A%E8%AF%9D%E5%BD%95%E9%9F%B3-%E6%9D%A5%E7%94%B5%E5%8E%BB%E7%94%B5%E5%BD%95%E9%9F%B3\/id1502359606"
+}

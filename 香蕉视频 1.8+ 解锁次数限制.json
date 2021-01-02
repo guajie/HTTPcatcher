@@ -1,0 +1,154 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "play_daily_remainders\":111",
+      "matchValue" : "play_daily_remainders\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "down_daily_remainders\":111",
+      "matchValue" : "down_daily_remainders\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "next_upgrade_need\":0",
+      "matchValue" : "next_upgrade_need\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isvip\":1",
+      "matchValue" : "isvip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"gicon\":\"V6",
+      "matchValue" : "\"gicon\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "gid\":\"6",
+      "matchValue" : "gid\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "app_launch_times_adshow:\"0",
+      "matchValue" : "app_launch_times_adshow:\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"adgroups__\"",
+      "matchValue" : "\"adgroups\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"iOS_adgroups__\"",
+      "matchValue" : "\"iOS_adgroups\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "retcode\":0",
+      "matchValue" : "retcode\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"httpurl\":\"http",
+      "matchValue" : "\"httpurl_preview\":\"http",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "errmsg\":\"\"",
+      "matchValue" : "errmsg\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "香蕉视频 解锁次数限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.xiangxiangapps.com",
+      "path" : "\/ucp\/index"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.xiangxiangapps.com",
+      "path" : "\/getGlobalData"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.xiangxiangapps.com",
+      "path" : "\/vod\/reqplay\/*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.xiangxiangapps.com",
+      "path" : "\/\/vod\/reqplay\/*"
+    }
+  ],
+  "description" : "游客不行就登号\n下载地址，http:\/\/VTBO2U.xxjiao645.club?inviteCode=VTBO2U"
+}

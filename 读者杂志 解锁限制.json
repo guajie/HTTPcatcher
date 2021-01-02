@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "price\":\"0",
+      "matchValue" : "price\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isvip\":\"1",
+      "matchValue" : "isvip\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_type\":\"1",
+      "matchValue" : "vip_type\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "读者杂志 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "www.fengread.com",
+      "path" : "\/tuwen\/apktw\/bookv5"
+    },
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "www.fengread.com",
+      "path" : "\/ebookreader\/fyhuserv5\/userinfo"
+    }
+  ],
+  "description" : "《读者》杂志官方版-中国人的心灵读本 来自 ePubChina https:\/\/apps.apple.com\/cn\/app\/%E8%AF%BB%E8%80%85-%E6%9D%82%E5%BF%97%E5%AE%98%E6%96%B9%E7%89%88-%E4%B8%AD%E5%9B%BD%E4%BA%BA%E7%9A%84%E5%BF%83%E7%81%B5%E8%AF%BB%E6%9C%AC\/id462072245"
+}

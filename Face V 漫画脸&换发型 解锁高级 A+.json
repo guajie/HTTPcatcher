@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n \"status\": 0,\n \"environment\": \"Production\",\n \"receipt\": {\n  \"receipt_type\": \"Production\",\n  \"app_item_id\": 1483026666,\n  \"receipt_creation_date\": \"2020-06-27 06:34:50 Etc\/GMT\",\n  \"bundle_id\": \"com.face.video.facev\",\n  \"original_purchase_date\": \"2020-06-27 06:10:38 Etc\/GMT\",\n  \"in_app\": [\n   {\n    \"quantity\": \"1\",\n    \"purchase_date_ms\": \"1593239639000\",\n    \"expires_date\": \"2022-06-30 06:33:59 Etc\/GMT\",\n    \"expires_date_pst\": \"2022-06-29 23:33:59 America\/Los_Angeles\",\n    \"is_in_intro_offer_period\": \"false\",\n    \"transaction_id\": \"340000496466666\",\n    \"is_trial_period\": \"true\",\n    \"original_transaction_id\": \"340000496466666\",\n    \"purchase_date\": \"2020-06-27 06:33:59 Etc\/GMT\",\n    \"product_id\": \"facev.weekly.pro\",\n    \"original_purchase_date_pst\": \"2020-06-26 23:33:59 America\/Los_Angeles\",\n    \"original_purchase_date_ms\": \"1593239639000\",\n    \"web_order_line_item_id\": \"340000190266666\",\n    \"expires_date_ms\": \"1656570839000\",\n    \"purchase_date_pst\": \"2020-06-26 23:33:59 America\/Los_Angeles\",\n    \"original_purchase_date\": \"2020-06-27 06:33:59 Etc\/GMT\"\n   }\n  ],\n  \"adam_id\": 1483026666,\n  \"receipt_creation_date_pst\": \"2020-06-26 23:34:50 America\/Los_Angeles\",\n  \"request_date\": \"2020-06-27 06:34:57 Etc\/GMT\",\n  \"request_date_pst\": \"2020-06-26 23:34:57 America\/Los_Angeles\",\n  \"version_external_identifier\": 836436666,\n  \"request_date_ms\": \"1593239697263\",\n  \"original_purchase_date_pst\": \"2020-06-26 23:10:38 America\/Los_Angeles\",\n  \"application_version\": \"29\",\n  \"original_purchase_date_ms\": \"1593238238000\",\n  \"receipt_creation_date_ms\": \"1593239690000\",\n  \"original_application_version\": \"29\",\n  \"download_id\": 74050830577235\n },\n \"pending_renewal_info\": [\n  {\n   \"product_id\": \"facev.weekly.pro\",\n   \"original_transaction_id\": \"340000496498141\",\n   \"auto_renew_product_id\": \"facev.weekly.pro\",\n   \"auto_renew_status\": \"1\"\n  }\n ],\n \"latest_receipt_info\": [\n  {\n   \"quantity\": \"1\",\n   \"purchase_date_ms\": \"1593239639000\",\n   \"expires_date\": \"2022-06-30 06:33:59 Etc\/GMT\",\n   \"expires_date_pst\": \"2022-06-29 23:33:59 America\/Los_Angeles\",\n   \"is_in_intro_offer_period\": \"false\",\n   \"transaction_id\": \"340000496466666\",\n   \"is_trial_period\": \"true\",\n   \"original_transaction_id\": \"340000496466666\",\n   \"purchase_date\": \"2020-06-27 06:33:59 Etc\/GMT\",\n   \"product_id\": \"facev.weekly.pro\",\n   \"original_purchase_date_pst\": \"2020-06-26 23:33:59 America\/Los_Angeles\",\n   \"subscription_group_identifier\": \"20579996\",\n   \"original_purchase_date_ms\": \"1593239639000\",\n   \"web_order_line_item_id\": \"340000190261327\",\n   \"expires_date_ms\": \"1656570839000\",\n   \"purchase_date_pst\": \"2020-06-26 23:33:59 America\/Los_Angeles\",\n   \"original_purchase_date\": \"2020-06-27 06:33:59 Etc\/GMT\"\n  }\n ]\n}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Face V 漫画脸&换发型 解锁高级 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "buy.itunes.apple.com",
+      "path" : "\/verifyReceipt"
+    }
+  ],
+  "description" : "关闭过滤器后恢复购买 注意规则冲突\nFace V-漫画脸&换发型 来自 Miniscape Technology Limited https:\/\/apps.apple.com\/cn\/app\/face-v-%E6%BC%AB%E7%94%BB%E8%84%B8-%E6%8D%A2%E5%8F%91%E5%9E%8B\/id1483023433"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n \"error\": 0,\n \"data\": {\n  \"is_valid\": true,\n  \"may_expire\": false,\n  \"is_offer_eligible\": true,\n  \"in_app\": {\n   \"com.beHappy.Productive.1y_7dt_sub00031.\": {\n    \"is_valid\": true,\n    \"cancelled\": false,\n    \"may_expire\": true,\n    \"is_trial\": true,\n    \"is_intro\": false,\n    \"transaction_id\": \"20000618719284\",\n    \"cancel_reason\": \"user\",\n    \"purchase_date_ms\": \"1572250822000\",\n    \"expired\": false,\n    \"expires_date_ms\": \"4096862781000\",\n    \"remaining_time_ms\": \"2522880000000\"\n   }\n  },\n  \"consumable_inapp\": [],\n  \"hash\": \"1a14a9df5944c5aa00a02783a8c5d2a4\"\n }\n}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "晚安 睡眠周期跟踪器和智能闹钟 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "subs.platforms.team",
+      "path" : "\/apple\/verifyTransaction"
+    }
+  ],
+  "description" : "晚安 — 睡眠周期跟踪器和智能闹钟 来自 ThrivePort, LLC https:\/\/apps.apple.com\/cn\/app\/%E6%99%9A%E5%AE%89-%E7%9D%A1%E7%9C%A0%E5%91%A8%E6%9C%9F%E8%B7%9F%E8%B8%AA%E5%99%A8%E5%92%8C%E6%99%BA%E8%83%BD%E9%97%B9%E9%92%9F\/id1064910141"
+}

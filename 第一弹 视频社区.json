@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isMember\": true",
+      "matchValue" : "isMember\": false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "第一弹 视频社区 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.diyidan.net",
+      "path" : "\/v0.3\/vip_user\/info"
+    }
+  ],
+  "description" : "第一弹-人人爱看的视频社区 来自 上海斯干网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%AC%AC%E4%B8%80%E5%BC%B9-%E4%BA%BA%E4%BA%BA%E7%88%B1%E7%9C%8B%E7%9A%84%E8%A7%86%E9%A2%91%E7%A4%BE%E5%8C%BA\/id983337376"
+}

@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "cardEndTime\": \"2111-11-11 01:11:11\"",
+      "matchValue" : "cardEndTime\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "days\":100",
+      "matchValue" : "days\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "学干货 解锁限制 A+",
+  "description" : "学干货 来自 Hefei Yirenhui E-commerce Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%AD%A6%E5%B9%B2%E8%B4%A7\/id1489444530",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "*",
+      "host" : "api.xueganhuo.net",
+      "path" : "\/app\/member\/getMemberInfo"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "itemNumber\":1",
+      "matchValue" : "itemNumber\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "chargeType\":1",
+      "matchValue" : "chargeType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "price\":0",
+      "matchValue" : "price\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickName\":\"已解锁\"",
+      "matchValue" : "nickName\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "memberPrice\":0",
+      "matchValue" : "memberPrice\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "mediaType\":1",
+      "matchValue" : "mediaType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":0",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "造就 让知识触手可及 看描述! 解锁会员付费 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "m.zaojiu.com",
+      "path" : "\/api*"
+    }
+  ],
+  "description" : "造就 让知识触手可及 来自 上海行书信息科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E9%80%A0%E5%B0%B1\/id1190044215\n\n球抓不到地址请用Qx规则\n\/*\n#造就 解锁付费VIP付费课程 A+\nhttps:\\\/\\\/m.zaojiu.com\\\/api\\\/.+ url script-response-body zj.js\n*\/\nbody = $response.body.replace(\/itemNumber\\\":\\d\/g, 'itemNumber\" : 1').\n\nreplace(\/chargeType\\\":\\d\/g, 'chargeType\" : 1').\n\n\nreplace(\/isVip\\\":\\d\/g, 'isVip\" : 0').\n\nreplace(\/mediaType\\\":\\d\/g, 'mediaType\" : 1').\n\nreplace(\/memberPrice\\\":\\d+\/g, 'memberPrice\":0').\n\n\nreplace(\/nickName\\\":\\\".*?\\\"\/g, 'nickName\" : \"已解锁\"').\n\nreplace(\/price\\\":\\d+\/g, 'price\" : 0');\n$done({body});\n"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_end\":\"2050\\\/11\\\/11\"",
+      "matchValue" : "vip_end\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "荐片播放器 专治迅雷被封链接 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api2.rinhome.com",
+      "path" : "\/*api\/vUser*"
+    }
+  ],
+  "description" : "下载地址，https:\/\/jianpian.com\/"
+}

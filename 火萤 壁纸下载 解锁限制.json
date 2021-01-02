@@ -1,0 +1,91 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_ads\":\"0\"",
+      "matchValue" : "is_ads\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "{\"is_ads\":\"\\d\",\"ads_type\":\"\\d\",\"union_type\":\"\\d+\",\"ads_id\":\"\\d+\",\"url\":\".*?\",\"title\":\".*?\",\"is_click\":\"\\d\",\"open_type\":\"\\w+\",\"pic_path\":\".*?\",\"ads_flag\":\".*?\",\"display_style\":\"\\d\"},",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "username\":\"已解锁\",\"attention",
+      "matchValue" : "username\":\".*?\",\"attention",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "火萤 壁纸下载 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.hyhuo.com",
+      "path" : "\/image\/download"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.hyhuo.com",
+      "path" : "\/extra\/ads"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.hyhuo.com",
+      "path" : "\/home\/img_recommend"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.hyhuo.com",
+      "path" : "\/home\/list"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.hyhuo.com",
+      "path" : "\/find\/index"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "v1.hyhuo.com",
+      "path" : "\/user\/info"
+    }
+  ],
+  "description" : "火萤 - 壁纸铃声の原创社区 来自 北京优友动量网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%81%AB%E8%90%A4-%E5%A3%81%E7%BA%B8%E9%93%83%E5%A3%B0%E3%81%AE%E5%8E%9F%E5%88%9B%E7%A4%BE%E5%8C%BA\/id1219137338"
+}

@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "modify-query",
+      "matchField" : "uid",
+      "field" : "",
+      "value" : "900001",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : true,
+  "name" : "火龙果 优选小视频 1.8 解锁限制  A+",
+  "description" : "下载地址 https:\/\/xc3.app\/index.html?package=va_100&shareCode=w8cqwa\n\n随时失效 2020年12月21日",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "*.tr102.com",
+      "path" : "\/api\/user\/refresh"
+    }
+  ]
+}

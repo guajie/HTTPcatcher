@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "User\":\"2\"",
+      "matchValue" : "User\":\"\\d+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Expire\":\"2345678900000\"",
+      "matchValue" : "Expire\":\"(.*?)\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "modify-query",
+      "matchField" : "uid",
+      "field" : "",
+      "value" : "1",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "酷我音乐 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/vip\/v2\/user\/vip"
+    },
+    {
+      "method" : "",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "",
+      "path" : "\/music.pay"
+    }
+  ],
+  "description" : "酷我音乐-好音质用酷我 来自 Kuwo Tianjin Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90-%E5%A5%BD%E9%9F%B3%E8%B4%A8%E7%94%A8%E9%85%B7%E6%88%91\/id588673713"
+}

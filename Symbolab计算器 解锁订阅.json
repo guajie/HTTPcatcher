@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"valid\":true,\"hasUserConsumedAppleFreeTrial\":true,\"newlyAssociated\":true}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Symbolab计算器 解锁订阅 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "scibug.com",
+      "path" : "\/appleSubscriptionValidate"
+    }
+  ],
+  "description" : "Symbolab计算器 来自 Symbolab https:\/\/apps.apple.com\/cn\/app\/symbolab%E8%AE%A1%E7%AE%97%E5%99%A8\/id876942533"
+}

@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : " \"expire_time\": \"1800000000\"",
+      "matchValue" : "\"expire_time\":\"\\d+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : " \"is_vip\":true",
+      "matchValue" : "\"is_vip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "left_time\": \"1800000000\"",
+      "matchValue" : "left_time\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "番茄畅听 海量小说全场畅听 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.snssdk.com",
+      "path" : "\/novelfm\/userapi\/user_info\/v:version\/"
+    }
+  ],
+  "description" : "番茄畅听-海量小说全场畅听 来自 Beijing Zhending Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%95%AA%E8%8C%84%E7%95%85%E5%90%AC-%E6%B5%B7%E9%87%8F%E5%B0%8F%E8%AF%B4%E5%85%A8%E5%9C%BA%E7%95%85%E5%90%AC\/id1508443800"
+}

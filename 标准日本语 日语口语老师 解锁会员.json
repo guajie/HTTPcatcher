@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipStatus\":\"1",
+      "matchValue" : "vipStatus\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\":1800000000",
+      "matchValue" : "expireTime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "cost\":0",
+      "matchValue" : "cost\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "标准日本语 日语口语老师 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.iyuba.com.cn",
+      "path" : "\/v2\/api.iyuba"
+    },
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "class.iyuba.cn",
+      "path" : "\/getClass.iyuba"
+    }
+  ],
+  "description" : "标准日本语-会打分的日语口语老师 来自 ShangHai AiLanguage Technology Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%A0%87%E5%87%86%E6%97%A5%E6%9C%AC%E8%AF%AD-%E4%BC%9A%E6%89%93%E5%88%86%E7%9A%84%E6%97%A5%E8%AF%AD%E5%8F%A3%E8%AF%AD%E8%80%81%E5%B8%88\/id1467939996"
+}

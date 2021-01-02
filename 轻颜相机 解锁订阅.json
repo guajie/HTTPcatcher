@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "flag\":true",
+      "matchValue" : "flag\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "start_time\":1587654321",
+      "matchValue" : "start_time\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "end_time\":1975566110",
+      "matchValue" : "end_time\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_cancel_subscribe\":true",
+      "matchValue" : "is_cancel_subscribe\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "轻颜相机 解锁订阅 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "commerce-api.faceu.mobi",
+      "path" : "\/commerce\/v1\/subscription\/user_info"
+    }
+  ],
+  "description" : "立即订阅，取消\n轻颜相机-风格自拍新潮流 来自 深圳市脸萌科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%BD%BB%E9%A2%9C%E7%9B%B8%E6%9C%BA-%E9%A3%8E%E6%A0%BC%E8%87%AA%E6%8B%8D%E6%96%B0%E6%BD%AE%E6%B5%81\/id1375390276"
+}

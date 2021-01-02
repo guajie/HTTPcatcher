@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":0",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "小世界语音 无限刷礼物 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "xiaoshijie.weezhi.cn",
+      "path" : "\/api\/gift\/batchGivingGift"
+    }
+  ],
+  "description" : "小世界语音 来自 江苏千道街网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%B0%8F%E4%B8%96%E7%95%8C%E8%AF%AD%E9%9F%B3\/id1494561245\n\n网球使用中失效请使用Qx规则\n\/*\n#小世界语音 解锁无限刷礼物 A+\n^https:\\\/\\\/xiaoshijie\\.weezhi\\.cn\\\/api\\\/gift\\\/batchGivingGift url script-response-body xsjyy.js\n\nHost\nxiaoshijie.weezhi.cn\n*\/\nbody = $response.body.replace(\/code\":\\d+\/g, 'code\":0');\n$done({body});"
+}

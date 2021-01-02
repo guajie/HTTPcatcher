@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": [{\n      \"id\": 88888880,\n      \"auth_type\": 1,\n      \"auth_value\": 2439271514\n    }]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "PDF转换器#PDF转Word文档 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/virtualactregister"
+    }
+  ],
+  "description" : "迅捷PDF转换器-PDF转Word文档手机版 来自 Shanghai Hudun Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%BF%85%E6%8D%B7pdf%E8%BD%AC%E6%8D%A2%E5%99%A8-pdf%E8%BD%ACword%E6%96%87%E6%A1%A3%E6%89%8B%E6%9C%BA%E7%89%88\/id1424760349"
+}

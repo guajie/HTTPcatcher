@@ -1,0 +1,217 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": \"0\"",
+      "matchValue" : "is_vip\": \"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_level\":\"3\"",
+      "matchValue" : "vip_level\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\":\"1800000000",
+      "matchValue" : "expireTime\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "end_time\":\"1800000000\"",
+      "matchValue" : "end_time\":\"\\d+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":\"1",
+      "matchValue" : "is_vip\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "sub_title_ext\": \"2027年到期\"",
+      "matchValue" : "sub_title_ext\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "membership_status\": \"2\"",
+      "matchValue" : "membership_status\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_end_time\":1800000000",
+      "matchValue" : "vip_end_time\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "desc\":\"2027-07-13到期\",\"user_status\":\"1\"",
+      "matchValue" : "desc\":\".*?\",\"user_status\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_buy\":\"1",
+      "matchValue" : "is_buy\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip_price\": \"1",
+      "matchValue" : "is_vip_price\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_shidu\":\"1\"",
+      "matchValue" : "is_shidu\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_365vip\":1",
+      "matchValue" : "is_365vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"audition_end_toast_v22\":{",
+      "matchValue" : "\"audition_end_toast_v2\":{",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "read_status\": 1",
+      "matchValue" : "read_status\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_price\": \"9999999\"",
+      "matchValue" : "vip_price\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "price\": \"0.00\"",
+      "matchValue" : "price\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"top_mask\": \"card_label_free\",\"action_log\": {",
+      "matchValue" : "\"action_log\":{",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "user_type\": \"1\"",
+      "matchValue" : "user_type\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_pay\": \"1\"",
+      "matchValue" : "is_pay\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "title\":\"已开通\",\"membership_icon",
+      "matchValue" : "title\":\".*?\",\"membership_icon",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "有书 听书学知识 解锁会员 A+ p1",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "gongdu.youshu.cc",
+      "path" : "*"
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "sc.youshu.cc",
+      "path" : "*"
+    }
+  ],
+  "description" : "不行就清理缓存 付费有声书和付费电子书可以自己解锁\n使用有书-听书学知识 来自 OneWay https:\/\/apps.apple.com\/cn\/app\/%E6%9C%89%E4%B9%A6-%E5%90%AC%E4%B9%A6%E5%AD%A6%E7%9F%A5%E8%AF%86\/id1076892178"
+}

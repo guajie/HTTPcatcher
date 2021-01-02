@@ -1,0 +1,24 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "app=com.chengdu.mahuayingshi&data=aEVPNkRrbXRTVHFPalZoMXVueEE0RTRVNmlqeEFCL2Y1TExlRFZnSTlaK2tFU2k1RXloNkVTdVNQMlkzUXZ6bDBJazhEZzFrRmdpTlRrQUlhM09MNERLNG00SDBSSlJFbXdZRy9pMXJSRm1hdEhqeWdoT0J6NlJwNEplOUlIcDBEQ2U5TE1RSkx2VEs1WW1YUWlaeVR1QjAvYkJZYnV2c0lhVmhReW9hT3ViZDNyckg1bDhIT0c5cGxTeWI5WFBhbkFwVzM0YzN0QWhqU2pyc1VIeXBEZz09&deviceid=407AEE73-780F-48E8-BBBF-EE1229983BF8&devicetype=0&s=03bde983d497a8f3179e238542739bfc&v=1.1.8",
+		"matchValue": ".+",
+		"destiontion": "request",
+		"isRegex": true
+	}],
+	"enabled": true,
+	"isReadOnly": false,
+	"name": "花椒视频卡永久vip A+",
+	"locations": [{
+		"method": "POST",
+		"scheme": "http",
+		"enabled": true,
+		"port": 80,
+		"query": "",
+		"host": "user.shywck.com",
+		"path": "\/user\/login"
+	}],
+	"description": "A+ \n随便账密登入后不需开网球\n下载地址，http:\/\/t.cn\/A6ZOW1ho"
+}

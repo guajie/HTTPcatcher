@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "status\": \"play\"",
+      "matchValue" : "status\":\"direct_pay\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nick\": \"已解锁\"",
+      "matchValue" : "nick\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "status\": \"preview\"",
+      "matchValue" : "status\":\"unactivated\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "submit_comment\": true",
+      "matchValue" : "submit_comment\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "tag_list2\":",
+      "matchValue" : "tag_list\":",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "新世相读书会 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.thefair.net.cn",
+      "path" : "\/v1\/item\/get_item_detail"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.thefair.net.cn",
+      "path" : "\/v1\/user\/chicken_user_info"
+    }
+  ],
+  "description" : "有些不行\n新世相读书会 来自 Beijing Shixiang Technology Culture Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%96%B0%E4%B8%96%E7%9B%B8%E8%AF%BB%E4%B9%A6%E4%BC%9A\/id1265071680"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : ":0",
+      "matchValue" : ":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "图片编辑 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "huamao.dicallapp.com",
+      "path" : "\/PEGetMeCount.ashx"
+    }
+  ],
+  "description" : "图片编辑－最美照片编辑处理软件 来自 Huiwen Education Consulting Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%9B%BE%E7%89%87%E7%BC%96%E8%BE%91-%E6%9C%80%E7%BE%8E%E7%85%A7%E7%89%87%E7%BC%96%E8%BE%91%E5%A4%84%E7%90%86%E8%BD%AF%E4%BB%B6\/id1512560475"
+}

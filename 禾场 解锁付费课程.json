@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isPublic\": \"yes\"",
+      "matchValue" : "isPublic\":\"no\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "UserName\":\"已解锁\"",
+      "matchValue" : "UserName\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "禾场 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.myhechang.cn",
+      "path" : "\/interface\/*\/groupDetailInfo"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.myhechang.cn",
+      "path" : "\/interface\/*\/groupMeats"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.myhechang.cn",
+      "path" : "\/interface\/*\/profileInfo"
+    }
+  ],
+  "description" : "禾场 来自 Seewoods Tech Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%A6%BE%E5%9C%BA\/id1179623366"
+}

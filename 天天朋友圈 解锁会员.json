@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_expire\":\"1800000000\"",
+      "matchValue" : "vip_expire\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": 1",
+      "matchValue" : "is_vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "天天朋友圈 解锁会员 A+",
+  "description" : "天天朋友圈 来自 Guangzhou YouQu Technology Co., Limited https:\/\/apps.apple.com\/cn\/app\/%E5%A4%A9%E5%A4%A9%E6%9C%8B%E5%8F%8B%E5%9C%88\/id1413592422\n\n提供未测试qx规则\nhostname＝*\n\n#天天朋友圈 解锁会员 A+\nhttp:\/\/new\\.360pyq\\.com\/Main\/Member\/.+  url script-response-body ttpyq.js\n\nbody = $response.body.replace(\/vip_expire\":\"0\"\/g, 'vip_expire\":\"1800000000\"').replace(\/is_vip\":0\/g, 'is_vip\":1');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "new.360pyq.com",
+      "path" : "\/Main\/Member\/*"
+    }
+  ]
+}

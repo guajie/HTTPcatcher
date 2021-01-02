@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vipState\":{\"startTime\":1585941234,\"state\":1,\"forever\":true,\"expireTime\":1800000000}",
+      "matchValue" : "\"vipState\":\\{[^}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "豌豆清单-日程计划待办备忘录  A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.40sishi.com",
+      "path" : "\/list\/user\/profile"
+    }
+  ],
+  "description" : "点订阅，取消\n豌豆清单-日程计划待办备忘录 来自 Dongxue Hao https:\/\/apps.apple.com\/cn\/app\/%E8%B1%8C%E8%B1%86%E6%B8%85%E5%8D%95-%E6%97%A5%E7%A8%8B%E8%AE%A1%E5%88%92%E5%BE%85%E5%8A%9E%E5%A4%87%E5%BF%98%E5%BD%95\/id1477839383"
+}

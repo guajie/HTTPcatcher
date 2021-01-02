@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "endtime\":1800000000",
+      "matchValue" : "endtime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "萌宝儿歌大全 好听好看的儿歌大全 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "mbuser.ergedd.com",
+      "path" : "\/api\/user\/*"
+    }
+  ],
+  "description" : "需登录账号\n萌宝儿歌大全-好听好看的儿歌大全 来自 北京萌宝科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%90%8C%E5%AE%9D%E5%84%BF%E6%AD%8C%E5%A4%A7%E5%85%A8-%E5%A5%BD%E5%90%AC%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%84%BF%E6%AD%8C%E5%A4%A7%E5%85%A8\/id962205473\n\n\n附Qx规则\n\/\/萌宝儿歌大全 A+\nhttp:\\\/\\\/mbuser.ergedd.com\\\/api\\\/user\\\/* url script-response-body mbegdq.js\n\n\n\/\/mbegdq.js↓\nlet a = JSON.parse($response.body);\na.data.is_vip = 1;\na.data.is_svip = 1;\na.data.vip_endtime = 1800000000\na.data.svip_endtime = 1800000000\n\n$done({body: JSON.stringify(a)});"
+}

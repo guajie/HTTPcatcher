@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipType\": 1",
+      "matchValue" : "vipType\":0",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipValidDate\":1800000000000",
+      "matchValue" : "vipValidDate\":null",
+      "destiontion" : "response",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : true,
+  "name" : "桃子视频 1.8 解锁会员 A+",
+  "description" : "下载地址 http:\/\/69t.co?code=FCLCICI\n\n域名随时更换如有变动自行修改\n\n随时失效 2020年12月21日\n\n提供未测试qx规则\n\n#桃子视频\n^http:\\\/\\\/api\\.06f158e\\.xyz\\\/fast-cloud\\\/user\\\/info url script-response-body tzsp.js\n\nbody = $response.body.replace(\/vipType\":0\/g, 'vipType\":1').replace(\/vipValidDate\":null\/g, 'vipValidDate\":1800000000000');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.06f158e.xyz",
+      "path" : "\/fast-cloud\/user\/info"
+    }
+  ]
+}

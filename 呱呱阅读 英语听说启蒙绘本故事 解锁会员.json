@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":true",
+      "matchValue" : "vip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "呱呱阅读 英语听说启蒙绘本故事 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "ggr.jiliguala.com",
+      "path" : "\/api\/vip"
+    }
+  ],
+  "description" : "呱呱阅读-英语听说启蒙绘本故事 来自 Cheng Cheng Internet Technology Shanghai Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%91%B1%E5%91%B1%E9%98%85%E8%AF%BB-%E8%8B%B1%E8%AF%AD%E5%90%AC%E8%AF%B4%E5%90%AF%E8%92%99%E7%BB%98%E6%9C%AC%E6%95%85%E4%BA%8B\/id1487597184"
+}

@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "premium\": false",
+      "matchValue" : "premium\":true",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isLockedToUser\": false",
+      "matchValue" : "isLockedToUser\":true",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "name\":\"已解锁\",\"avata",
+      "matchValue" : "name\":\".*?\",\"avata",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "ShowMuse秀妙 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.showmuse.so",
+      "path" : "\/v2\/courses\/*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.showmuse.so",
+      "path" : "\/v2\/lessons\/*"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.showmuse.so",
+      "path" : "\/v2\/user\/sync"
+    }
+  ],
+  "description" : "ShowMuse秀妙 来自 ShowMuse https:\/\/apps.apple.com\/cn\/app\/showmuse%E7%A7%80%E5%A6%99\/id1013698709"
+}

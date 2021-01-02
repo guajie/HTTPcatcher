@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": 1",
+      "matchValue" : "is_vip\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "右翻 成人约爱神器 解锁会员附近人 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "youfan.taowoapp.com",
+      "path" : "\/api\/user\/"
+    }
+  ],
+  "description" : "右翻-成人约爱神器 来自 Wuhan Wuhui Network Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%8F%B3%E7%BF%BB-%E6%88%90%E4%BA%BA%E7%BA%A6%E7%88%B1%E7%A5%9E%E5%99%A8\/id1490517007"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isPreview\":2",
+      "matchValue" : "isPreview\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "栗子摄影 学习单反摄影必备 解锁付费 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "getlz.com",
+      "path" : "\/api\/course\/findListByClassifyId"
+    }
+  ],
+  "description" : "栗子摄影-学习单反摄影必备，拍摄入门教程 来自 Guangzhou Gao Zhi Image Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%A0%97%E5%AD%90%E6%91%84%E5%BD%B1-%E5%AD%A6%E4%B9%A0%E5%8D%95%E5%8F%8D%E6%91%84%E5%BD%B1%E5%BF%85%E5%A4%87-%E6%8B%8D%E6%91%84%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B\/id1402455405"
+}

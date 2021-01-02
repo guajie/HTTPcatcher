@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expired_at\":1800000000",
+      "matchValue" : "expired_at\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_role\":1",
+      "matchValue" : "vip_role\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "cvip_type\":1",
+      "matchValue" : "cvip_type\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "笔神 智能写作助手 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bishen.ink",
+      "path" : "\/api\/user-info"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bishen.ink",
+      "path" : "\/api\/auth-refresh"
+    }
+  ],
+  "description" : "笔神 来自 One Pen Sci-tech Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%AC%94%E7%A5%9E\/id1398149606"
+}

@@ -1,0 +1,54 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_day\":100",
+      "matchValue" : "vip_day\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": 1",
+      "matchValue" : "is_vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_type\": \"会员\"",
+      "matchValue" : "vip_type\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_expire\":\"2030-12-22 11:03:47\"",
+      "matchValue" : "vip_expire\":null",
+      "destiontion" : "response",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : true,
+  "name" : "新知卫星地图-3D地图 解锁限制 A+",
+  "description" : "新知卫星地图-3D地图,海拔查询 来自 安建 胡 https:\/\/apps.apple.com\/cn\/app\/%E6%96%B0%E7%9F%A5%E5%8D%AB%E6%98%9F%E5%9C%B0%E5%9B%BE-3d%E5%9C%B0%E5%9B%BE-%E6%B5%B7%E6%8B%94%E6%9F%A5%E8%AF%A2\/id1526845210",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "a.xinzhi.space",
+      "path" : "\/api\/User\/getUserByToken"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "hasVideo\":1",
+      "matchValue" : "hasVideo\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "testitemsBuyStatus\":1",
+      "matchValue" : "testitemsBuyStatus\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "unlock\":true",
+      "matchValue" : "unlock\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "videoUnlock\":true",
+      "matchValue" : "videoUnlock\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isBuyVideo\": true",
+      "matchValue" : "isBuyVideo\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isUnlock\": true",
+      "matchValue" : "isUnlock\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "<title><\/title><script src='http:\/\/bkt.jeagine.com\/views\/js\/app_html_show_img.js'><\/script><\/head><body>A+<\/body>",
+      "matchValue" : "<title>温馨提示.+<\\\/body>",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "小西考研 考研英语真押题学习帮手 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "bkt.jeagine.com",
+      "path" : "\/api\/package\/package_detail_study_plan"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "bkt.jeagine.com",
+      "path" : "\/api\/testitems\/index1"
+    }
+  ],
+  "description" : "使用方法\"点击课程目录\n小西考研-考研英语真押题学习帮手 来自 广州寄锦教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%B0%8F%E8%A5%BF%E8%80%83%E7%A0%94-%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E7%9C%9F%E6%8A%BC%E9%A2%98%E5%AD%A6%E4%B9%A0%E5%B8%AE%E6%89%8B\/id1250279160"
+}

@@ -1,0 +1,109 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "hasVideo\":1",
+      "matchValue" : "hasVideo\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "testitemsBuyStatus\":1",
+      "matchValue" : "testitemsBuyStatus\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "unlock\":true",
+      "matchValue" : "unlock\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "videoUnlock\":true",
+      "matchValue" : "videoUnlock\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isBuyVideo\": true",
+      "matchValue" : "isBuyVideo\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isUnlock\": true",
+      "matchValue" : "isUnlock\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "<title><\/title><script src='http:\/\/bkt.jeagine.com\/views\/js\/app_html_show_img.js'><\/script><\/head><body>A+<\/body>",
+      "matchValue" : "<title>温馨提示.+<\\\/body>",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nick_name\":\"已解锁\"",
+      "matchValue" : "nick_name\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "考霸联盟 教师药师医师资格证书 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "bkt.jeagine.com",
+      "path" : "\/api\/package\/package_detail_study_plan"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "bkt.jeagine.com",
+      "path" : "\/api\/testitems\/index1"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "bkt.jeagine.com",
+      "path" : "\/api\/user\/user_center"
+    }
+  ],
+  "description" : "使用方法\"点击课程目录\n考霸联盟-教师药师医师资格证书 来自 广州寄锦教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%80%83%E9%9C%B8%E8%81%94%E7%9B%9F-%E6%95%99%E5%B8%88%E8%8D%AF%E5%B8%88%E5%8C%BB%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81%E4%B9%A6\/id1132504466"
+}

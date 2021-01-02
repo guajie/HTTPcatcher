@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "HYVIP>1<\\\/HYVIP><VIPdate>2030\\\/7\\\/15<\\\/VIPdate>",
+      "matchValue" : "HYVIP>\\d<\\\/HYVIP><VIPdate>.*?<\\\/VIPdate>",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "DJ音乐盒 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "Hyname=*",
+      "host" : "ios-apk-asp.jyw8.com",
+      "path" : "\/Logon.asp"
+    }
+  ],
+  "description" : "用户管理中心下拉刷新\nDJ音乐盒 - 最劲爆最好听的音乐 来自 xiu hong zhang https:\/\/apps.apple.com\/cn\/app\/dj%E9%9F%B3%E4%B9%90%E7%9B%92-%E6%9C%80%E5%8A%B2%E7%88%86%E6%9C%80%E5%A5%BD%E5%90%AC%E7%9A%84%E9%9F%B3%E4%B9%90\/id667427645"
+}

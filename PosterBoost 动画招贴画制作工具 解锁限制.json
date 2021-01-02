@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "markers\":{\"proid\":\"5000000000\",\"canuse\":\"Yes\",\"authorization\":1,\"endTime\":1800000000,\"newUser\": false,\"onTrial\":0,\"probationership\": false, \"needReceipt\": false, \"paid\": true, \"in_app\":[{\"quantity\":\"1\",\"purchase_date_ms\":\"1589092400000\",\"expires_date\":\"2050-11-11 06:33:20 Etc\\\/GMT\",\"expires_date_pst\":\"2050-11-11 23:33:20 America\\\/Los_Angeles\",\"is_in_intro_offer_period\": false,\"transaction_id\":\"50000000000000\"]}",
+      "matchValue" : "markers\":\\{[^}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isPremium\": false",
+      "matchValue" : "isPremium\":\\s\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "PosterBoost 动画招贴画制作工具 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "assets.posterboostapp.com",
+      "path" : "\/v1\/*"
+    }
+  ],
+  "description" : "PosterBoost:Poster Maker 来自 Lightricks Ltd. https:\/\/apps.apple.com\/cn\/app\/posterboost-poster-maker\/id1468085151"
+}

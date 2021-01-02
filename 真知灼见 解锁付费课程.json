@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "checkbuy\":\"true\"",
+      "matchValue" : "checkbuy\":\"false\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "真知灼见 解锁付费课程 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "javaapi.wezhenzhi.com",
+      "path" : "\/appMemberType\/getMemberTypeByUid"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.wezhenzhi.com",
+      "path" : "\/api\/v2\/djtGetClassInfoByCourseId"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "sharer.wezhenzhi.com",
+      "path" : "\/node\/api\/v1\/getReadingClassInfoById\/*"
+    }
+  ],
+  "description" : "真知灼见 来自 石家庄路飞文化传播有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%9C%9F%E7%9F%A5%E7%81%BC%E8%A7%81\/id1403627629"
+}

@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"expire\":1800000000000",
+      "matchValue" : "\"expire\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"expire\":1800000000000",
+      "matchValue" : "\"expire\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "type\":\"vip",
+      "matchValue" : "type\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Airspeed VPN 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.express-api.com",
+      "path" : "\/v1\/device"
+    }
+  ],
+  "description" : "需非国区下载\nAirspeed VPN by Excess Inc https:\/\/apps.apple.com\/us\/app\/airspeed-vpn\/id1510289941"
+}

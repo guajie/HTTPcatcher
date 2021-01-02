@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "ticketEndDay\":1800000000000",
+      "matchValue" : "ticketEndDay\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "endDay\":1800000000000",
+      "matchValue" : "endDay\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "audioCount\":34",
+      "matchValue" : "audioCount\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "每天读点故事 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "apipc01.gsp1.cn",
+      "path" : "*"
+    }
+  ],
+  "description" : "播放不了解决方法,右下角列表切换其他后切回即可\n每天读点故事 来自 Beijing H&T Network Technology Co.,Ltd (北京海客瀛洲网络科技有限公司) https:\/\/apps.apple.com\/cn\/app\/%E6%AF%8F%E5%A4%A9%E8%AF%BB%E7%82%B9%E6%95%85%E4%BA%8B\/id1015772660"
+}

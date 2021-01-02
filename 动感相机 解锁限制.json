@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "free\":\"1\"",
+      "matchValue" : "free\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "动感相机 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.wecut.com",
+      "path" : "*"
+    }
+  ],
+  "description" : "动感相机 来自 Shicong Zhou https:\/\/apps.apple.com\/cn\/app\/%E5%8A%A8%E6%84%9F%E7%9B%B8%E6%9C%BA\/id1346510165"
+}

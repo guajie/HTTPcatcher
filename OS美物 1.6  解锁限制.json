@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "money\":\"99",
+      "matchValue" : "money\":\"0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "OS美物 1.6+ 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "rosi.jinyemimi.com",
+      "path" : "\/api_beta1_3\/api.php"
+    }
+  ],
+  "description" : "OS美物 来自 家雄 刘 https:\/\/apps.apple.com\/cn\/app\/os%E7%BE%8E%E7%89%A9\/id1481343892"
+}

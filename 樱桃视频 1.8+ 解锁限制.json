@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "userLevel\":8",
+      "matchValue" : "userLevel\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipEndTime\":\"1800000000\"",
+      "matchValue" : "vipEndTime\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipType\":1",
+      "matchValue" : "vipType\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "path",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isAd\":false",
+      "matchValue" : "isAd\":\\w+",
+      "destiontion" : "request",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "樱桃视频 1.8+ 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "abc.gan111.cc",
+      "path" : "\/videosite\/*"
+    }
+  ],
+  "description" : "下载地址，https:\/\/www-xa888.app?code=81f938370c38fd2342669aefb35966ed"
+}

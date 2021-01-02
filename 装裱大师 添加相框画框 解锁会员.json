@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "viptime\":\"1800000000",
+      "matchValue" : "viptime\":\"(\\d+)?",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "desc\":\"SUCCESS",
+      "matchValue" : "desc\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "error\":0",
+      "matchValue" : "error\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expiretime\":\"1800000000",
+      "matchValue" : "expiretime\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "装裱大师 添加相框画框 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 7070,
+      "query" : "",
+      "host" : "140.143.148.31",
+      "path" : "\/api\/v1\/user\/info"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 7070,
+      "query" : "",
+      "host" : "140.143.148.31",
+      "path" : "\/api\/v1\/vip\/buy"
+    }
+  ],
+  "description" : "装裱大师 - 为图片添加相框画框的编辑工具 VOUN 来自 Hangzhou Anhao Technology Co.,Ltd https:\/\/apps.apple.com\/cn\/app\/%E8%A3%85%E8%A3%B1%E5%A4%A7%E5%B8%88-%E4%B8%BA%E5%9B%BE%E7%89%87%E6%B7%BB%E5%8A%A0%E7%9B%B8%E6%A1%86%E7%94%BB%E6%A1%86%E7%9A%84%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7-voun\/id1345658257"
+}

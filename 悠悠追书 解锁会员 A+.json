@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1,\"isVip\":1,\"accountInfo\":{\"tickets\":[],\"balance\":0},\"msginfo\":{\"userid\":null,\"totalNum\":0,\"lastTime\":null},\"vipexpired\":1800000000",
+      "matchValue" : "vip\":0,\"isVip\":0,\"accountInfo\":{\"tickets\":[],\"balance\":0},\"msginfo\":{\"userid\":null,\"totalNum\":0,\"lastTime\":null},\"vipexpired\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "cmdType\":\"QuerySdkAdSettingsRequest",
+      "field" : "",
+      "value" : "cmdType\":\"QuerySdkAdSettingsRequest2",
+      "matchValue" : "cmdType\":\"QuerySdkAdSettingsRequest",
+      "destiontion" : "request",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "悠悠追书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "book.mediaway.cn",
+      "path" : "\/bookweb\/client\/api"
+    }
+  ],
+  "description" : "悠悠追书：小说阅读器-百万热门小说大全 来自 深圳市微媒有道信息技术有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%82%A0%E6%82%A0%E8%BF%BD%E4%B9%A6-%E5%B0%8F%E8%AF%B4%E9%98%85%E8%AF%BB%E5%99%A8-%E7%99%BE%E4%B8%87%E7%83%AD%E9%97%A8%E5%B0%8F%E8%AF%B4%E5%A4%A7%E5%85%A8\/id1336796508"
+}

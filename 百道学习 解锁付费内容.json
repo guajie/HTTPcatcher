@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "userbuy\": \"1\"",
+      "matchValue" : "userbuy\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "百道学习 解锁付费内容 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app3.bookdao.com",
+      "path" : "\/bookdao-app-web\/api\/v1\/course\/index"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app3.bookdao.com",
+      "path" : "\/bookdao-app-web\/api\/course\/catalog_new"
+    }
+  ],
+  "description" : "百道学习 来自 Beijing Bookdao.com Co. Ltd. https:\/\/apps.apple.com\/cn\/app\/%E7%99%BE%E9%81%93%E5%AD%A6%E4%B9%A0\/id1253797399"
+}

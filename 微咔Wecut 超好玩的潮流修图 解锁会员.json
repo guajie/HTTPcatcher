@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":\"1",
+      "matchValue" : "isVip\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireDate\":\"1800000000",
+      "matchValue" : "expireDate\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isAnnual\":\"1",
+      "matchValue" : "isAnnual\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "微咔Wecut 超好玩的潮流修图 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.wecut.com",
+      "path" : "\/v1\/*"
+    }
+  ],
+  "description" : "微咔Wecut-超好玩的潮流修图社区 来自 微咔世纪 https:\/\/apps.apple.com\/cn\/app\/%E5%BE%AE%E5%92%94wecut-%E8%B6%85%E5%A5%BD%E7%8E%A9%E7%9A%84%E6%BD%AE%E6%B5%81%E4%BF%AE%E5%9B%BE%E7%A4%BE%E5%8C%BA\/id922127546"
+}

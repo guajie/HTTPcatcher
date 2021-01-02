@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "m_istatus\":1",
+      "matchValue" : "m_istatus\":-\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "endTime\":\"2030-11-11\"",
+      "matchValue" : "endTime\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_svip\":0",
+      "matchValue" : "is_svip\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "svipEndTime\":\"2030-11-11\"",
+      "matchValue" : "svipEndTime\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "新花开 解锁1v1视频通话 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app2.zhaonuanmei.com",
+      "path" : "\/app\/launchVideoChat.html"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app2.zhaonuanmei.com",
+      "path" : "\/app\/index.html"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app2.zhaonuanmei.com",
+      "path" : "\/app\/seeWeiXinConsume.html"
+    }
+  ],
+  "description" : "切勿充值\n下载地址 http:\/\/xinhuakai22.jtgy88.com\/share\/jumpShare.htm?userId=45676"
+}

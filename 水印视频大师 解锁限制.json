@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "day\":\"999\"",
+      "matchValue" : "day\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "水印视频大师 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "101.37.76.151",
+      "path" : "\/User\/GetVIPInfo"
+    }
+  ],
+  "description" : "水印视频大师-水印视频制作 来自 长沙原力网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%B0%B4%E5%8D%B0%E8%A7%86%E9%A2%91%E5%A4%A7%E5%B8%88-%E6%B0%B4%E5%8D%B0%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C\/id1444706420"
+}

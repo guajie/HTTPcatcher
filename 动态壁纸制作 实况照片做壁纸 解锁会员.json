@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2030-01-01 00:00:00\"",
+      "matchValue" : "vipExpireTime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "动态壁纸制作 实况照片做壁纸 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.leanapp.cn",
+      "path" : "\/tools\/*"
+    }
+  ],
+  "description" : "购买 取消或恢复购买\n动态壁纸制作-实况照片做壁纸 来自 Chengdu Haima Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8%E5%88%B6%E4%BD%9C-%E5%AE%9E%E5%86%B5%E7%85%A7%E7%89%87%E5%81%9A%E5%A3%81%E7%BA%B8\/id1510706446"
+}

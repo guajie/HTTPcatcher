@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "member_type\":5",
+      "matchValue" : "member_type\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expire_time\":\"2030-05-05\"",
+      "matchValue" : "expire_time\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "user\":{\"islogin\":true,\"isview\":true,\"isNewsStand\":2,\"member_type\":5,\"expire_time\":\"2030-05-05\",\"isdigg\":true,\"isfav\":true}",
+      "matchValue" : "user\":\\{[^\\}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "南方周末 电子报刊 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "user=*",
+      "host" : "api.infzm.com",
+      "path" : "\/mobile\/user"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "user=*",
+      "host" : "api.infzm.com",
+      "path" : "\/mobile\/contents\/*"
+    }
+  ],
+  "description" : "南方周末-最可信赖的新闻 来自 Guangdong Southern Weekly New Media Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%8D%97%E6%96%B9%E5%91%A8%E6%9C%AB-%E6%9C%80%E5%8F%AF%E4%BF%A1%E8%B5%96%E7%9A%84%E6%96%B0%E9%97%BB\/id333953812"
+}

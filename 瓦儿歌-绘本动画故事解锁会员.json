@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":\"2",
+      "matchValue" : "is_vip\":\"N",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "money\":\"9999",
+      "matchValue" : "money\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_annual\":\"2",
+      "matchValue" : "is_annual\":\"N",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_contract\":\"2",
+      "matchValue" : "is_contract\":\"N",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "end_time_fmt\":\"1890754389",
+      "matchValue" : "end_time_fmt\":\"-",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "贝瓦儿歌-绘本动画故事解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "passport.beva.com",
+      "path" : "\/passport\/v1\/sdk\/getuserinfo"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "iface.beva.com",
+      "path" : "\/order\/device\/vip"
+    }
+  ],
+  "description" : "贝瓦儿歌-绘本动画故事儿歌大全 来自 Beijing Slanissue Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%B4%9D%E7%93%A6%E5%84%BF%E6%AD%8C-%E7%BB%98%E6%9C%AC%E5%8A%A8%E7%94%BB%E6%95%85%E4%BA%8B%E5%84%BF%E6%AD%8C%E5%A4%A7%E5%85%A8\/id716603240"
+}

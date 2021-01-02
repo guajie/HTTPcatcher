@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isvip\":\"true",
+      "matchValue" : "isvip\":\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expiretime\":\"2050-06-01\"",
+      "matchValue" : "expiretime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "扫描仪全能王 扫描文件识别扫描王 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.gkocr.com",
+      "path" : "\/api\/userlogin1.php"
+    }
+  ],
+  "description" : "扫描仪全能王-扫描文件识别扫描王 来自 北京方盒子图灵优视 https:\/\/apps.apple.com\/cn\/app\/%E6%89%AB%E6%8F%8F%E4%BB%AA%E5%85%A8%E8%83%BD%E7%8E%8B-%E6%89%AB%E6%8F%8F%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E6%89%AB%E6%8F%8F%E7%8E%8B\/id1335554068"
+}

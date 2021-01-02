@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "zYGE\/ViY\/IpQ7bnm1EgT+vAAvkPdF0IUYAHg1WfaL\/Hm3uknJcURIZ4+GNhnIVL\/kf\/8sI6AXi4GetRu0FzmERCRF56EK6SISWEj9CA1SzONLnJ0GFpqDuzxD65wfQ2UOMrEwXQ+x0gnDvNqUMzLDdQwaOYJ2ywVjTkqm6WJDDlWeO7lGicfK8s9PfN4MjdyLok5lkPVhEmoL\/glXTcwtVswH9sN7XUsnbYLOxhunuaXVhRcOT2whuMg98AxZfQPnjMyN147N63HzpQkPCFHzaQfD+24rRij2vAjwrKMR6EhxcUtSuGdmDI5WpalrTSrjJp7ck3iM+Ry+l47pLSfp7zdl5LTSQICQjKgfUr3uJZDif\/pt7qWhAIh14rnzFnyULds4mGtRyys0qoJl7rnfWk1D9HMlwA0Lv+\/2sHMsoyxKXZcTObBCsOcUmTi8WglK89XcUfm\/VVnc5IWqS17kRxrEEi+zSbKP4O4JLa+3\/6985EAr0HMwfxr5DGxf8zh3Lo3XCElrr\/FWFQ1mFtlMqJ8Sg6ZqTzAKCWBdRA8sMs51Lps7mzyUIkcWTdLIu4tS1Y5T3RS8HKErKjBgbuhIemHy6\/\/nqbst11adK4YLSgi6lCsqqT5BhMbYdKcC7uS6umAWCXXC\/UUkv1DcLt6Llai5ow9xDDry6dZC+pn5LCtVFl7okubqBu\/xvl88fHo6bnTM7b3fJ1jn3heLo5HX8qUbSwdOAOkjmK5Eo1yh1k7vi6wOljNm9Al\/yfarMprvnIs46tWcJs1JGDwg1syGJdsxOjOfczCCcWwGC271xmrxK9idhcTBFTbhhr0+GMAKX1C3w2X3fsEi65oEdFSZpf4L0PBMmp2wnzcx0HqfRCGBra\/3auJ8pX06OoP8QzkCxWcbZPhesyEBjKfPdXVR8w+wsKrtge+xG\/Arguu74cJNJKRGc5INN+KAzmhgpxUA+y8lVnIfT90iFB\/EaNTtYcBMQ1+jhI0Eavx8cF5kyawxUftVVUYySLPHPgY0mjr4ixuesttEeNKYxrjZK754uVItyZHP8bkWgQmoFOOLlD0vWcfu6neDRAh50xKeoQ641Djk6HYLSAxEj6lw\/EA9h311kSZxufmlM1xW9U\/XnwFUrePSMkKxPQm6GwahbHYFEFBkLyxkEW8+K7pJyQY\/Czj+AZQ8nXxbc0TOVv4Hv+026ED5u\/V6U5hOBnMcAw+WjqzDxGByDa+SmnW2Hy5mth8xvS7dyqsQhBpoD\/DJvIohwrzLLC1y9z154QoBirC\/5UxQTC7UTDeQez3hTZm9jQnfB3l\/5+cDot+ajXmER0rqNfwe2BNH4el0Ro7Q+jRI5JhnOs0AL2AVcBPflD28t0jkZOBPUJUgqCqnvLOqJPBBMelelwfdHr4s7Zrk1rJ\/1nM+1PVy0pRIyaR2yqvByjL5gfm1BVA5y3htsHRehKMIf74Q0f+4UkzYXBf6HPZfpJ+SJbbh9qyCmOAT+prraGE3A+m6++G5VgAPTM05B5wMEvZAUP6a74BmpZhyRwIk0B0cBytYjOWyg3TOJO+GKTR9ga9r+6kZPhLHW3nc\/AyiyfGDIowqFLPy649P8S5\/P\/swSazKishjdcptGGxmQ8qB3OTohbcRlEOVPae6+qazMn8I3ZpB8oEsa1l3NC4D3Vn34F1v8lY1FGeGSM\/RIoP+War4GGXyZTFsVT7zs3AzdEYxGivj1IwrdBXqmK4aEEJ+XippAhi6Om8sRQYUcMnKLnwt3AY4MVYd4oRTkqnD3btqgrmO81djl7UbuLGEzx+BWVBOpz4PMYAWKsNCho48eX00eNmeHuLla1InArzKohospMSMciMAa6qJCwMKwebMkepV1CravSXXFWnUM28WoxN23OPFzV5muKolgVj0Q4zGGuH8FwJsdcCfgtNVfGbF7HH7wjBdCjMD1iWyWh8MJ+iHFfmMK2p2BvK18H+BffJs9u+6yvq\/ukxTWVhsrnqsvxax6i73iYpIZ38YN\/m1VJaYuRWkqWVeSJ6POrok+B01p1YgVGd6k3AKv4PmQ7JcZjzkEaGSMNljvprNDBZTaZgpKwBVcvAYBlHWolpFqjXa6qAKJtziIaQmZm4t\/vypAhTmwMJMArFdo5HVGKUd7Le\/vJX9y2gJVDiYcksd3XhWL1IY+egpU+xotD8",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "蜜蜂加速器 解锁永久免费 非vip A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "",
+      "host" : "*",
+      "path" : "\/myapi\/eapiuserinfo"
+    }
+  ],
+  "description" : "下载地址, INS、TUI特、油管，FB，海外常用网站  https:\/\/www.mf76.shop\/user\/Y8N2RR"
+}

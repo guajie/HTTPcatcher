@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isbuy\":1",
+      "matchValue" : "isbuy\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "money\":\"0\"",
+      "matchValue" : "money\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "state\":0",
+      "matchValue" : "state\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "10情趣 1.6+ 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "www.10qingqu.com",
+      "path" : "\/api_beta1_2\/api.php"
+    }
+  ],
+  "description" : "10情趣 来自 广州菲你不可信息技术有限公司 https:\/\/apps.apple.com\/cn\/app\/10%E6%83%85%E8%B6%A3\/id1102456165"
+}

@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "canPlay\": true",
+      "matchValue" : "canPlay\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "canDownload\":true",
+      "matchValue" : "canDownload\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "unlocks\": 0",
+      "matchValue" : "unlocks\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isPreview\": false",
+      "matchValue" : "isPreview\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":true",
+      "matchValue" : "vip\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireDate\":\"2030-11-11\"",
+      "matchValue" : "vipExpireDate\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "樊登小读者 亲子共读 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "uapi.xfanread.com",
+      "path" : "\/core\/book\/detail\/get\/*"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "uapi.xfanread.com",
+      "path" : "\/core\/member\/summery\/get"
+    }
+  ],
+  "description" : "樊登小读者-亲子共读的最佳助手 来自 北京三五更教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%A8%8A%E7%99%BB%E5%B0%8F%E8%AF%BB%E8%80%85-%E4%BA%B2%E5%AD%90%E5%85%B1%E8%AF%BB%E7%9A%84%E6%9C%80%E4%BD%B3%E5%8A%A9%E6%89%8B\/id1329432247"
+}

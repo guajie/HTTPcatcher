@@ -1,0 +1,91 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_valid_ts\":\"2030-01-01 08:05:43\"",
+      "matchValue" : "vip_valid_ts\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_create_ts\":\"2020-01-01 08:05:43\"",
+      "matchValue" : "vip_create_ts\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_free\":true",
+      "matchValue" : "is_free\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_buy_vip\":true",
+      "matchValue" : "is_buy_vip\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "口袋故事 小学生碎片时间学习利器 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "47.102.23.164",
+      "path" : "\/inner4\/ilisten\/user\/vip:get"
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "47.102.23.164",
+      "path" : "\/api.php"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "method=aps.getMemberBasicInfo",
+      "host" : "47.102.23.164",
+      "path" : "\/api.php\/"
+    }
+  ],
+  "description" : "口袋故事-小学生碎片时间学习利器 来自 Shanghai Tongrui Network Technology Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E5%8F%A3%E8%A2%8B%E6%95%85%E4%BA%8B-%E5%B0%8F%E5%AD%A6%E7%94%9F%E7%A2%8E%E7%89%87%E6%97%B6%E9%97%B4%E5%AD%A6%E4%B9%A0%E5%88%A9%E5%99%A8\/id560449213"
+}

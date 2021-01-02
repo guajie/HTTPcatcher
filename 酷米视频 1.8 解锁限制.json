@@ -1,0 +1,63 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expire_time1\":1800000000",
+      "matchValue" : "expire_time1\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expire_time\": \"2030-01-01\"",
+      "matchValue" : "expire_time\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "re_today_view_times\":999",
+      "matchValue" : "re_today_view_times\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "酷米视频 1.8 解锁会员 A+",
+  "description" : "下载地址 km.app\n\n随时失效2020年12月21日\n\n\n提供未测试qx规则\n\n#酷米视频\n^https:\/\/myiconisme.com\/\/api\/.+ url script-response-body kmsp.js\n\nbody = $response.body.replace(\/is_vip\":\\d\/g, 'is_vip\":1').replace(\/expire_time1\":0\/g, 'expire_time1\":1800000000').replace(\/expire_time\":\"\"\/g, 'expire_time\": \"2030-01-01\"').replace(\/re_today_view_times\":0\/g, 're_today_view_times\":999');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "myiconisme.com",
+      "path" : "\/\/api\/member"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "myiconisme.com",
+      "path" : "\/\/api\/movie\/addPlay"
+    }
+  ]
+}

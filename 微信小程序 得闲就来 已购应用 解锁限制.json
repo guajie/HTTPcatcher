@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "account\":\"$1----$2\",\"password\":\"000\"",
+      "matchValue" : "account\":\"(.*?)\",\"password\":\"(.*?)\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "accountBtn\":\"获取账号和密码\",\"passwordBtn\":\"\"",
+      "matchValue" : "accountBtn\":\".*?\",\"passwordBtn\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "微信小程序 得闲就来 已购应用 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.radish.ink",
+      "path" : "\/miniprogram\/app"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.radish.ink",
+      "path" : "\/miniprogram\/appconfig"
+    }
+  ],
+  "description" : "微信里搜索 得闲就来\n点击标题三次切换到已购应用列表\n不明白可以看图 https:\/\/i.loli.net\/2020\/07\/16\/uhWBjrMAVqZTzGg.jpg"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"error\":0,\"data\":{\"is_valid\":true,\"may_expire\":false,\"is_offer_eligible\":true,\"in_app\":{\"com.apalonapps.wallpaperspys.7d_3dt_SUB00010\":{\"is_valid\":true,\"cancelled\":false,\"may_expire\":true,\"is_trial\":true,\"is_intro\":false,\"transaction_id\":\"550000539399999\",\"cancel_reason\":\"user\",\"purchase_date_ms\":\"1577961210000\",\"expired\":false,\"expires_date_ms\":\"4070890131000\",\"remaining_time_ms\":\"2247793000\"}},\"consumable_inapp\":[],\"hash\":\"5773ec1ddfbdf45fc1d00e1fcbch5hg6\"}}",
+      "matchValue" : "[^*]+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "我的壁纸库HD 手机壁纸 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "subs.platforms.team",
+      "path" : "\/apple\/verifyTransaction"
+    }
+  ],
+  "description" : "我的壁纸库HD-高清主题&手机壁纸 来自 Apalon Apps https:\/\/apps.apple.com\/cn\/app\/%E6%88%91%E7%9A%84%E5%A3%81%E7%BA%B8%E5%BA%93hd-%E9%AB%98%E6%B8%85%E4%B8%BB%E9%A2%98-%E6%89%8B%E6%9C%BA%E5%A3%81%E7%BA%B8\/id749046891"
+}

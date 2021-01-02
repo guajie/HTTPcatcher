@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "member\":true",
+      "matchValue" : "member\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expire_time\":\"2077-12-12\"",
+      "matchValue" : "expire_time\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "云美摄 解锁企业会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.meisheapp.com",
+      "path" : "\/v2\/user\/index"
+    }
+  ],
+  "description" : "云美摄 来自 Beijing Yunshemei Network Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E4%BA%91%E7%BE%8E%E6%91%84\/id928359827"
+}

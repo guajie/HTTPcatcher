@@ -1,0 +1,136 @@
+{
+  "rules" : [
+    {
+      "action" : "path",
+      "matchField" : "",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "\/index.php\/app\/ios\/ads\/index",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "path",
+      "matchField" : "",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "\/index.php\/app\/ios\/ver\/index_ios",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "path",
+      "matchField" : "",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "\/index.php\/app\/ios\/pay\/ok",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "cion\":\"9999",
+      "matchValue" : "cion\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":\"1",
+      "matchValue" : "vip\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "viptime\":\"2970-01-01 08:00:00\"",
+      "matchValue" : "viptime\":\"(.*?)\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "playTimes\":0",
+      "matchValue" : "playTimes\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "CT_App_Show_Vod_Time1\":\"0",
+      "matchValue" : "CT_App_Show_Vod_Time1\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "爱美剧 最全美剧资源 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bjxkhc.com",
+      "path" : ""
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bjxkhc.com",
+      "path" : "\/index.php\/app\/ios\/user\/index"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bjxkhc.com",
+      "path" : "\/index.php\/app\/ios\/m3u8\/index"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bjxkhc.com",
+      "path" : "\/index.php\/app\/ios\/feedback\/unread"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bjxkhc.com",
+      "path" : "\/index.php\/app\/android\/ver\/change"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.bjxkhc.com",
+      "path" : "\/index.php\/app\/ios\/vod\/show"
+    }
+  ],
+  "description" : "下载地址，https:\/\/www.xmj.app\/"
+}

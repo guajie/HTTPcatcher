@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "IsVip\": \"false\"",
+      "matchValue" : "IsVip\":\"true\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "site_nick_name\": \"已解锁\"",
+      "matchValue" : "site_nick_name\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "书虫小说 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "pay.3g.cn",
+      "path" : "\/apkinfo\/IosBookInf\/newMenuList"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "channel=300&ggid=72A4792EA189EA5F354301B196C6C29F&imei=35F5C671-C5A7-4926-B570-4CC5748FE518&locale=CN&m_ver=iPhone%207%20%28CDMA%29&mid=B07B22B0-D549-41CA-9163-B67EA28FBDD3&pass=d1e25d4092191c2af3af9017a40e92c1&pid=300&platform=iOS&producttype=apkios&s_ver=iOS12.4&versioncode=6&versionname=1.1.4",
+      "host" : "pay.3g.cn",
+      "path" : "\/apkinfo\/IosUserInf\/getUserInfo"
+    }
+  ],
+  "description" : "书虫小说-小说阅读器之电子书小说大全 来自 Guangzhou Jiubang Digital Technolgy Co.,LTD https:\/\/apps.apple.com\/cn\/app\/%E4%B9%A6%E8%99%AB%E5%B0%8F%E8%AF%B4-%E5%B0%8F%E8%AF%B4%E9%98%85%E8%AF%BB%E5%99%A8%E4%B9%8B%E7%94%B5%E5%AD%90%E4%B9%A6%E5%B0%8F%E8%AF%B4%E5%A4%A7%E5%85%A8\/id1345253175"
+}

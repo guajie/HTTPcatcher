@@ -1,0 +1,100 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "timeInfo\":\"vip权益,将于999天后过期\"",
+      "matchValue" : "timeInfo\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "state\":1",
+      "matchValue" : "state\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "packageRightEndTime\": 1800000000",
+      "matchValue" : "packageRightEndTime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "hasPackageRight\": true",
+      "matchValue" : "hasPackageRight\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "中信书院 用知识抵抗平庸 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "book.yunpub.cn",
+      "path" : "\/api\/v4_1_0\/getColumnHome"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "book.yunpub.cn",
+      "path" : "\/api\/v4_1_0\/getGoodsHome"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "book.yunpub.cn",
+      "path" : "\/api\/v4_1_0\/getHomeMore"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "book.yunpub.cn",
+      "path" : "\/api\/v4_1_0\/getGoodsHome"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "book.yunpub.cn",
+      "path" : "\/api\/v4_1_0\/getGoodsHomeNew"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "v.yunpub.cn",
+      "path" : "\/api\/graphql"
+    }
+  ],
+  "description" : "打开不了就是服务器返回没有播放地址解锁不了的\n中信书院 来自 中信联合云科技有限责任公司 https:\/\/apps.apple.com\/cn\/app\/%E4%B8%AD%E4%BF%A1%E4%B9%A6%E9%99%A2\/id1194887441"
+}

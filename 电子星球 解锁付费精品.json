@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "video_type\":1",
+      "matchValue" : "video_type\":2",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "playback_look\":1",
+      "matchValue" : "playback_look\":2",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "电子星球 解锁付费精品 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.eestar.com",
+      "path" : "\/api\/*\/live\/playback-info"
+    }
+  ],
+  "description" : "电子星球 来自 天津网博互动科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E7%94%B5%E5%AD%90%E6%98%9F%E7%90%83\/id1435866519"
+}

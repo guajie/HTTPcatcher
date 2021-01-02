@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1,\"vip_end_time\":1800000000,\"vip_type\":2",
+      "matchValue" : "is_vip\":0,\"vip_end_time\":0,\"vip_type\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "手机表格学习 表格制作 A+",
+  "description" : "手机表格学习-表格制作编辑教程 来自 俊芳 付 https:\/\/apps.apple.com\/cn\/app\/%E6%89%8B%E6%9C%BA%E8%A1%A8%E6%A0%BC%E5%AD%A6%E4%B9%A0-%E8%A1%A8%E6%A0%BC%E5%88%B6%E4%BD%9C%E7%BC%96%E8%BE%91%E6%95%99%E7%A8%8B\/id1536123647\n\n提供未测试qx规则\nhoustname＝*\n\n#手机表格学习 表格制作 A+\nhttp:\/\/excel.sc2yun.com\/user\/my.+  url script-response-body sbsb.js\n\nbody = $response.body.replace(\/is_vip\":0,\"vip_end_time\":0,\"vip_type\":0\/g, 'is_vip\":1,\"vip_end_time\":1800000000,\"vip_type\":2');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "*",
+      "host" : "excel.sc2yun.com",
+      "path" : "\/user\/my"
+    }
+  ]
+}

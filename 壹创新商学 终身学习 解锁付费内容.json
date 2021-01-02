@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "gratis\": 1",
+      "matchValue" : "gratis\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isPay\": 1",
+      "matchValue" : "isPay\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "壹创新商学 终身学习 解锁付费内容 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "yi-chuangxin.com",
+      "path" : "\/api\/*\/ycxsx-product\/audio\/homePage"
+    }
+  ],
+  "description" : "壹创新商学-职场商学院 来自 Beijing xiaofang media culture co. LTD https:\/\/apps.apple.com\/cn\/app\/%E5%A3%B9%E5%88%9B%E6%96%B0%E5%95%86%E5%AD%A6-%E8%81%8C%E5%9C%BA%E5%95%86%E5%AD%A6%E9%99%A2\/id1439336957"
+}

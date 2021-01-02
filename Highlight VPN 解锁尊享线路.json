@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "premium\":false",
+      "matchValue" : "premium\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Highlight VPN 解锁尊享线路 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "connectionprotector.com",
+      "path" : "\/v1\/servers"
+    }
+  ],
+  "description" : "需非国区下载\nHighlight VPN by Smart Defender https:\/\/apps.apple.com\/us\/app\/highlight-vpn\/id1517478960"
+}

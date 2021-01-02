@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"subscribed\":true,\"subscriptionStatus\":\"YEARLY_SUBSCRIBED\",\"eligibleForFreeTrial\":true}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "耐克Nike Training Club 训练健身计划软件 解锁高级内容 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.nike.com",
+      "path" : "\/cap\/ntc_premium_subscription\/verify\/v*"
+    }
+  ],
+  "description" : "Nike Training Club 来自 Nike, Inc https:\/\/apps.apple.com\/cn\/app\/nike-training-club\/id301521403"
+}

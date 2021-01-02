@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "modify-form",
+      "matchField" : "user_id",
+      "field" : "",
+      "value" : "568850",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "remove-header",
+      "matchField" : "Cookie",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "remove-form",
+      "matchField" : "token",
+      "field" : "token",
+      "value" : "",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "remove-header",
+      "matchField" : "X-YS-USER-TOKEN",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "remove-header",
+      "matchField" : "CLIENT_ID",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "modify-header",
+      "matchField" : "X-YS-UID",
+      "field" : "",
+      "value" : "568850",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "remove-header",
+      "matchField" : "X-YS-DEVICE-ID",
+      "field" : "",
+      "value" : "",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "有书 听书学知识 解锁会员 A+ p2",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "gongdu.youshu.cc",
+      "path" : "\/m\/media\/media_info"
+    }
+  ],
+  "description" : "不行就清理缓存 付费有声书和付费电子书可以自己解锁\n有书-听书学知识 来自 OneWay https:\/\/apps.apple.com\/cn\/app\/%E6%9C%89%E4%B9%A6-%E5%90%AC%E4%B9%A6%E5%AD%A6%E7%9F%A5%E8%AF%86\/id1076892178"
+}

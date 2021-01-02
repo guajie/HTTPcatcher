@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "lockStatus\":1",
+      "matchValue" : "lockStatus\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "trialFlag\":1",
+      "matchValue" : "trialFlag\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expiredTime\": \"2030-07-15 11:11:11\"",
+      "matchValue" : "expiredTime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipType\": 1",
+      "matchValue" : "vipType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "customerType\": 1",
+      "matchValue" : "customerType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "一书一课  解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.chiyue365.com",
+      "path" : "*"
+    }
+  ],
+  "description" : "一书一课——自学习型组织的养成神器 来自 Shanghai Chiy Network Technology Ltd. Company https:\/\/apps.apple.com\/cn\/app\/%E4%B8%80%E4%B9%A6%E4%B8%80%E8%AF%BE-%E8%87%AA%E5%AD%A6%E4%B9%A0%E5%9E%8B%E7%BB%84%E7%BB%87%E7%9A%84%E5%85%BB%E6%88%90%E7%A5%9E%E5%99%A8\/id1193113815"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "level\":2",
+      "matchValue" : "level\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Polaris Office PDF  A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.polarisoffice.com",
+      "path" : "\/api\/1\/account\/userinfo"
+    }
+  ],
+  "description" : "Polaris Office - PDF & Docs 来自 Infraware Co.,Ltd https:\/\/apps.apple.com\/cn\/app\/polaris-office-pdf-docs\/id698070860"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipEndTime\":\"世界末日\"",
+      "matchValue" : "vipEndTime\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "睡眠精灵-专业白噪音 会员解锁 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "wsv2.jiyw.com",
+      "path" : "\/api\/Sleep\/StartData"
+    }
+  ],
+  "description" : "睡眠精灵-专业白噪音助眠梦话录音睡眠质量监测 来自 ChangshaYouJiMutual https:\/\/apps.apple.com\/cn\/app\/%E7%9D%A1%E7%9C%A0%E7%B2%BE%E7%81%B5-%E4%B8%93%E4%B8%9A%E7%99%BD%E5%99%AA%E9%9F%B3%E5%8A%A9%E7%9C%A0%E6%A2%A6%E8%AF%9D%E5%BD%95%E9%9F%B3%E7%9D%A1%E7%9C%A0%E8%B4%A8%E9%87%8F%E7%9B%91%E6%B5%8B\/id1473217152"
+}

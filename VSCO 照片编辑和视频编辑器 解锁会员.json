@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n  \"user_subscription\": {\n    \"user_id\": 2888888,\n    \"subscription_code\": \"VSCOANNUAL\",\n    \"sku\": \"VSCOANNUAL\",\n    \"expired\": false,\n    \"starts_on_sec\": null,\n    \"expires_on_sec\": 1800000000000,\n    \"last_verified_sec\": 1593333000000000,\n    \"canceled_at_sec\": null,\n    \"source\": 1,\n    \"payment_type\": 2,\n    \"invalid_reason\": 999,\n    \"is_active\": true,\n    \"is_in_grace_period\": true\n  },\n  \"created_at\": \"2088-07-10T02:46:44.14354028Z\"\n}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "VSCO 照片编辑和视频编辑器 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "vsco.co",
+      "path" : "\/api\/subscriptions\/*\/user-subscriptions\/*"
+    }
+  ],
+  "description" : "VSCO: 照片编辑和视频编辑器 来自 Visual Supply Company https:\/\/apps.apple.com\/cn\/app\/vsco-%E7%85%A7%E7%89%87%E7%BC%96%E8%BE%91%E5%92%8C%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91%E5%99%A8\/id588013838"
+}

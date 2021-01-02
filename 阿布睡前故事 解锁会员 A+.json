@@ -1,0 +1,73 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isvip\": \"true",
+      "matchValue" : "isvip\": \"false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "PayVip\": 1",
+      "matchValue" : "PayVip\": 0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "PayVipExpDate\": \"2025\/7\/1\"",
+      "matchValue" : "PayVipExpDate\": \".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "analyticType\": \"True",
+      "matchValue" : "analyticType\": \"false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "downvip\":\"0",
+      "matchValue" : "downvip\": \"2",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "PayVipResidueSeconds\": 1800000000",
+      "matchValue" : "PayVipResidueSeconds\": 0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "阿布睡前故事 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "tutugushiapi.tutuerge.com",
+      "path" : "\/default.aspx"
+    }
+  ],
+  "description" : "阿布睡前故事-超棒超好听的故事！ 来自 Chengdu Fubao Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E9%98%BF%E5%B8%83%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B-%E8%B6%85%E6%A3%92%E8%B6%85%E5%A5%BD%E5%90%AC%E7%9A%84%E6%95%85%E4%BA%8B\/id1273658475"
+}

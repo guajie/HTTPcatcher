@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipStatus\":\"1",
+      "matchValue" : "vipStatus\":\"\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\":1800000000",
+      "matchValue" : "expireTime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "cost\":0",
+      "matchValue" : "cost\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "托福听力专业版 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.iyuba.com.cn",
+      "path" : "\/v2\/api.iyuba"
+    },
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "class.iyuba.cn",
+      "path" : "\/getClass.iyuba"
+    }
+  ],
+  "description" : "托福听力专业版 来自 ShangHai AiLanguage Technology Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%89%98%E7%A6%8F%E5%90%AC%E5%8A%9B%E4%B8%93%E4%B8%9A%E7%89%88\/id1476231652"
+}

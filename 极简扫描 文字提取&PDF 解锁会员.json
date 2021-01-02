@@ -1,0 +1,63 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\": true",
+      "matchValue" : "isVip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipEndOn\": \"2030-01-01 00:00:00\"",
+      "matchValue" : "vipEndOn\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "payExpireDate\": 1800000000000",
+      "matchValue" : "payExpireDate\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "userType\": \"svip\"",
+      "matchValue" : "userType\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "svip\": 1",
+      "matchValue" : "svip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "极简扫描 文字提取&PDF 解锁会员 A+",
+  "description" : "极简扫描 - 文字提取&PDF 来自 Dalian CZUR TECH CO.,LTD https:\/\/apps.apple.com\/cn\/app\/%E6%9E%81%E7%AE%80%E6%89%AB%E6%8F%8F-%E6%96%87%E5%AD%97%E6%8F%90%E5%8F%96-pdf\/id1336380850",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "cn.czur.cc",
+      "path" : "\/api\/v3\/User\/info"
+    }
+  ]
+}

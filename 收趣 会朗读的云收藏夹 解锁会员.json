@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "integral\":9999",
+      "matchValue" : "integral\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "memberStatus\":1",
+      "matchValue" : "memberStatus\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "memberExpire\":1800000000000",
+      "matchValue" : "memberExpire\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "收趣 会朗读的云收藏夹 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.shouqu.me",
+      "path" : "\/api_service\/api\/v1\/user\/getInfo"
+    }
+  ],
+  "description" : "收趣 - 会朗读的云收藏夹 来自 Jie Yang https:\/\/apps.apple.com\/cn\/app\/%E6%94%B6%E8%B6%A3-%E4%BC%9A%E6%9C%97%E8%AF%BB%E7%9A%84%E4%BA%91%E6%94%B6%E8%97%8F%E5%A4%B9\/id1072254626"
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":0",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "初恋直播 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "service=Live.roomCharge",
+      "host" : "api.g1d.xyz",
+      "path" : "\/api\/public\/"
+    }
+  ],
+  "description" : "越狱可能失效，请换qx\n\n^https:\\\/\\\/api.g1d.xyz\\\/api\\\/public\\\/?service=Live.roomCharge url script-response-body clzb.js\n\nvar Body=$response.body;var obj=JSON.parse(Body);obj.code=0;Body=JSON.stringify(obj);$done(Body);\n\n下载地址，https:\/\/g1b.xyz\/assets\/2iwut.html"
+}

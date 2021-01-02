@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "total\":12345",
+      "matchValue" : "total\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "remaining\":12345",
+      "matchValue" : "remaining\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "player\":true",
+      "matchValue" : "player\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "views\":12345",
+      "matchValue" : "views\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "bind\":12345",
+      "matchValue" : "bind\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickname\":\"已解锁\"",
+      "matchValue" : "nickname\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "左手视频修复 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "i.zuo.pet",
+      "path" : "\/api\/app\/user\/index"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "i.zuo.pet",
+      "path" : "\/api\/app\/video\/index"
+    }
+  ],
+  "description" : "下载地址，http:\/\/azsx50.live\/?code=PABW80&channel=poster\n\n出现失效情况 请使用Qx规则\n\n\n\/\/左手视频 18+ \n\/\/https:\\\/\\\/i.zuo.pet\\\/api\\\/app\\\/[user\\\/index|video\\\/index]* url script-response-body zssp2.js\n\n\/\/Rewrite↑      zssp2.js↓\n\n\nvar body = $response.body;\nvar url = $request.url;\nvar obj = JSON.parse(body);\n\nconst vip = 'user\/index';\nconst video = 'video\/index';\n\nif (url.indexOf(video) != -1) {\nobj.result.views = 12345;\nobj.result.player = true;\nbody = JSON.stringify(obj);\n\n}\n\nif (url.indexOf(vip) != -1) {\nobj.result.views.total = 12345;\nobj.result.views.remaining = 12345;\nobj.result.nickname = \"已解锁\";\nobj.result.bind = 12345;\nbody = JSON.stringify(obj);\n}\n\n$done({body})"
+}

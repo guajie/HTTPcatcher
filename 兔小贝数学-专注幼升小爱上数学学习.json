@@ -1,0 +1,45 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": 1",
+      "matchValue" : "vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_expire_at\":\"1800000000\"",
+      "matchValue" : "vip_expire_at\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_type\": \"2\"",
+      "matchValue" : "vip_type\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : false,
+  "name" : "兔小贝数学-专注幼升小爱上数学学习 A+",
+  "description" : "兔小贝数学-专注幼升小爱上数学学习 来自 Guangdong Starting Line Culture Co.,Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%85%94%E5%B0%8F%E8%B4%9D%E6%95%B0%E5%AD%A6-%E4%B8%93%E6%B3%A8%E5%B9%BC%E5%8D%87%E5%B0%8F%E7%88%B1%E4%B8%8A%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0\/id1524576787\n\n提供未测试qx规则\nhostname=*\n\n#兔小贝系列\nhttps:\/\/(.+)-api.tuxiaobei.com\/v1\/user\/.+ * url script-response-body txb.js\n\nbody = $response.body.replace(\/vip\":0\/g, 'vip\":0').replace(\/vip_expire_at\":null\/g, 'vip_expire_at\":\"1800000000\"').replace(\/vip_type\":\"\"\/g, 'vip_type\":\"2\"');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "*-api.tuxiaobei.com",
+      "path" : "\/v1\/user\/*"
+    }
+  ]
+}

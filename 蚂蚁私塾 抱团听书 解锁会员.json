@@ -1,0 +1,82 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "viplevel\":\"3\"",
+      "matchValue" : "viplevel\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipexptime\":\"2030-01-11\"",
+      "matchValue" : "vipexptime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_show\": {\n      \"title\": \"书籍畅听包有效期\",\n      \"time\": \"2030.01.11\"\n    }",
+      "matchValue" : "vip_show\":\\{[^}]+\\}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "getvip\":\"vipexp\"",
+      "matchValue" : "getvip\": \".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"exptime\":1800000000",
+      "matchValue" : "\"exptime\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "canStudy\":1",
+      "matchValue" : "canStudy\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "freetype\": \"1\"",
+      "matchValue" : "freetype\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "蚂蚁私塾 抱团听书 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.mayisishu.com",
+      "path" : "\/"
+    }
+  ],
+  "description" : "蚂蚁私塾-抱团听书就用蚂蚁私塾 来自 宁波风口网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%9A%82%E8%9A%81%E7%A7%81%E5%A1%BE-%E6%8A%B1%E5%9B%A2%E5%90%AC%E4%B9%A6%E5%B0%B1%E7%94%A8%E8%9A%82%E8%9A%81%E7%A7%81%E5%A1%BE\/id1456084734"
+}

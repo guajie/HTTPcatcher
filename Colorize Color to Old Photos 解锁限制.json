@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Expiration\": \"2029-05-01T18:54:23+00:00\"",
+      "matchValue" : "Expiration\": \".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Colorize Color to Old Photos 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "download.photomyne.com",
+      "path" : "\/api\/v2\/user"
+    }
+  ],
+  "description" : "Colorize - Color to Old Photos 来自 Photomyne LTD https:\/\/apps.apple.com\/cn\/app\/colorize-color-to-old-photos\/id1464665765"
+}

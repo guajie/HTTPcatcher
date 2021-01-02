@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":0",
+      "matchValue" : "code\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "望月直播 1.8+ 解锁计时房 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "",
+      "enabled" : true,
+      "port" : 0,
+      "query" : "service=Live.roomCharge",
+      "host" : "",
+      "path" : "\/api\/public\/"
+    }
+  ],
+  "description" : "下载地址 http:\/\/wy9.tv\/"
+}

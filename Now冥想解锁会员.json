@@ -1,0 +1,100 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_forever\":\"true",
+      "matchValue" : "\"vip_forever\":\"false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "free\":\"true",
+      "matchValue" : "free\":\"false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "end_at\":\"2025-03-01 15:29:41\"",
+      "matchValue" : "end_at\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_over_days\":999",
+      "matchValue" : "\"vip_over_days\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_over_time\":\"2025-03-01 15:29:41\"",
+      "matchValue" : "vip_over_time\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_type\":\"forever\"",
+      "matchValue" : "\"vip_type\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_status_text\":\"永久会员\"",
+      "matchValue" : "\"vip_status_text\":\"\\w+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "Now冥想 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "nowapi.navoinfo.cn",
+      "path" : "\/user"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "nowapi.navoinfo.cn",
+      "path" : "\/get_sections_list_*"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "nowapi.navoinfo.cn",
+      "path" : "\/my_vip"
+    }
+  ],
+  "description" : "Now冥想-改善睡眠和提升专注 来自 Xian iBetterLife Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/now%E5%86%A5%E6%83%B3-%E6%94%B9%E5%96%84%E7%9D%A1%E7%9C%A0%E5%92%8C%E6%8F%90%E5%8D%87%E4%B8%93%E6%B3%A8\/id1048518210"
+}

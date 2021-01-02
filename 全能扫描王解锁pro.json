@@ -1,0 +1,24 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "data\":{\\\"server_time\\\":\\\"1577341000\\\",\\\"psnl_vip_property\\\":{\\\"auto_renewal\\\":false,\\\"last_payment_method\\\":\\\"IntSig promotion\\\",\\\"nxt_renew_tm\\\":\\\"0\\\",\\\"renew_method\\\":\\\"appstore\\\",\\\"initial_tm\\\":\\\"1555050555\\\",\\\"expiry\\\":\\\"1870000000\\\"},\\\"pay\\\":{\\\"upgrade_time\\\":\\\"1870000000\\\"}",
+		"matchValue": "data\":[^}]+",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": false,
+	"isReadOnly": false,
+	"name": "全能扫描王 PDF扫描 A+",
+	"locations": [{
+		"method": "",
+		"scheme": "https",
+		"enabled": true,
+		"port": 443,
+		"query": "",
+		"host": "api-cs.intsig.net",
+		"path": "\/purchase\/cs\/query_property"
+	}],
+	"description": "扫描全能王-PDF扫描、拍文件转Word和Excel 来自 INTSIG Information Co.,Ltd https:\/\/apps.apple.com\/cn\/app\/%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B-pdf%E6%89%AB%E6%8F%8F-%E6%8B%8D%E6%96%87%E4%BB%B6%E8%BD%ACword%E5%92%8Cexcel\/id388627783"
+}

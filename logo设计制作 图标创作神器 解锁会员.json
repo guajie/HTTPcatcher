@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_exp\":1",
+      "matchValue" : "vip_exp\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "out_time\": \"2030-01-01 00:00:00\"",
+      "matchValue" : "out_time\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "can_free_vip\":1",
+      "matchValue" : "can_free_vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nickName\":\"已解锁\"",
+      "matchValue" : "nickName\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "logo设计制作 图标创作神器 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "wx.520gyh.com",
+      "path" : "\/Logomaker\/Account\/deviceLogin"
+    }
+  ],
+  "description" : "logo设计制作-图标创作神器 来自 hu yucui https:\/\/apps.apple.com\/cn\/app\/logo%E8%AE%BE%E8%AE%A1%E5%88%B6%E4%BD%9C-%E5%9B%BE%E6%A0%87%E5%88%9B%E4%BD%9C%E7%A5%9E%E5%99%A8\/id1497560103"
+}

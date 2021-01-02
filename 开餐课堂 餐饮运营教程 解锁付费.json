@@ -1,0 +1,46 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "play_status\": 1",
+      "matchValue" : "play_status\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "username\": \"已解锁\"",
+      "matchValue" : "username\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "开餐课堂 餐饮运营教程 解锁付费 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.kaicanketang.com",
+      "path" : "\/api\/v2\/subject_directory"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api.kaicanketang.com",
+      "path" : "\/api\/v2\/user_info"
+    }
+  ],
+  "description" : "开餐课堂-餐饮运营管理职级化培训专家 来自 Jinan Kaiqicanyin Server Co.,Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%BC%80%E9%A4%90%E8%AF%BE%E5%A0%82-%E9%A4%90%E9%A5%AE%E8%BF%90%E8%90%A5%E7%AE%A1%E7%90%86%E8%81%8C%E7%BA%A7%E5%8C%96%E5%9F%B9%E8%AE%AD%E4%B8%93%E5%AE%B6\/id1381299237"
+}

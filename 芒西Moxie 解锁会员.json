@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":true",
+      "matchValue" : "vip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "芒西Moxie 解锁会员 A+",
+  "description" : "芒西Moxie 来自 Hainan Miaoka Network Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%8A%92%E8%A5%BFmoxie\/id1498175914",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "fr=user_nfwn9uffs729s2ibn",
+      "host" : "api.moxie.fit",
+      "path" : "\/v1\/payment\/transaction\/getInfo"
+    }
+  ]
+}

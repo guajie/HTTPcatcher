@@ -1,0 +1,127 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vipLevel\":1",
+      "matchValue" : "\"vipLevel\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vipExpireDate\": \"2029-07-07T09:58:13.000+0000\"",
+      "matchValue" : "\"vipExpireDate\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":2",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "startDate\":\"2020-07-01\",\"endDate\":\"2029-07-07\"",
+      "matchValue" : "startDate\":null,\"endDate\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isBuy\":  1",
+      "matchValue" : "isBuy\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVipSupply\":1",
+      "matchValue" : "isVipSupply\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "buyType\":1",
+      "matchValue" : "buyType\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "price\": 0",
+      "matchValue" : "price\":\\d+\\.\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "boxType\":1",
+      "matchValue" : "boxType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isFree\":1",
+      "matchValue" : "isFree\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "actualStartTime\":\"2019-12-20 20:50:00\"",
+      "matchValue" : "actualStartTime\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"actualEndTime\": \"2059-12-20 20:50:00\"",
+      "matchValue" : "\"actualEndTime\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "懂行 与明白的人一起成长 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "dhapi6.rz158.com",
+      "path" : "*"
+    }
+  ],
+  "description" : "懂行 来自 伯乐优选(北京)管理咨询有限公司 https:\/\/apps.apple.com\/cn\/app\/%E6%87%82%E8%A1%8C\/id1370346581"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":true",
+      "matchValue" : "isVip\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipEndTime\":1800000000",
+      "matchValue" : "vipEndTime\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "飞读小说 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "free.reader.qq.com",
+      "path" : "\/cofree-user\/info"
+    }
+  ],
+  "description" : "飞读小说-热门电子书阅读软件 来自 起点中文网 https:\/\/apps.apple.com\/cn\/app\/%E9%A3%9E%E8%AF%BB%E5%B0%8F%E8%AF%B4-%E7%83%AD%E9%97%A8%E7%94%B5%E5%AD%90%E4%B9%A6%E9%98%85%E8%AF%BB%E8%BD%AF%E4%BB%B6\/id1451147516"
+}

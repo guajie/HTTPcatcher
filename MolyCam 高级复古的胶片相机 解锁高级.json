@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\n  \"code\": 0,\n  \"msg\": \"处理成功\",\n  \"data\": {\n    \"isValid\": 1,\n    \"expiresTs\": 1800000000\n  }\n}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "MolyCam 高级复古的胶片相机 解锁高级 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "pay.wecut.com",
+      "path" : "\/apple\/iosVerifyReceipt.php"
+    }
+  ],
+  "description" : "MolyCam - 高级复古的胶片相机 来自 Shicong Zhou https:\/\/apps.apple.com\/cn\/app\/molycam-%E9%AB%98%E7%BA%A7%E5%A4%8D%E5%8F%A4%E7%9A%84%E8%83%B6%E7%89%87%E7%9B%B8%E6%9C%BA\/id1304078556"
+}

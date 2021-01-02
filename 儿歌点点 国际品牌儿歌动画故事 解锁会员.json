@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_endtime\":1800000000",
+      "matchValue" : "vip_endtime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "儿歌点点 国际品牌儿歌动画故事 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "gateway.ergedd.com",
+      "path" : "\/dduser\/user\/center\/set"
+    }
+  ],
+  "description" : "儿歌点点- 国际品牌儿歌动画故事 来自 北京萌宝科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%84%BF%E6%AD%8C%E7%82%B9%E7%82%B9-%E5%9B%BD%E9%99%85%E5%93%81%E7%89%8C%E5%84%BF%E6%AD%8C%E5%8A%A8%E7%94%BB%E6%95%85%E4%BA%8B\/id1006637877\n\n\n附Qx规则\n\/\/儿歌点点 A+\nhttp:\\\/\\\/gateway.ergedd.com\\\/dduser\\\/user\\\/center\\\/set url script-response-body egdd.js\n\n\n\/\/egdd.js↓\nlet a = JSON.parse($response.body);\na.data.is_vip = 1;\na.data.is_svip = 1;\na.data.vip_endtime = 1800000000\na.data.svip_endtime = 1800000000\n\n$done({body: JSON.stringify(a)});"
+}

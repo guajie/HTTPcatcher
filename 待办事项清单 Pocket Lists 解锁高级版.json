@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "subscription_expires\":\"2050-11-11\"",
+      "matchValue" : "subscription_expires\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "subscription_type\":\"premium\"",
+      "matchValue" : "subscription_type\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "待办事项清单 Pocket Lists 解锁高级版 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "pocketlists.com",
+      "path" : "\/api\/v1\/pocketlists.me.get"
+    }
+  ],
+  "description" : "待办事项清单 - Pocket Lists 来自 1312 https:\/\/apps.apple.com\/cn\/app\/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%E6%B8%85%E5%8D%95-pocket-lists\/id1272049520"
+}

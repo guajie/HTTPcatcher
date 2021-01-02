@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "userType\":2",
+      "matchValue" : "userType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "马卡龙秒抠p图神器 解锁会员Pro",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.api.versa-ai.com",
+      "path" : "\/user\/base\/getSelfUserBaseInfo"
+    }
+  ],
+  "description" : "马卡龙-一秒抠图，p图神器！ 来自 Versa, Inc. https:\/\/apps.apple.com\/cn\/app\/%E9%A9%AC%E5%8D%A1%E9%BE%99-%E4%B8%80%E7%A7%92%E6%8A%A0%E5%9B%BE-p%E5%9B%BE%E7%A5%9E%E5%99%A8\/id1214783848"
+}

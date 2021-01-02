@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"error\":0,\"data\":{\"error_msg\":\"\",\"is_success\":true,\"user_info\":{\"is_vip\":\"9A0684792021D73BE42B71491469ADFA\",\"clean_id\":\"39E71CC1F4A8F59725C62BE3AAAD424E\",\"play_token\":\"F0ED6D6872782A1B0A67BBD1C3257C1618919DB32B116CF8F06D8E68815ED4A043AE5F26DE7B7F50872055FD71DD5635B07CC3EB0EEC3395553BE79B824CDCA3\",\"is_expired\":0,\"expired_time\":1800000000},\"error_code\":\"\",\"data_info\":[]}}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "悟饭趣玩 共享token 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "iosv2.cjapi.papa21.com",
+      "path" : "\/user\/ios_store_pay_edition\/members_login\/check_members_identity_v2"
+    }
+  ],
+  "description" : "悟饭趣玩 -发现属于你的趣玩游戏 来自 xin zhang https:\/\/apps.apple.com\/cn\/app\/%E6%82%9F%E9%A5%AD%E8%B6%A3%E7%8E%A9-%E5%8F%91%E7%8E%B0%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E8%B6%A3%E7%8E%A9%E6%B8%B8%E6%88%8F\/id1436676508"
+}

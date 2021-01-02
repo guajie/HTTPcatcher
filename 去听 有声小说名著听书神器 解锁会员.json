@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "VipStatus\": \"1\"",
+      "matchValue" : "VipStatus\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "VipDeadline\":\"2030-11-11\"",
+      "matchValue" : "VipDeadline\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "去听 有声小说名著听书神器 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "www.cnquting.com",
+      "path" : "\/services\/GetUserInfo.aspx"
+    }
+  ],
+  "description" : "去听-有声小说名著听书神器 来自 中国出版集团数字传媒有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%8E%BB%E5%90%AC-%E6%9C%89%E5%A3%B0%E5%B0%8F%E8%AF%B4%E5%90%8D%E8%91%97%E5%90%AC%E4%B9%A6%E7%A5%9E%E5%99%A8\/id966769876"
+}

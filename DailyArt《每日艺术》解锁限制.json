@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "account_type\":\"2\"",
+      "matchValue" : "account_type\":\"\\d\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "DailyArt《每日艺术》解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "panel.getdailyart.com",
+      "path" : "\/APIMobile\/users\/*"
+    }
+  ],
+  "description" : "非恢复内购,登录账号后使用\nDailyArt 《每日艺术》 来自 Moiseum https:\/\/apps.apple.com\/cn\/app\/dailyart-%E6%AF%8F%E6%97%A5%E8%89%BA%E6%9C%AF\/id547982045"
+}

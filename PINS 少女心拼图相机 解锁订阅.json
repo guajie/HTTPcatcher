@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"code\":0,\"msg\":\"\\u5904\\u7406\\u6210\\u529f\",\"data\":{\"isValid\":1,\"expiresTs\":1800000000}}",
+      "matchValue" : ".+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "PINS 少女心拼图相机 解锁订阅 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "pay.wecut.com",
+      "path" : "\/apple\/iosVerifyReceipt.php"
+    }
+  ],
+  "description" : "恢复购买 重复两到三次可成\nPINS－少女心拼图相机 来自 微咔世纪 https:\/\/apps.apple.com\/cn\/app\/pins-%E5%B0%91%E5%A5%B3%E5%BF%83%E6%8B%BC%E5%9B%BE%E7%9B%B8%E6%9C%BA\/id1256992655"
+}

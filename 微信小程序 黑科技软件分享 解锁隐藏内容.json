@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "Ad\":\"0\"",
+      "matchValue" : "Ad\":\"1\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "微信小程序 黑科技软件分享 解锁隐藏内容 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.hkj178.com",
+      "path" : "\/wp-json\/wp\/v2\/posts\/*"
+    }
+  ],
+  "description" : "微信里搜索 黑科技软件分享"
+}

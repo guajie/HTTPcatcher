@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_start\":\"2019-11-11\",\"vip_end\":\"2970-01-01\",\"is_vip\":1,\"kefu",
+      "matchValue" : "vip_start\":(.+),\"kefu",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "恋爱脱单话术助手 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "app.lianaihuashu.com.cn",
+      "path" : "\/\/Api\/Usercenter\/getUserinfo"
+    }
+  ],
+  "description" : "恋爱脱单话术助手 来自 mengjia zhu https:\/\/apps.apple.com\/cn\/app\/%E6%81%8B%E7%88%B1%E8%84%B1%E5%8D%95%E8%AF%9D%E6%9C%AF%E5%8A%A9%E6%89%8B\/id1490861551"
+}

@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2070-01-01 00:00:00\"",
+      "matchValue" : "vipExpireTime\":\"[^\"]+\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "扫描王 文件扫描仪 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "micro-tool-api.foundao.com",
+      "path" : "\/orderPayCenterService\/user\/userInfo"
+    }
+  ],
+  "description" : "不用订阅&恢复\n扫描王 - 文件扫描仪 来自 Chengdu Tianmaituodao Technology Co.,Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%89%AB%E6%8F%8F%E7%8E%8B-%E6%96%87%E4%BB%B6%E6%89%AB%E6%8F%8F%E4%BB%AA\/id1499945951"
+}

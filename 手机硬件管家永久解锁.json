@@ -1,0 +1,64 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "isVip\":true",
+		"matchValue": "isVip\":[a-z]+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "signDays\":\"999",
+		"matchValue": "signDays\":\"\\d+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "score\":\"999",
+		"matchValue": "score\":\"\\d+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "expireTime\":\"99999999999",
+		"matchValue": "expireTime\":\"\\d+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "errno\":0",
+		"matchValue": "errno\":\\d+",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "errmsg\":\"OK\"",
+		"matchValue": "errmsg\":\".*?\"",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": true,
+	"isReadOnly": false,
+	"name": "手机硬件管家 永久解锁 A+",
+	"locations": [{
+		"method": "POST",
+		"scheme": "http",
+		"enabled": true,
+		"port": 0,
+		"query": "",
+		"host": "api.591master.com",
+		"path": "\/*\/uicommon\/getuser"
+	}],
+	"description": "下载地址，https:\/\/apps.apple.com\/cn\/app\/id1329937809"
+}

@@ -1,0 +1,45 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": 1",
+      "matchValue" : "vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_expire_at\":\"1800000000\"",
+      "matchValue" : "vip_expire_at\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_type\": \"2\"",
+      "matchValue" : "vip_type\":\"\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : false,
+  "name" : "兔小贝乐园-儿童早教启蒙睡前绘本故事 A+",
+  "description" : "兔小贝乐园-儿童早教启蒙睡前绘本故事 来自 Guangdong Starting Line Culture Co.,Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%85%94%E5%B0%8F%E8%B4%9D%E4%B9%90%E5%9B%AD-%E5%84%BF%E7%AB%A5%E6%97%A9%E6%95%99%E5%90%AF%E8%92%99%E7%9D%A1%E5%89%8D%E7%BB%98%E6%9C%AC%E6%95%85%E4%BA%8B\/id1463743536\n\n\n提供未测试qx规则\nhostname=*\n\n#兔小贝系列\nhttps:\/\/(.+)-api.tuxiaobei.com\/v1\/user\/.+ * url script-response-body txb.js\n\nbody = $response.body.replace(\/vip\":0\/g, 'vip\":0').replace(\/vip_expire_at\":null\/g, 'vip_expire_at\":\"1800000000\"').replace(\/vip_type\":\"\"\/g, 'vip_type\":\"2\"');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "*-api.tuxiaobei.com",
+      "path" : "\/v1\/user\/*"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "time\":1800000000",
+      "matchValue" : "time\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "筋斗云影院 全网V视频无广告免费看 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "jdytv.cn",
+      "path" : "\/login\/login\/veifys.html"
+    }
+  ],
+  "description" : "点击会员充值，随意点击某卡\n下载地址，http:\/\/jdytv.cn\/app\/"
+}

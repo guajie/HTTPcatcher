@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": [{\n      \"id\": 88888880,\n      \"auth_type\": 1,\n      \"auth_value\": 2439271514\n    }]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "论文查重#毕业论文查重检测修改助 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/memprofile"
+    }
+  ],
+  "description" : "迅捷论文查重-毕业论文查重检测修改助手 来自 Shanghai Hudun Information Technology Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E8%BF%85%E6%8D%B7%E8%AE%BA%E6%96%87%E6%9F%A5%E9%87%8D-%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%E6%9F%A5%E9%87%8D%E6%A3%80%E6%B5%8B%E4%BF%AE%E6%94%B9%E5%8A%A9%E6%89%8B\/id1444401231"
+}

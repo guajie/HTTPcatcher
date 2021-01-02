@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\":\"2030-07-15 02:02:02\"",
+      "matchValue" : "expireTime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\":\"2030-07-15 02:02:02\"",
+      "matchValue" : "expireTime\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVIP\":\"Y\"",
+      "matchValue" : "isVIP\":\"\\w\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "attribute\":4",
+      "matchValue" : "attribute\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "audition\": \"N\"",
+      "matchValue" : "audition\":\"\\w\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "聆知 随时随地 听见真知 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.heyjoy.cc",
+      "path" : "*"
+    }
+  ],
+  "description" : "聆知 – 随时随地，听见真知 来自 嘿球(北京)网络科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E8%81%86%E7%9F%A5-%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0-%E5%90%AC%E8%A7%81%E7%9C%9F%E7%9F%A5\/id1457931045"
+}

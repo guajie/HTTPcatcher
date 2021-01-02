@@ -1,0 +1,37 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\":1",
+      "matchValue" : "isVip\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipExpireTime\":\"2030-01-01 00:00:00\"",
+      "matchValue" : "vipExpireTime\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "血压心率 心跳脉搏血压监测仪 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "*.leanapp.cn",
+      "path" : "\/tools\/*"
+    }
+  ],
+  "description" : "购买 取消或恢复购买\n血压心率-心跳脉搏血压监测仪 来自 Chengdu Haima Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E8%A1%80%E5%8E%8B%E5%BF%83%E7%8E%87-%E5%BF%83%E8%B7%B3%E8%84%89%E6%90%8F%E8%A1%80%E5%8E%8B%E7%9B%91%E6%B5%8B%E4%BB%AA\/id1507735337"
+}

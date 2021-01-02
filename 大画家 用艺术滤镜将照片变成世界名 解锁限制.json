@@ -1,0 +1,64 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "coin\":9999",
+      "matchValue" : "coin\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "noWaterMark\":1",
+      "matchValue" : "noWaterMark\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\":\"000",
+      "matchValue" : "code\":\"\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "大画家 用艺术滤镜将照片变成世界名 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "goartwebapi.fotor.com",
+      "path" : "\/user\/home"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "goartwebapi.fotor.com",
+      "path" : "\/coin\/unlockEffect"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "goartwebapi.fotor.com",
+      "path" : "\/hdimage\/process"
+    }
+  ],
+  "description" : "大画家 - 用艺术滤镜将照片变成世界名画 来自 Chengdu Everimaging Science and Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%A4%A7%E7%94%BB%E5%AE%B6-%E7%94%A8%E8%89%BA%E6%9C%AF%E6%BB%A4%E9%95%9C%E5%B0%86%E7%85%A7%E7%89%87%E5%8F%98%E6%88%90%E4%B8%96%E7%95%8C%E5%90%8D%E7%94%BB\/id1148932799"
+}

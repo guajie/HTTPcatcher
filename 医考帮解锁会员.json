@@ -1,0 +1,48 @@
+{
+	"rules": [{
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "\"is_vip\":\"1\"",
+		"matchValue": "\"is_vip\":\"\\d\"",
+		"destiontion": "response",
+		"isRegex": true
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "\"vip_deadline\":\"解锁成功\"",
+		"matchValue": "\"vip_deadline\":\"\"",
+		"destiontion": "response",
+		"isRegex": false
+	}, {
+		"action": "body",
+		"matchField": "",
+		"field": "",
+		"value": "pass\":1",
+		"matchValue": "pass\":\\d",
+		"destiontion": "response",
+		"isRegex": true
+	}],
+	"enabled": true,
+	"isReadOnly": false,
+	"name": "医考帮会员解锁 A+",
+	"locations": [{
+		"method": "GET",
+		"scheme": "https",
+		"enabled": true,
+		"port": 443,
+		"query": "",
+		"host": "api.yikaobang.com.cn",
+		"path": "\/user\/main\/vip"
+	}, {
+		"method": "GET",
+		"scheme": "https",
+		"enabled": true,
+		"port": 443,
+		"query": "",
+		"host": "api.yikaobang.com.cn",
+		"path": "\/index.php\/activity\/main\/chapterLock"
+	}],
+	"description": "A+"
+}

@@ -1,0 +1,55 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":[{\"id\":8888881,\"auth_type\":1,\"auth_value\":1800000000}]",
+      "matchValue" : "vip\":\\[\\]",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_valid\":1",
+      "matchValue" : "\"vip_valid\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_deadline\":1800000000",
+      "matchValue" : "\"vip_deadline\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "uid\":\"已解锁\"",
+      "matchValue" : "uid\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "语言翻译器 实时翻译软件 解锁会员 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "app.xunjiepdf.com",
+      "path" : "\/api\/v4\/memprofile"
+    }
+  ],
+  "description" : "不用订阅&恢复\n语音翻译器-英汉互译在线实时翻译软件 来自 Duanqiang Tang https:\/\/apps.apple.com\/cn\/app\/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91%E5%99%A8-%E8%8B%B1%E6%B1%89%E4%BA%92%E8%AF%91%E5%9C%A8%E7%BA%BF%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91%E8%BD%AF%E4%BB%B6\/id1475440734"
+}

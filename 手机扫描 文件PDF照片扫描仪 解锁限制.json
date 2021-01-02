@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : ":0",
+      "matchValue" : ":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "isReadOnly" : false,
+  "name" : "手机扫描 文件PDF照片扫描仪 解锁限制 A+",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "panzhu.dicallapp.com",
+      "path" : "\/SMGetMeCount.ashx"
+    }
+  ],
+  "description" : "手机扫描－文件PDF照片扫描仪 来自 Huiwen Education Consulting Co., Ltd. https:\/\/apps.apple.com\/cn\/app\/%E6%89%8B%E6%9C%BA%E6%89%AB%E6%8F%8F-%E6%96%87%E4%BB%B6pdf%E7%85%A7%E7%89%87%E6%89%AB%E6%8F%8F%E4%BB%AA\/id1503637695"
+}
