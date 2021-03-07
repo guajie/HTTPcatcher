@@ -1,0 +1,81 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\":1",
+      "matchValue" : "is_vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_date\":\"2022-01-01\"",
+      "matchValue" : "vip_date\":null",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "level_id\":6",
+      "matchValue" : "level_id\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isplayed\":1",
+      "matchValue" : "isplayed\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "dltime\":1",
+      "matchValue" : "dltime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "notMore\":0",
+      "matchValue" : "notMore\":1",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "辣椒视频 1.8 解锁限制 A+",
+  "description" : "下载地址 http:\/\/v.sj31.live\/?code=AUVRQH\n下载地址 http:\/\/19av.live\/\n\n测试时间2021.2.21 随时失效\n\n提供未测试Qx规则\nhostname= jk.5apk.cn\n\n#辣椒视频 1.8 解锁限制 A+\n^http:\\\/\\\/jk\\.5apk\\.cn\\\/api\\\/[reg|play] url script-response-body ljsp.js\n\n\nbody = $response.body.replace(\/is_vip\":0\/g, 'is_vip\":1').\nreplace(\/vip_date\":null\/g, 'vip_date\":\"2022-01-01\"').\nreplace(\/level_id\":\\d\/g, 'level_id\":6').\nreplace(\/isplayed\":0\/g, 'isplayed\":1').\nreplace(\/dltime\":\\d+\/g, 'dltime\":1').\nreplace(\/notMore\":1\/g, 'notMore\":0')\n\n$done({body});",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "jk.5apk.cn",
+      "path" : "\/api\/reg"
+    },
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "jk.5apk.cn",
+      "path" : "\/api\/play"
+    }
+  ]
+}

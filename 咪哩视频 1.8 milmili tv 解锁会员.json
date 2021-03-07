@@ -1,0 +1,90 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": 1",
+      "matchValue" : "vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_expire\":1800000000",
+      "matchValue" : "vip_expire\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "coin\":999",
+      "matchValue" : "coin\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "nick\":\"已解锁\",\"vip",
+      "matchValue" : "nick\":\".*?\",\"vip",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":0,\"district",
+      "matchValue" : "vip\":1,\"district",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "price\":0",
+      "matchValue" : "price\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "咪哩视频 1.8 milmili tv 解锁会员 A+",
+  "description" : "下载地址 http:\/\/69n1.cn\n下载地址 http:\/\/mlml.tv\n下载地址 http:\/\/www.mrnzhc.cn\/s\/eyJhcHBpZCI6NjcwNzg3MDkwLCJncm91cF9pZCI6MywidmlzaXRfdHlwZSI6ImJyb3dzZXIiLCJyZXF1ZXN0X3VyaSI6IlwvP2M9Q0hOSk9NV0sifQ==\n\n测试时间2021.2.21 随时失效\n\n提供未测试Qx规则\n\nhostname = *.xtbl365.com, *.tyshuo.com\n\n#咪哩视频 milmili tv 解锁会员 A+\n^https:\\\/\\\/awmattack\\.(xtbl365|tyshuo)\\.com\\\/api\\\/.* url script-response-body milmil.js\n\nbody = $response.body.replace(\/vip\":1\/g, 'vip\":0').replace(\/price\":\\d+\/g, 'price\":0').replace(\/vip_expire\":0\/g, 'vip_expire\":1800000000').replace(\/vip\":0,\"vip_expire\/g, 'vip\":1,\"vip_expire');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "awmattack.tyshuo.com",
+      "path" : "\/api\/member\/info"
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "awmattack.xtbl365.com",
+      "path" : "\/api\/member\/info"
+    },
+    {
+      "method" : "",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "awmattack.tyshuo.com",
+      "path" : "\/api\/video\/video\/video_play"
+    }
+  ]
+}

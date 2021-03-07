@@ -1,0 +1,63 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_time\":\"2022-01-01 00:00:00\"",
+      "matchValue" : "vip_time\":\"0000-00-00 00:00:00\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\":1",
+      "matchValue" : "vip\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "code\": 200",
+      "matchValue" : "code\":100",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_ymd\":\"2022-11-30\"",
+      "matchValue" : "vip_ymd\":\"-0001-11-30\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "69视频 1.8 解锁限制 A+",
+  "description" : "下载地址 http:\/\/app.exxanz.com\n\n测试时间2021.2.21 随时失效\n\n提供未测试Qx规则\nhostname=69shipin.vip\n\n#69视频 解锁限制 A+\n^http:\\\/\\\/69shipin\\.vip\\\/api\\\/edition\\\/index url script-response-body 69sp.js\n\n\nbody = $response.body.replace(\/code\":100\/g, 'code\":200');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "69shipin.vip",
+      "path" : "\/api\/user\/personal"
+    },
+    {
+      "method" : "",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "69shipin.vip",
+      "path" : "\/api\/community\/edit"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vipstatus\":1",
+      "matchValue" : "\"vipstatus\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"expiration_time\": \"2023-01-01\"",
+      "matchValue" : "\"expiration_time\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "2496 在线播放高质量黑胶唱片 A+",
+  "description" : "2496 来自 Yeelion Online Network Beijing Co. Ltd. https:\/\/apps.apple.com\/cn\/app\/2496\/id1210665923\n\n提供未测试Qx规则\nhttp:\/\/api_2496\\.kuwo\\.cn\/front\/user\/vipstatus  url script-response-body 2496.js\n\nbody = $response.body.replace(\/\"vipstatus\":0\/g, '\"vipstatus\":1').replace(\/\"expiration_time\":\".*?\"\/g, '\"expiration_time\": \"2023-01-01\"');\n$done({body});",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "api_2496.kuwo.cn",
+      "path" : "\/front\/user\/vipstatus"
+    }
+  ]
+}
