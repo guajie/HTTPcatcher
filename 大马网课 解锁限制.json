@@ -1,0 +1,27 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "freeFlag\":1",
+      "matchValue" : "freeFlag\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "大马网课 解锁限制 A+",
+  "description" : "点击目录观看课程\n大马网课 来自 北京实诚慧博教育科技有限公司 https:\/\/apps.apple.com\/cn\/app\/%E5%A4%A7%E9%A9%AC%E7%BD%91%E8%AF%BE\/id1420964665",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "sdk.yunduoketang.com",
+      "path" : "\/appApi\/course\/liveAndFace\/list"
+    }
+  ]
+}

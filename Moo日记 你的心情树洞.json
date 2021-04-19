@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "proType\":1",
+      "matchValue" : "proType\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "userType\": 2",
+      "matchValue" : "userType\":\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "Moo日记 你的心情树洞 A+",
+  "description" : "Moo日记 - 你的心情树洞 来自 重庆书漫文化传播有限公司 https:\/\/apps.apple.com\/cn\/app\/moo%E6%97%A5%E8%AE%B0-%E4%BD%A0%E7%9A%84%E5%BF%83%E6%83%85%E6%A0%91%E6%B4%9E\/id1473250948\n\n提供未测试Qx规则\nhttps:\/\/diary\\.7english\\.cn:2433\/\/api\/user\/userInfo url script-response-body Moorj.js\n\n\nbody = $response.body.replace(\/proType\":0\/g, 'proType\":1').replace(\/userType\":\\d\/g, 'userType\":2');\n$done({body});\n",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 2433,
+      "query" : "",
+      "host" : "diary.7english.cn",
+      "path" : "\/\/api\/user\/userInfo"
+    }
+  ]
+}

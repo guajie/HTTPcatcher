@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": true",
+      "matchValue" : "is_vip\":false",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_exp_time\": 1800000000",
+      "matchValue" : "vip_exp_time\":0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "儿童睡前故事 童年必听的好故事 A+",
+  "description" : "儿童睡前故事-童年必听的好故事 来自 Hangzhou Lemi Network Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E5%84%BF%E7%AB%A5%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B-%E7%AB%A5%E5%B9%B4%E5%BF%85%E5%90%AC%E7%9A%84%E5%A5%BD%E6%95%85%E4%BA%8B\/id1458435477",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.babybooks.top",
+      "path" : "\/v0\/profile"
+    }
+  ]
+}

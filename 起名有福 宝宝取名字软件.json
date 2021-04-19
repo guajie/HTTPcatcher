@@ -1,0 +1,36 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": 1",
+      "matchValue" : "is_vip\": 0",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expire\":1800000000",
+      "matchValue" : "expire\": 0",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "起名有福 宝宝取名字软件 A+",
+  "description" : "起名有福-宝宝取名字软件 来自 Hangzhou Lemi Network Technology Co., Ltd https:\/\/apps.apple.com\/cn\/app\/%E8%B5%B7%E5%90%8D%E6%9C%89%E7%A6%8F-%E5%AE%9D%E5%AE%9D%E5%8F%96%E5%90%8D%E5%AD%97%E8%BD%AF%E4%BB%B6\/id1447841037",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.qimingyoufu.cn",
+      "path" : "\/v01\/user-info"
+    }
+  ]
+}
